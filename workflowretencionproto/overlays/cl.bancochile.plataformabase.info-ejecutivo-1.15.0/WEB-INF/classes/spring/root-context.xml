@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <!-- Root Context: define recursos compartidos visibles a todos los otros componentes web -->
+    <context:property-placeholder location="classpath:system.properties"/>
+
+    <import resource="classpath:spring/clientes-ws-context.xml" />
+
+    <!-- Configuración catálogo genérico -->
+    <bean id="catalogoGenericoProperties" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="cacheSeconds" value="30"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="basename" value="classpath:catalogos/generico/ErroresGenericosLogLocalizer"/>
+    </bean>
+
+    <!-- Configuración catálogo de proyecto -->
+    <bean id="catalogoProperties" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="cacheSeconds" value="30"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="basenames"
+                  value="classpath:catalogos/plataformabase/PermisosPOC,
+                         classpath:catalogos/generico/TransversalTecnicoLogLocalizer"/>
+    </bean>
+
+    <!-- Configuración catálogo de proyecto -->
+    <bean id="catalogoPropertiesEjecutivo" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="cacheSeconds" value="30"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="basenames"
+                  value="classpath:catalogos/plataformabase/InformacionEjecutivo,
+                         classpath:catalogos/generico/TransversalTecnicoLogLocalizer"/>
+    </bean>
+
+    <!--
+        Escaneo de paquetes para que Spring busque e instancie los beans correspondientes.
+        jwt-security:
+            cl.bancochile.plataformabase.security.service
+            cl.bancochile.plataformabase.security.config
+            cl.bancochile.plataformabase.error.advice,
+            cl.bancochile.plataformabase.error.resttemplate,
+        info-ejecutivo:
+            cl.bancochile.plataformabase.infoejecutivo.service,
+            cl.bancochile.plataformabase.infoejecutivo.proxy,
+        shared-lib-translator-jar:
+            cl.bancochile.traductor.services
+    -->
+    <context:component-scan
+            base-package="cl.bancochile.plataformabase.security.service,
+                          cl.bancochile.plataformabase.security.config,
+                          cl.bancochile.plataformabase.error.advice,
+                          cl.bancochile.plataformabase.error.resttemplate,
+                          cl.bancochile.plataforma.common.*,
+                          cl.bancochile.plataformabase.*,
+                          cl.bancochile.traductor.services,
+                          cl.bancochile.plataforma.common.informacionejecutivo.service,
+                          cl.bancochile.plataforma.common.informacionejecutivo.sal"/>
+    <context:annotation-config/>
+
+</beans>

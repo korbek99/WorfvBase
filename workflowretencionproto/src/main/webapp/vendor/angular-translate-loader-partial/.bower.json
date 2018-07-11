@@ -1,0 +1,16 @@
+{
+  "name": "angular-translate-loader-partial",
+  "description": "A plugin for Angular Translate",
+  "version": "2.11.1",
+  "main": "./angular-translate-loader-partial.js",
+  "ignore": [],
+  "author": "Pascal Precht",
+  "license": "MIT",
+  "dependencies": {
+    "angular-translate": "~2.11.1"
+  },
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/angular-translate-loader-partial",
+  "_target": "2.11.1",
+  "_release": "2.11.1",
+  "_originalSource": "angular-translate-loader-partial"
+}

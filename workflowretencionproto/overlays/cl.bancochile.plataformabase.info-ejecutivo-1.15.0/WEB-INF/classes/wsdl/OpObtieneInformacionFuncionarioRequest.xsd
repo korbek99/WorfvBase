@@ -1,0 +1,12 @@
+<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://osb.bancochile.cl/ESB/ObtieneInformacionFuncionario/OpObtieneInformacionFuncionarioRequest" targetNamespace="http://osb.bancochile.cl/ESB/ObtieneInformacionFuncionario/OpObtieneInformacionFuncionarioRequest" elementFormDefault="qualified">
+    <complexType name="reqObtieneInformacionFuncionario">
+        <sequence>
+            <element name="Cuerpo" type="tns:CuerpoType"/>
+        </sequence>
+    </complexType>
+    <complexType name="CuerpoType">
+        <sequence>
+            <element name="rutFuncionario" minOccurs="1" maxOccurs="1" nillable="false" type="string"/>
+        </sequence>
+    </complexType>
+</xsd:schema>

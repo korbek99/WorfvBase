@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cl.bancochile.workflow.retencion</groupId>
+    <artifactId>WorkflowRetencion</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!-- Configuraciones globales -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <source.level>1.7</source.level>
+        <target.level>1.7</target.level>
+        <dist.id>${project.artifactId}</dist.id>
+        <dist.name>${project.name}</dist.name>
+        <project.root>${basedir}</project.root>
+
+        <!-- Librerias y versiones base -->
+        <org.springframework-version>4.0.6.RELEASE</org.springframework-version>
+        <org.aspectj-version>1.7.4</org.aspectj-version>
+        <junit.version>4.8.1</junit.version>
+        <cliente.ws.version>1.0.0</cliente.ws.version>
+        <apache.commons.lang.version>2.6</apache.commons.lang.version>
+        <javax.servlet-version>3.0.1</javax.servlet-version>
+        <bch.shared-lib-translator-version>1.0.0</bch.shared-lib-translator-version>
+
+        <jacoco.version>0.6.5.201403032054</jacoco.version>
+        <java.version>1.7</java.version>
+        <junit.version>4.12</junit.version>
+        <mockito.version>1.9.5</mockito.version>
+        <servlet.version>3.0.1</servlet.version>
+        <spring.version>4.2.1.RELEASE</spring.version>
+        <spring.test.version>4.2.1.RELEASE</spring.test.version>
+        <spring-security.version>4.0.2.RELEASE</spring-security.version>
+        <spring-security-test.version>4.0.2.RELEASE</spring-security-test.version>
+        <weblogic-maven-plugin.version>10.3.6.0</weblogic-maven-plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://200.14.166.249:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://200.14.166.249:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+
+    <dependencies>
+        <!-- INI Bibliotecas compartidas/contenedor provided -->
+        <dependency>
+            <groupId>cl.bancochile.plataforma.shared.lib.common</groupId>
+            <artifactId>taurus-shared-lib-common-jar</artifactId>
+            <version>1.8.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataforma.shared.lib</groupId>
+            <artifactId>taurus-shared-lib-cdnsession-api-jar</artifactId>
+            <version>2.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataforma.shared.lib</groupId>
+            <artifactId>taurus-shared-lib-cdnsession-model-jar</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataforma.shared.lib</groupId>
+            <artifactId>taurus-shared-lib-journalcn-api-jar</artifactId>
+            <version>4.1.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataforma.shared.lib</groupId>
+            <artifactId>taurus-shared-lib-spring-jar</artifactId>
+            <version>1.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.portal.lib.shared</groupId>
+            <artifactId>shared-lib-commons-jar</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.portal.lib.shared</groupId>
+            <artifactId>shared-lib-aop-jar</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.portal.lib.shared</groupId>
+            <artifactId>shared-lib-log-jar</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.portal.lib.shared</groupId>
+            <artifactId>shared-lib-jackson-jar</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataforma.common</groupId>
+            <artifactId>common-reporteria-lib</artifactId>
+            <version>1.6.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>commons-lang</groupId>
+                    <artifactId>commons-lang</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataforma.shared.lib</groupId>
+            <artifactId>taurus-shared-lib-reporteria-jar</artifactId>
+            <version>1.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataforma.shared.lib</groupId>
+            <artifactId>taurus-shared-lib-cdncommon-extension-jar</artifactId>
+            <version>1.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- FIN Bibliotecas compartidas/contenedor provided -->
+
+        <!-- INI Servlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- FIN Servlet -->
+        <!-- INI Dependencias Banco de Chile PROVIDED -->
+        <dependency>
+            <groupId>cl.bancochile.portal.lib.shared</groupId>
+            <artifactId>shared-lib-translator-jar</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- FIN Dependencias Banco de Chile PROVIDED -->
+
+        <!-- INI Dependencias Banco de Chile -->
+        <dependency>
+            <groupId>cl.bancochile.plataformabase</groupId>
+            <artifactId>rest-error-handler</artifactId>
+            <version>1.13.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpcore</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataformabase</groupId>
+            <artifactId>jwt-security</artifactId>
+            <version>4.1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-context</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-webmvc</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-tx</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-config</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-web</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>io.jsonwebtoken</groupId>
+                    <artifactId>jjwt</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.aspectj</groupId>
+                    <artifactId>aspectjrt</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-lang3</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>cl.bancochile.plataformacomercial</groupId>
+            <artifactId>common-validation-lib</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
+        <!-- FIN Dependencias Banco de Chile -->
+
+        <!--INI individuales -->
+        <!-- JWT -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.5.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-core</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-annotations</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!--FIN individuales -->
+
+
+
+
+        <!-- Unit Testing -->
+        <!-- INI Testing depues de Libs compartidas -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.4.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.4.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- FIN Testing depues de Libs compartidas -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.test.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>0.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path-assert</artifactId>
+            <version>0.8.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <version>${spring-security-test.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--Lib utilitario para registrar en Journal CDN -->
+        <dependency>
+            <groupId>cl.bancochile.plataforma.common</groupId>
+            <artifactId>common-journal-cdn-lib</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+
+        <!-- Ficha Full -->
+        <dependency>
+            <groupId>cl.bancochile.ws.client</groupId>
+            <artifactId>obtener-datos-ficha-full</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- Datos Ejecutivo -->
+        <dependency>
+            <groupId>cl.bancochile.ws.client</groupId>
+            <artifactId>consulta-escalamiento-funcionario</artifactId>
+            <version>1.3.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Librería de castigo-->
+        <dependency>
+            <groupId>cl.bancochile.workflow.castigo</groupId>
+            <artifactId>persistence-castigo-dao-lib</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- libreria valor Dolar-->
+        <dependency>
+            <groupId>cl.bancochile.ws.client</groupId>
+            <artifactId>consulta-precio-dolar</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+
+        <!-- libreria valor UF-->
+        <dependency>
+            <groupId>cl.bancochile.ws.client</groupId>
+            <artifactId>CS000073_ConsultaValorMoneda</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <resources>
+            <!--se agrega resource para la descarga de archivos excell -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>**/*.properties</exclude>
+                    <exclude>**/*.xml</exclude>
+                </excludes>
+            </resource>
+            <!--se agrega resource para la descarga de archivos excell -->
+            <resource>
+                <directory>src/main/webapp/WEB-INF</directory>
+                <filtering>true</filtering>
+            </resource>
+
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <additionalProjectnatures>
+                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+                    </additionalProjectnatures>
+                    <additionalBuildcommands>
+                        <buildcommand>org.springframework.ide.eclipse.core.springbuilder</buildcommand>
+                    </additionalBuildcommands>
+                    <downloadSources>true</downloadSources>
+                    <downloadJavadocs>true</downloadJavadocs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <compilerArgument>-Xlint:all</compilerArgument>
+                    <showWarnings>true</showWarnings>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration>
+                    <mainClass>org.test.int1.Main</mainClass>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>com.oracle.weblogic</groupId>
+                <artifactId>weblogic-maven-plugin</artifactId>
+                <version>${weblogic-maven-plugin.version}</version>
+                <configuration>
+                    <adminurl>t3://${deploy.server.ip}:${deploy.server.port}</adminurl>
+                    <user>${deploy.server.user}</user>
+                    <password>${deploy.server.pass}</password>
+                    <upload>true</upload>
+                    <action>deploy</action>
+                    <remote>true</remote>
+                    <verbose>true</verbose>
+                    <source>target/${project.artifactId}.${project.packaging}</source>
+                    <name>${project.artifactId}</name>
+                    <targets>${deploy.server.cluster}</targets>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                        </manifest>
+                    </archive>
+                    <webResources>
+                        <resource>
+                            <filtering>true</filtering>
+                            <directory>src/main/webapp</directory>
+                            <includes>
+                                <include>**/weblogic.xml</include>
+                            </includes>
+                        </resource>
+                    </webResources>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
+                </configuration>
+            </plugin>
+
+
+            <!--JavaDoc Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--CheckStyle Plugin -->
+            <!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.17</version> <executions> <execution> <id>validate</id> <phase>validate</phase>
+                <configuration> <configLocation>resourcesDocumentacion/checkstyleBch.xml</configLocation>
+                <encoding>UTF-8</encoding> <consoleOutput>true</consoleOutput> <failsOnError>true</failsOnError>
+                </configuration> <goals> <goal>check</goal> </goals> </execution> </executions>
+                </plugin> -->
+            <!--Metadata Extractor -->
+            <plugin>
+                <groupId>cl.bancochile.maven.pinfo</groupId>
+                <artifactId>pinfo-cn</artifactId>
+                <version>1.3.3</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+

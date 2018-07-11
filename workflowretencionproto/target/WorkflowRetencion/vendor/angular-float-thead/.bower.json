@@ -1,0 +1,31 @@
+{
+  "name": "angular-floatThead",
+  "main": "angular-floatThead.js",
+  "version": "v0.0.1",
+  "homepage": "https://github.com/brandon-barker/angular-floatThead",
+  "authors": [
+    "Brandon Barker <skinty@gmail.com>"
+  ],
+  "description": "A very simple AngularJS wrapper around the awesome floatThead library",
+  "keywords": [
+    "floatThead",
+    "sticky",
+    "table",
+    "headers",
+    "angular",
+    "sticky",
+    "columns"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/angular-float-thead",
+  "_target": "0.0.1",
+  "_release": "v0.0.1",
+  "_originalSource": "angular-float-thead"
+}

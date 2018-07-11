@@ -1,0 +1,347 @@
+.modal
+	&-body
+		padding 10px 30px !important
+		height auto
+		overflow-y auto
+	.caja-resumen-inicio
+		background $color-16
+		position relative
+		left -30px
+		width calc(100% + 60px)
+		margin-top -10px
+		padding 15px 30px
+		display flex
+		flex-direction row
+		align-items stretch
+		flex 1
+		margin-bottom 30px
+		p
+			margin-bottom 0px
+		h5
+			margin-bottom 0px
+			color $color-3
+	.confirmacion-aside
+		border 1px solid $color-14
+		padding 15px
+		margin-bottom 15px
+		.form-group
+			margin-bottom 0px
+	.listado-datos
+		margin-bottom 30px
+		ul
+			padding 0px
+			li
+				list-style none
+				padding 10px 0px
+				p
+					float left
+					font-size 14px
+					&:first-child
+						color $color-12
+					&:last-child
+						color black
+				&.border-bottom
+					border-bottom 1px dashed $color-13 !important
+				&.border-bottom-dashed
+					border-bottom 1px dashed $color-13 !important
+	.resumen
+		h4
+			color $color-3
+	.cuadro-mail
+		padding 0
+		.select-mail
+			display flex
+			background $color-16
+			padding 15px
+			flex-direction row
+			align-items flex-end
+			.form-group
+				margin-bottom 0px
+		.descarga-comprobante
+			margin-top 5px
+			background $color-16
+			padding-top 6px
+			padding-bottom 6px
+			display flex
+			flex-direction row
+			align-items center
+			justify-content flex-end
+			position relative
+			.enlace
+				display flex
+				flex-direction row
+				align-items center
+				cursor pointer
+				i
+					color $color-6
+					font-size 24px
+					margin-right 10px
+	.modal-footer
+		&.gestiones
+			border-top 1px solid #eeeeee !important
+			padding-left 0px !important
+			padding-right 0px !important
+			margin-left 30px !important
+			width calc(100% - 60px)
+.modal
+	z-index 1070 !important
+.modal-open
+	.modal
+		background rgba(0, 0, 0, .75)
+.modal-content
+	box-shadow none
+	border-radius 0
+	.modal-header
+		background $color-3
+		border none
+		position relative
+		.modal-title
+			color $grey-one
+		.close-modal
+			position absolute
+			top 0
+			right 0px
+			width 40px
+			bottom 0px
+			opacity 1 !important
+			border-radius 0
+			background $grey-three
+			color $grey-one
+			font-size 25px
+			padding 0
+			&:hover
+				background $grey-one
+				color $default-color
+		&.outside
+			.close-modal
+				position absolute
+				right -40px
+				margin 0
+			.modal-actions
+				position absolute
+				right -40px
+				top 100%
+				div.action-icon
+					width 40px
+					height 40px
+					display block
+					background $grey-five
+					text-align center
+					font-size 23px
+					line-height 40px
+					transition all ease .2s
+					cursor pointer
+					position relative
+					.badge
+						position absolute
+						top 5px
+						right 4px
+						font-size 10px
+						padding 4px
+					&:hover
+						background $grey-four
+					&.delete
+						&:hover
+							background $danger-color
+							color $default-color
+		.dropdown
+			display inline-block
+			border-right 1px solid white
+			padding-right 25px
+			> a
+				i
+					color $default-color
+					font-size 20px
+			.dropdown-menu
+				left initial
+				right 10px
+
+	.modal-footer
+		border none
+		clear both
+		
+// Tabla Detalle Modal
+.modal-detalle
+	&.fade
+		.modal-dialog
+			margin-right 0
+			margin-top 0
+			height 100%
+			//max-width 920px
+			min-width 498px
+			position absolute
+			right -100%
+			@media (min-width $bp-tablet)
+				width 100% !important
+			@media (min-width $bp-desktop)
+				width 70% !important
+			@media (min-width $bp-large-desktop)
+				width 55% !important
+			&.modal-lg
+				@media (min-width $bp-tablet)
+					width 100% !important
+				@media (min-width $bp-desktop)
+					width 90% !important
+				@media (min-width $bp-large-desktop)
+					width 70% !important
+			&.modal-sm
+				@media (min-width $bp-tablet)
+					width 100% !important
+				@media (min-width $bp-desktop)
+					width 55% !important
+				@media (min-width $bp-large-desktop)
+					width 40% !important
+			&.modal-xs
+				@media (min-width $bp-tablet)
+					width 100% !important
+				@media (min-width $bp-desktop)
+					width 55% !important
+				@media (min-width $bp-large-desktop)
+					width 40% !important
+	&.in
+		.modal-dialog
+			margin-bottom 0
+			margin-top 0
+			height 100%
+			.modal-content
+				border none
+				height 100%
+				overflow-y auto !important
+				.btn-close
+					display none
+				.modal-info
+					padding 15px
+					h2
+						.ion-ios-close-empty
+							cursor pointer
+							display inline-block
+					.tab-pane
+						height 48px
+						position fixed
+						bottom 0
+						width 100%
+						display flex
+						flex-direction row
+						align-items center
+				.modal-subfooter
+					height 80px
+					position fixed
+					bottom 0px
+					width 100%
+					.column-two
+						justify-content flex-end
+						display flex
+						flex-direction row
+				.action-box
+					padding 15px
+					position absolute
+					bottom 0
+					right 0
+					width 100%
+					.button-toggle
+						width 30px
+						height 30px
+						border-radius 50%
+						margin 0 0 0 -15px
+						top -15px
+						left 50%
+						display inline-block
+						text-align center
+						line-height 34px
+						position absolute
+						cursor pointer
+						&:hover
+							transition all ease .3s
+				.modal-header
+					min-height 50px
+					padding 15px 30px
+					display flex !important
+					flex-direction row !important
+					align-items center !important
+					h3
+						line-height 1
+						width calc(100% - 65px)
+					.close-modal
+						width 55px
+						margin 0
+					.dropdown-descarga
+						border-right-style solid
+						border-right-width 1px
+						padding-right 15px
+						margin-left 10px
+						.boton-descarga-documentos
+							font-size 20px
+							i
+								vertical-align middle
+						.descarga-detalle
+						.enviar-mail
+							padding-left 15px !important
+							padding-right 15px !important
+							
+.con-scroll
+	&.modal-detalle
+		.modal-content
+			overflow-y auto !important
+
+.modal
+	&.modal-detalle
+		.modal-dialog
+			animation-delay .01s
+			animation-duration .4s
+			animation-name deslizaModal
+			animation-fill-mode forwards
+
+@keyframes deslizaModal {
+	from{
+		position absolute
+		right -100%
+	}
+
+	to{
+		position absolute
+		right 0%
+	}
+}
+
+
+.modal
+	&.modal-detalle
+		transition-delay 0s
+		transition-duration 0.4s
+		transition-property all
+		transition-timing-function ease-in-out
+		display block
+		right -100%
+		transform translate3d(0,0,0)
+		&.in
+			transition-delay 0s
+			transition-duration 0.4s
+			transition-property all
+			transition-timing-function ease-in-out
+			display block
+			right 0%
+			transform translate3d(0,0,0)
+
+.modal
+	display block
+	animation-delay 0s
+	animation-duration .4s
+	animation-name bloqueoDisplay
+	animation-fill-mode backwards
+
+.modal.in
+	display block
+	animation-delay 0s
+	animation-duration .4s
+	animation-name bloqueoDisplay
+	animation-fill-mode backwards
+
+@keyframes bloqueoDisplay {
+	from{
+		display block
+	}
+
+	to{
+		display block
+	}
+}

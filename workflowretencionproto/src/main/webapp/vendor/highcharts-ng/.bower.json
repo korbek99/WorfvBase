@@ -1,0 +1,15 @@
+{
+  "name": "highcharts-ng",
+  "version": "0.0.7",
+  "main": "dist/highcharts-ng.js",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "latest",
+    "angular-mocks": "latest",
+    "jquery": "latest"
+  },
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/highcharts-ng",
+  "_target": "0.0.7",
+  "_release": "0.0.7",
+  "_originalSource": "highcharts-ng"
+}

@@ -1,0 +1,72 @@
+.pill-descarga
+	background-color $default-color
+	align-items center
+	align-content center
+	display flex
+	font-size 12px
+	min-height 75px
+	transition .2s all linear
+	&--con-icono
+		> div 
+			flex 1
+		> div:nth-child(1)
+			max-width 40px
+			padding 0
+			text-align center
+	&__contenido
+		display flex
+		align-items center
+	&__icono
+		border-width 2px !important
+		font-size 25px
+		height 35px
+		line-height 125%
+		width 35px
+		&--success
+			font-size 43px
+			line-height 33px
+			&:before
+				content "\f3fe"
+				line-height 33px
+		&--error
+			font-size 43px
+			line-height 33px
+			&:before
+				content "\f405"
+				line-height 33px
+		&--sin-circulo
+			border none !important
+			font-size 40px
+			line-height 1
+	a
+		&:focus
+		&:hover
+			text-decoration none
+	&__ir-detalle
+		height 17px
+		width 17px
+	.grafico-donut__percent
+		font-size 12px
+		margin-top -11px
+	&--dashed
+		border-width 1px
+		border-style dashed
+		.pill-descarga__icono
+			border-style dashed !important
+			transition all linear .2s
+		.pill-descarga__dato
+				*
+					transition all linear .2s
+		&:hover
+			.pill-descarga__icono
+				border-color alpha($grey-one, .3) !important
+				color alpha($grey-one, .3) !important
+			.pill-descarga__dato
+				*
+					color alpha($grey-one, .3)
+					
+	.dropdown-descarga
+		&.open
+			.dropdown-menu
+				left inherit
+				right 0

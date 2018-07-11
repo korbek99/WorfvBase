@@ -1,0 +1,175 @@
+//Elementos dentro de Tablas
+
+.tabla-interactiva
+	tbody
+		tr
+			td
+				.boton-descarga-documentos
+					font-size 18px
+					
+//Boton Fill
+table
+	.btn-fill
+		margin-bottom 0
+		.cont-animacion
+			height 14px
+			width 14px
+			i
+				font-size 14px
+				height 14px
+				width 14px
+			span
+				height 14px
+				width 14px
+		& > span
+			font-size 12px
+		&:hover
+			.cont-animacion
+				span
+					border-width 7px
+					
+	.bch-custom-check
+		font-size 12px
+		margin-bottom 0
+		> div
+			background-color $default-color
+			height 15px
+			width 15px
+			i
+				top 1px
+				left 2px
+		&.radiobutton
+			> div
+				height 16px
+				width 16px
+		&.favorite
+			div
+				height 15px
+				width auto
+			i
+				font-size 15px
+			
+	.switch
+		display inline-block
+		margin-bottom 0
+		padding 0
+		span
+			font-size 12px
+			width auto
+		i
+			width 32px
+			&:before
+				height 18px
+				width 18px
+		:checked
+			& + i
+				padding-left 15px
+
+	.dropdown
+		margin-bottom 0
+		.dropdown-toggle
+			i
+				color $color-6 !important
+			&:hover
+				i
+					color $color-5 !important
+		&.open
+			.dropdown-toggle
+				i
+					color $color-5 !important
+		&.acciones-tabla
+			.dropdown-toggle
+				padding 2px 5px 4px 5px
+				height 20px
+				width 20px
+				border-radius 50%
+				font-size 13px
+				cursor pointer
+				transition .3s linear all
+			.dropdown-menu
+				margin 10px 0px 0px -70px
+				li
+					cursor pointer
+					a
+						font-size 12px
+						width 100%
+						display block
+						text-align left
+						span
+							margin-right 5px
+							font-size 16px
+				&:after, &:before
+					bottom: 100%
+					left 50%
+					border solid transparent
+					content " "
+					height 0
+					width 0
+					position absolute
+					pointer-events none
+				&:after
+					border-width 5px
+					margin-left -5px
+				&:before
+					border-width 6px
+					margin-left -6px
+		&.boton-descarga-documentos
+			display inline-block
+			line-height 1
+			.dropdown-toggle
+				i
+					font-size 20px
+	td
+		&:first-child
+			.dropdown-descarga
+			.dropdown-acciones-empresas
+				.dropdown-menu
+					left 0
+		&:last-child
+			.dropdown
+			.dropdown-descarga
+			.dropdown-acciones-empresas
+				.dropdown-menu
+					left inherit
+					right -20px
+					
+	.enlace-detalle-tabla
+		background-color $default-color
+		border 1px solid $color-6
+		border-radius 50%
+		color $color-6
+		display inline-block
+		font-size 8px
+		height 15px
+		width 15px
+		line-height 14px
+		text-align center
+		text-decoration none
+		vertical-align middle
+		&:focus
+		&:hover
+			border 1px solid $color-5
+			color $color-5
+		.ion-chevron-right
+			margin-left 1px
+		&__relleno
+			border none
+			background-color $color-6
+			color $default-color !important
+			&:hover
+				border none
+				background-color $color-5
+				color $default-color !important
+			i
+				display block
+				&.ion-chevron-right
+					margin-left 1px
+					margin-top 3px
+				&.ion-chevron-left
+					margin-right 2px
+					margin-top 4px
+				&.ion-chevron-up
+					margin-top 3px
+				&.ion-chevron-down
+					margin-top 4px
+			

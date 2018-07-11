@@ -1,0 +1,36 @@
+.caja-interactiva
+	h4
+	h5
+	i
+		color $color-3
+	&--hover
+		&:hover
+			background-color $color-3
+			.caja-interactiva__icono
+			h4
+				color $default-color
+			&:before
+				border-color $color-3 transparent transparent transparent !important
+		&__activa
+			background-color $color-3
+			.caja-interactiva__icono
+			h4
+				color $default-color
+			&:before
+				border-color $color-3 transparent transparent transparent !important
+
+	&__con-flecha
+		&:before
+			border-color $default-color transparent transparent transparent
+
+	&__con-enlaces
+		&--head
+			color $color-3
+		&:hover
+			.caja-interactiva__con-enlaces--back
+				.caja-interactiva__con-enlaces--lista
+					li
+						a
+							color $default-color
+	&__nombre
+		color $color-3

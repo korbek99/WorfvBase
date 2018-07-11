@@ -1,0 +1,13 @@
+{
+  "name": "highcharts",
+  "version": "v4.0.4",
+  "main": [
+    "highcharts.js",
+    "highcharts-more.js",
+    "modules/exporting.js"
+  ],
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/highcharts",
+  "_target": "4.0.4",
+  "_release": "v4.0.4",
+  "_originalSource": "highcharts"
+}

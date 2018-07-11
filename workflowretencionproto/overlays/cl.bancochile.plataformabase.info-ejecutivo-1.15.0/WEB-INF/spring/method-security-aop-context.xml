@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+    <!--methodResponseSecurity-->
+    <bean name="methodResponseSecurityInterceptor"
+          class="cl.bancochile.plataformabase.security.method_response.interceptor.MethodResponseSecurityInterceptor"/>
+
+
+    <aop:config>
+        <aop:aspect id="methodSecurityAspect" ref="methodResponseSecurityInterceptor">
+            <aop:pointcut id="operationsRestControllerPointcut"
+                          expression="execution(* cl.bancochile.plataformabase.infoejecutivo.controller.*Controller.*(..)))"/>
+            <aop:around method="aroundMethod" pointcut-ref="operationsRestControllerPointcut"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

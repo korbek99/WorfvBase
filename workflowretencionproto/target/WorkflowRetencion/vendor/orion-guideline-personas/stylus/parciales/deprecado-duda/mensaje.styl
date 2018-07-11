@@ -1,0 +1,34 @@
+.bch-alert-lista
+	.bch-mensaje-empresas
+		margin-bottom 0
+		border-bottom 1px solid $default-color
+		font-family $regular
+	& > ul
+		padding 15px 20px 30px 62px
+		margin 0
+		font 12px/130% 'Arial'
+		li
+			list-style none
+			padding 10px 0
+			position relative
+			&:before
+				content "\f121"
+				display inline-block
+				font 22px "Ionicons"
+				left -30px
+				position absolute
+				speak none
+				text-transform none
+				text-rendering auto
+				top 13px
+				line-height 1
+				moz-osx-font-smoothing grayscale
+
+	&.step-list
+		& > ul
+			li
+				&:before
+					content "\f3d3"
+				&.check
+					&:before
+						content "\f121"

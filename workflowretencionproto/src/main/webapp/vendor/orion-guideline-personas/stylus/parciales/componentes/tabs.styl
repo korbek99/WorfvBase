@@ -1,0 +1,76 @@
+
+/* TABS */
+.bch-empresas-tabs
+	.nav-tabs
+		border-bottom 1px solid $color-13
+		li
+			margin-bottom 0
+			a
+				border-color $color-13
+				color $color-11
+				cursor pointer
+				margin 0 7px -1px 0
+				font 16px $light
+				padding 10px 15px 5px 15px
+				background-color $color-16
+				transition all 0.2s ease-in-out
+				&:hover
+					background-color $color-15
+				@media (max-width $bp-tablet)
+					font 13px $light
+					padding 10px 15px					
+			&.active
+				a
+					background-color $default-color
+					border-bottom 1px solid $default-color
+					color $color-3 !important
+					
+	.tab-content
+		padding 15px 0
+/* FIN TABS */
+
+/* SUBTABS */		
+.bch-empresas-subtabs
+	margin-top 15px
+	.nav-tabs
+		border-bottom none !important
+		li
+			margin-bottom 0 !important
+			a
+				padding 5px 15px !important
+				margin 0 2px !important
+				border-left none !important
+				border-right none !important
+				border-top none !important
+				border-bottom none !important
+				background-color $color-16 !important
+				color $color-11 !important
+				cursor pointer !important
+				font 14px $regular !important
+				transition all 0.2s ease-in-out !important
+				border-radius 0px !important
+				&:hover
+					border-left none !important
+					border-right none !important
+					border-top none !important
+					border-bottom none !important
+					background-color $color-15 !important
+				&:focus
+					border-top none !important
+					border-left none !important
+					border-right none !important
+					background-color $color-16 !important
+			&.active
+				a
+					pointer-events none !important
+					color $default-color !important
+					border-bottom none !important
+					background-color $color-3 !important
+			&:focus
+				outline none !important
+		&:nth-child(1)
+			a
+				margin-left 0 !important	
+	.tab-content
+		padding 15px 0 !important
+/* FIN SUBTABS */				

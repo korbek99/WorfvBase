@@ -1,0 +1,85 @@
+.datepicker
+	table
+		thead
+			background-color $corporative-light-blue
+			color $default-color
+			.btn
+				background transparent
+				color $default-color
+				&:hover
+					background $corporative-light-blue - 20%
+			th
+				color $grey-one
+			tr
+				&:nth-child(even)
+					background-color $grey-four
+					border-bottom-color $grey-four
+					color $grey-one
+				&:nth-child(2)
+					th
+						&:hover
+							background $corporative-light-blue - 20% !important
+							color $default-color !important
+		tbody
+			tr
+				td
+					border-bottom-color $grey-three
+					border-left-color $grey-three
+					&:last-child 
+						border-right-color $grey-three
+					button
+						&:disabled
+							color $grey-four
+			.btn
+				&:hover
+					background-color $grey-three
+				&.active
+					background-color $success-color
+					span
+						color $default-color
+			.text-muted
+				color rgba(0,0,0,.1)
+/* ESTILOS NECESARIOS PARA CALENDARIO EN FORMULARIO */
+.input-group
+	.dropdown-menu
+		table
+			thead
+				background-color $corporative-light-blue !important
+				color $default-color
+				.btn
+					background transparent
+					color $default-color
+					&:hover
+						background $corporative-light-blue - 20%
+				th
+					color $grey-one
+				tr
+					&:nth-child(even)
+						background-color $grey-four
+						border-bottom-color $grey-four
+						color $grey-one
+					&:nth-child(2)
+						th
+							&:hover
+								background $corporative-light-blue - 20% !important
+								color $default-color !important
+			tbody
+				tr
+					td
+						border-bottom-color $grey-three
+						border-left-color $grey-three
+						&:last-child 
+							border-right-color $grey-three
+						button
+							&:disabled
+								color $grey-four
+				.btn
+					&:hover
+						background-color $grey-three
+					&.active
+						background-color $success-color
+						span
+							color $default-color
+				.text-muted
+					color rgba(0,0,0,.1)
+/* FIN ESTILOS NECESARIOS PARA CALENDARIO EN FORMULARIO */

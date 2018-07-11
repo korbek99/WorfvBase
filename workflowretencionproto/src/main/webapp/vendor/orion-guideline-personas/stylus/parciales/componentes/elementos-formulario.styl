@@ -1,0 +1,524 @@
+.form-group
+	*
+		outline none !important
+	.ui-select-container
+		margin-right 0px !important
+	.form-control
+		border-width 1px 
+		border-style solid
+		box-shadow none
+		&::-webkit-input-placeholder
+			font-style italic !important
+		clearfix()
+		font-size 12px
+		min-height 34px
+		border-radius 2px
+		&:placeholder 
+			font-style italic
+		&:focus
+			border-width 1px
+			border-style solid
+			box-shadow none
+			outline none
+		&[disabled]
+			user-select none
+			background-color $color-16 !important
+			border-color $color-14 !important
+			color $grey-two !important
+	.input-group
+		&.clockpicker
+			.input-group-addon
+				padding 0 13px
+				background $white
+				min-height 34px
+				color $grey-three
+				border-top-right-radius 2px
+				border-bottom-right-radius 2px
+				i
+					margin 0
+				&:hover
+					background $grey-five
+					color $grey-three
+				&:active
+				&:focus
+					color $grey-three
+	.input-group-btn
+		button
+			padding 0 15px
+			background $default-color
+			min-height 34px
+			color $grey-three
+			i
+				color $grey-three
+				margin 0
+			&:hover
+				background $grey-five
+				color $grey-three
+			&:active
+			&:focus
+				color $grey-three
+	textarea
+		&.form-control
+			resize none
+		&.ng-invalid
+		&.invalid
+			border-color $danger-color !important
+	.contador-caracteres
+		font-size 14px
+	input[type="checkbox"]
+	input[type="radio"]
+		margin-right 5px
+	.ui-select-bootstrap
+		.btn-default
+			border-width 1px
+			border-style solid
+			radius()
+			opacity 1
+			padding-right 30px
+			&:focus
+				border-width 1px
+				border-style solid
+				box-shadow none
+				outline none
+			.text-muted
+				font-style italic
+				margin-top 3px
+		.btn-default-focus
+			border none
+			box-shadow none
+			outline none
+		.ui-select-search
+			&:focus
+				border-width 1px
+				border-style solid
+				box-shadow none
+				outline none
+		.caret
+			border none
+			content "\f3d0"
+			display block !important
+			font-family 'Ionicons'
+			font-size 14px
+			font-style inherit
+			&:before 
+				content "\f3d0"
+		.ui-select-choices-content
+			border-width 1px
+			border-style solid
+			font-size 12px
+			width 100%
+			z-index 101
+			.ui-select-choices-row
+				&.active
+					white-space nowrap
+					overflow hidden
+					text-overflow ellipsis
+					.ui-select-choices-row-inner
+						white-space nowrap
+						overflow hidden
+						text-overflow ellipsis
+				a
+					min-height 28px
+					padding-top 5px
+					overflow hidden
+					text-overflow ellipsis
+					white-space nowrap
+					transition all 0.2s ease-in-out
+		.ui-select-match
+			span
+				max-width 100%
+				text-overflow ellipsis
+				overflow hidden
+				display inline-block
+				padding-right 10px
+				&.ui-select-toggle
+					width 100%
+					overflow visible
+				span
+					width auto
+					font-family $regular
+					margin-top 1px
+		&[disabled]
+			cursor not-allowed
+			button
+				span
+					user-select none
+		&.open
+			&:before
+				absolute right 12px
+				top calc(50% - 9px)
+				content "\f3d8"
+				font-family 'Ionicons'
+				font-size 14px
+
+	.dropdown-menu
+		border-width 1px
+		border-style solid
+		z-index 4
+		ul
+			&
+				[datepicker-popup-wrap]
+					min-width 270px
+		li
+			div
+				table
+					border-radius 4px 4px 0 0
+					overflow-x hidden
+					min-width 270px
+					thead
+						border-radius 4px 4px 0 0
+						overflow-x hidden			
+						overflow hidden
+						padding-bottom 5px
+						font-weight 100
+						.btn
+							border none
+							strong
+								font-weight	100
+							&:focus
+								outline none
+								box-shadow none
+						th
+							border 0 !important
+							padding 0 !important
+							height auto !important
+						[aria-label]
+							font-size 10px
+						tr
+							&:nth-child(even)
+								border-bottom-width 1px
+								border-bottom-style solid
+								padding-bottom 5px
+					tbody
+						tr
+							td
+								border-bottom-width 1px
+								border-bottom-style botted
+								border-left-width 1px
+								border-left-style botted
+								padding 0 !important
+								height auto !important
+								&:last-child
+									border-right-width 1px
+									border-right-style dotted
+								&:first-child 
+									border-left none
+						[ng-disabled]
+							border none
+						.btn
+							transition .3s linear background
+							&:hover
+								border-radius 0
+							&.active
+								border none
+								border-radius 0
+								span
+									font-weight 400
+							&:focus
+								outline none
+								box-shadow none
+	&.adicional
+		position relative
+		input
+			padding-right 45px
+		button
+			&.input
+				position absolute
+				right 15px
+				top calc(0% + 24px)
+				width 40px
+				height 34px
+				border-bottom-left-radius 0 !important
+				border-top-left-radius 0 !important
+				border-top none !important
+				border-right none !important
+				border-bottom none !important
+				background none
+				border-color $color-13 !important
+				margin 0px
+				transition all 0.3s ease-in-out
+				i
+					margin 0px
+					font-size 18px
+					line-height 0px
+					color $color-13
+					transition all 0.3s ease-in-out
+				&:hover
+					border-color $color-13 !important
+					i
+						color $color-11
+				.spinner
+					position relative
+					> div
+						width 7px
+						height 10px
+						border-radius 0px
+						margin-right 3px
+						position relative
+		.ng-invalid
+			border-color $danger-color
+			/*+ button
+				border-left-color $danger-color !important
+				&:hover
+					border-color $danger-color !important*/
+			
+.ng-invalid
+	border-color $danger-color
+	/*+ span.input-group-btn
+		button
+			border-color $danger-color !important
+			&:hover
+				border-color $danger-color !important*/
+span.input-group-btn
+	cursor pointer !important
+	button
+		cursor pointer !important
+		border-bottom-left-radius 0 !important
+		border-top-left-radius 0 !important
+		border-top 1px solid $color-13
+		border-right 1px solid $color-13
+		border-bottom 1px solid $color-13
+		border-left none !important
+		background none !important
+		border-color $color-13
+		margin 0px !important
+		transition all 0.3s ease-in-out !important
+		i
+			margin 0px !important
+			font-size 18px !important
+			line-height 0px !important
+			color $color-13 !important
+			transition all 0.3s ease-in-out !important
+		&:hover
+			border-color $color-13 !important
+			border-left none !important
+			i
+				color $color-11 !important
+		&:active
+			border-left none !important
+		&:focus
+			border-left none !important
+p.input-group
+	.ng-invalid
+		border-top-color $danger-color !important
+		border-bottom-color $danger-color !important
+		border-left-color $danger-color !important
+		border-right-color $color-13 !important
+		+ span.input-group-btn
+			button
+				border-top 1px solid $danger-color !important
+				border-right 1px solid $danger-color !important
+				border-bottom 1px solid $danger-color !important
+				&:active
+					border-top 1px solid $danger-color !important
+					border-right 1px solid $danger-color !important
+					border-bottom 1px solid $danger-color !important
+				&:focus
+					border-top 1px solid $danger-color !important
+					border-right 1px solid $danger-color !important
+					border-bottom 1px solid $danger-color !important
+.invalid
+	font 12px $regular !important
+
+label
+	font 14px $regular
+
+.validate-box
+	margin-top 23px
+	.ok
+		font-size 33px
+		margin-top -6px
+		display inline-block
+		color $success-color
+	.error
+		font-size 33px
+		margin-top -6px
+		display inline-block
+		color $color-21
+		background none !important
+
+.bch-custom-check
+	cursor pointer
+	font-size 14px
+	margin-bottom 0
+	> div
+		border-width 1px
+		border-style solid
+		border-radius 3px
+		display inline-block
+		height 18px
+		margin-right 5px
+		position relative
+		vertical-align middle
+		width 18px
+		& input
+			opacity 0
+			margin-top 0
+			margin-right 0
+			cursor pointer
+		i
+			display none
+			font 11px "Ionicons"
+			speak none
+			font-style normal
+			font-weight normal
+			font-variant normal
+			text-transform none
+			text-rendering auto
+			line-height 1
+			moz-osx-font-smoothing grayscale
+			absolute top 3px left 4px
+			&:before
+				content "\f122"
+		input:checked + i
+			display block
+	span
+		float right
+		width calc(100% - 23px)
+
+	&.radiobutton
+		> div
+			border-radius 50%
+			i
+				width 6px
+				height 6px
+				border-radius 50%
+				left calc(50% - 3px)
+				top calc(50% - 3px)
+				&:before
+					content ' '
+	&.favorite
+		div
+			border none
+			padding-top 0
+			height 25px
+			width 20px
+		i
+			display block
+			font-size 25px
+			top 0
+			left 0
+			&:before
+				content "\f2fc"
+		span
+			width calc(100% - 25px)
+
+	&.disabled
+		> div
+			cursor not-allowed
+
+.switch
+	cursor pointer
+	font-weight normal !important
+	padding 8px 0
+	input
+		display none
+	span
+		display inline-block
+		margin-top 2px
+		vertical-align middle
+		width calc(100% - 55px)
+	i
+		border-width 1px
+		border-style solid
+		display inline-block
+		cursor pointer
+		padding-right 20px
+		transition all ease 0.2s
+		-webkit-transition all ease 0.2s
+		border-radius 20px
+		position relative
+		vertical-align middle
+		width 40px
+		&:before
+			display block
+			content ''
+			width 20px
+			height 20px
+			border-radius 20px
+			transition .2s linear box-shadow
+		& + span
+			margin-left 5px
+
+	:checked
+		& + i
+			padding-right 0
+			padding-left 20px
+
+.bch-switch-text
+	border-radius 30px
+	position relative
+	cursor pointer
+	width 100%
+	input
+		opacity 0
+		position absolute
+		&:checked
+			& + .interruptor
+				border none
+				i
+					left calc(100% - 41px)
+					font-family 'Ionicons'
+					&:before
+						content "\f49a"
+				span
+					float right
+					margin 12px 30% 0 0
+	.interruptor
+		border 1px solid $grey-four 
+		padding 2px
+		height 46px
+		border-radius 30px
+		position relative
+		i
+			border-radius 50%
+			height 38px
+			width 38px
+			position absolute
+			left 3px
+			transition all .2s linear
+			font-family 'bch-custom-icon-2'
+			speak none
+			font-style normal
+			font-weight normal
+			font-variant normal
+			text-transform none
+			line-height 1
+			-webkit-font-smoothing antialiased
+			-moz-osx-font-smoothing grayscale
+			text-align center
+			font-size 28px
+			padding-top 5px
+			margin-top 2px
+			&:before
+				content "\e619"
+				line-height normal
+		span
+			font-family $regular
+			font-size 15px
+			margin 12px 0 0 29%
+			float left
+			
+.ui-select-bootstrap
+	.ui-select-toggle > .caret
+		position absolute !important
+		height 10px !important
+		width 10px !important
+		right 10px !important
+		top calc(50% - 9px) !important
+		margin 0px !important
+/* CLOCKPICKER */
+
+.popover
+	&.clockpicker-popover
+		.arrow
+			&:after
+				border-bottom-color #285b9b !important
+		.popover-title
+			background-color #285b9b !important
+			color $default-color
+			span.text-primary
+				color #149dc9 !important
+		.popover-content
+			background-color #fafafc !important
+/* FIN CLOCKPICKER */ 

@@ -1,0 +1,388 @@
+.resume-box
+	background-color $color-16
+	padding 15px
+	width 100%
+	margin-bottom 30px
+	display table
+	h4
+		transition all 0.3s ease-in-out
+		font-size 18px
+	h5
+		transition all 0.3s ease-in-out
+		font-size 16px
+	.head
+		display flex
+		flex-direction row
+		justify-content space-between
+		margin-bottom 5px
+		width 100%
+		h3
+			color $color-11
+			font-size 16px
+			font-family $regular !important
+			margin-bottom 0px
+		button
+			margin-bottom 0px
+		&.flex-end
+			justify-content flex-end !important
+	.bloque-box
+		background-color $default-color
+		display flex
+		flex-direction row
+		justify-content space-between
+		.border-right
+			border-right 3px solid $color-16 !important
+		.border-left
+			border-left 3px solid $color-16 !important
+		.border-top
+			border-top 3px solid $color-16 !important
+		.border-bottom
+			border-bottom 3px solid $color-16 !important
+		.col-progress
+			padding 15px
+			p
+				color $color-12
+				font-size 14px !important
+				font-family $regular !important
+				margin-bottom 0
+			h4
+				font-size 14px !important
+				font-family $regular !important
+				margin-bottom 0
+			h5
+				font-size 14px !important
+				font-family $regular !important
+				margin-bottom 0
+			.section-progress
+				display flex
+				flex-direction column
+				align-items center
+				.progress
+					width 100%
+					height 10px
+					border none
+					border-radius 3px
+					margin 0px
+					background $color-3
+					.progress-bar-success
+						background $color-18 !important
+				.leyenda
+					display flex
+					flex-direction row
+					align-items center
+					justify-content space-between
+					margin-top 9px
+					width 100%
+					.ley-block
+						width 50%
+						&:last-child
+							text-align right
+						.success
+							background $color-18 !important
+						.info
+							background $color-3 !important
+			&.border-right
+				border-right 3px solid $color-16 !important
+			&.border-left
+				border-left 3px solid $color-16 !important
+			&.border-top
+				border-top 3px solid $color-16 !important
+			&.border-bottom
+				border-bottom 3px solid $color-16 !important
+		.principal-data
+			min-height 100%
+			position relative
+			padding 15px
+			display flex
+			flex-direction column
+			justify-content center
+			float left
+			border-right 3px solid $color-16
+			p
+				color $color-12
+				font-size 14px
+				margin-bottom 0
+			h4
+				color $color-4 !important
+				font-size 14px !important
+				font-family $regular !important
+				margin-bottom 0
+			> i
+				font-size 60px
+				color $color-3
+		.list-data
+			border-right 3px solid $color-16
+			display flex
+			flex-direction column
+			justify-content space-between
+			&:last-child
+				border-right none
+			.element-list
+				border-bottom 3px solid $color-16
+				padding 15px
+				display flex
+				flex-direction column
+				justify-content center
+				ul
+					list-style none
+					padding 0
+					display flex
+					align-items center
+					margin 0px
+					transition all 0.3s ease-in-out
+					li
+						transition all 0.3s ease-in-out
+						&:first-child
+							width 40%
+							transition all 0.3s ease-in-out
+						&:last-child
+							width 60%
+							transition all 0.3s ease-in-out
+				&:last-child
+					border-bottom none
+	.bloque-logo
+		background none
+		display flex
+		flex-direction row
+		align-items center
+		.logo-ico
+			i
+				font-size 60px
+				margin-right 15px
+				color $color-1
+		.glosa
+			p
+				color $color-12
+				font-size 14px
+				font-family $regular
+				margin-bottom 0
+			h4
+				color $color-4
+				font-size 14px
+				font-family $regular !important
+				margin-bottom 0			
+
+
+.cuadro-mail
+	padding 0
+	.select-mail
+		display flex
+		background $color-16
+		padding 15px
+		flex-direction row
+		align-items flex-end
+		.form-group
+			margin-bottom 0px
+	.descarga-comprobante
+		margin-top 5px
+		background $color-16
+		padding-top 6px
+		padding-bottom 6px
+		display flex
+		flex-direction row
+		align-items center
+		justify-content flex-end
+		position relative
+		.enlace
+			display flex
+			flex-direction row
+			align-items center
+			cursor pointer
+			i
+				color $color-6
+				font-size 24px
+				margin-right 10px
+	&.one-row
+		display flex
+		flex-direction row
+		align-items stretch
+		.select-mail > div
+			display flex
+			flex-direction row
+			align-items center
+			label
+				width 35%
+			.ui-select-container
+				width 65%
+		.descarga-comprobante
+			margin-top 0px
+
+
+
+/* [Inicio] - CUADRO DE RESUMEN A DEPRECAR */
+.cuadro-resumen
+	padding-left 25px
+	padding-right 25px
+	margin-bottom 40px
+	&__head
+		margin-top 10px
+		h6
+		h5
+		h3
+			display inline-block
+		button
+		h6
+			margin-top 5px
+	&__body
+		background-color $default-color
+		border 1px solid $grey-three
+		margin-bottom 25px
+		& > .row
+			display flex
+		h3
+		h4
+		h5
+		h6
+			margin-bottom 0
+	&__box
+		align-items center
+		display flex
+		min-height 45px
+		&--text-right
+			justify-content flex-end
+		&--simple
+			h5
+				margin-bottom 5px
+	&__titulo
+		position relative
+		&:before
+			absolute left -15px top 5px
+			content '\f125'
+			display inline-block
+			font-family 'Ionicons'
+			font-size 12px
+			speak none
+			font-style normal
+			font-weight normal
+			font-variant normal
+			text-transform none
+			text-rendering auto
+			line-height 120%
+			--webkit-font-smoothing antialiased
+			moz-osx-font-smoothing grayscale
+	&__cuadro-centrado
+		display inline-block
+		text-align left
+	&__leyenda-grafico
+		display inline-block
+		height 12px
+		margin-right 5px
+		width 12px
+		
+	.progress
+		border-radius 0
+		border none
+		height 10px
+		margin-bottom 15px
+		.progress-bar
+			border-right 1px solid $default-color
+
+.cuadro-resumen-outline
+	border 1px solid $grey-three
+	padding-top 10px
+	padding-bottom 10px
+	.titulo-resumen
+		h5
+			line-height 160%
+			margin-top 10px
+			margin-bottom 0
+	.datos-resumen
+		border-left 1px solid $grey-three
+		h6
+			margin-top 10px
+			margin-bottom 5px
+		h5
+			margin-bottom 10px
+	.btn-fill
+		margin-top 25px
+		.cont-animacion
+			span
+				background-color $grey-six
+		
+.cuadro-resumen-outline-extendido
+	border-width 0 1px 1px
+	border-style solid 
+	border-color $grey-three
+	padding-top 20px
+	padding-bottom 5px
+	.caja-datos
+		margin-bottom 15px
+	span
+		font-size 12px
+		margin-bottom 10px
+		padding-left 10px
+		position relative
+		&:before
+			content '\f3d3'
+			font-family 'Ionicons'
+			position absolute
+			left 0
+	h6
+		margin-bottom 0
+		padding-left 10px
+		
+.modal-detalle
+	.cuadro-resumen-outline
+		h5
+			font-size 14px
+			
+.cuadro-resumen-nuevo
+	header
+		.border-right
+			border-color $grey-four !important
+	&__boton-accion
+		i
+			height 22px
+			padding-top 3px
+			width 22px
+	&__input
+		min-height 29px !important
+		height 29px
+	&__underline
+		border-bottom 1px solid $grey-five !important
+		padding-bottom 2px
+	&__rotulo-dato
+		position relative
+		&:before
+			absolute left -10px top 5px
+			color $grey-two
+			content '\f21b'
+			font-size 5px
+	article
+	footer
+		margin-bottom 2px
+/* [Fin] - CUADRO DE RESUMEN A DEPRECAR */
+
+/* [Inicio] - RESPONSIVE NUEVOS RESUMEN BOX */
+@media screen and (max-width: 1094px)
+	.resume-box
+		h4
+			font-size 16px
+		h5
+			font-size 
+		.bloque-box
+			.list-data
+				.element-list
+					ul
+						flex-direction column
+						text-align left
+						li
+							width 100%
+							text-align left
+							&:first-child
+								width 100%
+							&:last-child
+								width 100%
+@media screen and (max-width: 992px)
+	.resume-box
+		h5
+			font-size 12px
+@media screen and (max-width: 944px)
+	.resume-box
+		h4
+			font-size 15px
+@media screen and (max-width: 897px)
+	.resume-box
+		h4
+			font-size 14px
+/* [Fin] - RESPONSIVE NUEVOS RESUMEN BOX */

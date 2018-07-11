@@ -1,0 +1,58 @@
+@import 'nib'
+@import 'parciales/*'
+@import 'parciales/componentes/*'
+@import 'parciales/deprecado-duda/*'
+
+body
+	color $grey-two
+	font-family $regular
+	font-size 12px
+	margin-bottom 190px
+	@media print
+		font-family Arial !important
+		margin-bottom 0 !important
+	&.modal-open
+		.trigger-menu
+			display none !important
+		.trigger-menu--close
+			display none !important
+		
+html
+	position relative
+	min-height 100%
+	
+//.container
+//	min-width $bp-tablet 
+
+h1
+	headings(28px,20px,30px,$regularc)
+h2
+	headings(24px,0,10px,$regular)
+h3
+	headings(20px,0,10px,$regular)
+h4
+	headings(18px,0,10px,$regular)
+h5
+	headings(16px,0,10px,$regular)
+h6
+	headings(14px,0,10px,$regular)
+p
+	font-size 12px
+	font-family $regular
+	line-height 120%
+
+ul
+ol
+	line-height 120%
+	li
+		line-height 150%
+a
+	color $color-6
+	font-size 14px
+	line-height 120%
+	font-family $regular
+	&:hover
+		text-decoration none
+	&:focus
+		outline none
+		border none

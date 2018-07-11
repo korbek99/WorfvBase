@@ -1,0 +1,155 @@
+.datepicker
+	padding 0 !important
+	outline none !important
+	table
+		border-radius 4px 4px 0 0
+		overflow-x hidden
+		thead
+			border-radius 4px 4px 0 0
+			overflow-x hidden			
+			overflow hidden
+			padding-bottom 5px
+			font-weight 100
+			.btn
+				border none
+				i
+					font-family Ionicons !important
+					margin -5px 0 0 0
+				&.pull-left
+					i
+						&:before
+							content "\f124" !important
+				&.pull-right
+					i
+						&:before
+							content "\f125" !important
+				strong
+					font-weight 100
+				&:focus
+					outline none
+					box-shadow none
+			th
+				border 0 !important
+				padding 0 !important
+				height auto !important
+				&:hover 
+					background transparent !important
+				text-transform capitalize
+			[aria-label]
+				font-size 10px
+			tr
+				&:nth-child(even)
+					border-bottom-width 1px
+					border-bottom-style solid
+					padding-bottom 5px
+		tbody
+			tr
+				td
+					border-bottom-width 1px
+					border-bottom-style dotted
+					border-left-width 1px
+					border-left-style dotted
+					padding 0 !important
+					height auto !important
+					&:last-child
+						border-right-width 1px
+						border-right-style dotted
+					&:first-child 
+						border-left none
+
+			[ng-disabled]
+				border none
+
+			.btn
+				transition .3s linear background
+				&:hover
+					border-radius 0
+				&.active
+					border none
+					border-radius 0
+					span
+						font-weight 400
+				&:focus
+					outline none
+					box-shadow none
+/* ESTILOS NECESARIOS PARA CALENDARIO EN FORMULARIO */
+.input-group
+	.dropdown-menu
+		padding 0 !important
+		outline none !important
+		table
+			border-radius 4px 4px 0 0
+			overflow-x hidden
+			thead
+				border-radius 4px 4px 0 0
+				overflow-x hidden			
+				overflow hidden
+				padding-bottom 5px
+				font-weight 100
+				.btn
+					border none
+					i
+						font-family Ionicons !important
+						margin -5px 0 0 0
+					&.pull-left
+						i
+							&:before
+								content "\f124" !important
+					&.pull-right
+						i
+							&:before
+								content "\f125" !important
+					strong
+						font-weight 100
+					&:focus
+						outline none
+						box-shadow none
+				th
+					border 0 !important
+					padding 0 !important
+					height auto !important
+					&:hover 
+						background transparent !important
+				[aria-label]
+					font-size 10px
+				tr
+					&:nth-child(even)
+						border-bottom-width 1px
+						border-bottom-style solid
+						padding-bottom 5px
+			tbody
+				tr
+					td
+						border-bottom-width 1px
+						border-bottom-style dotted
+						border-left-width 1px
+						border-left-style dotted
+						padding 0 !important
+						height auto !important
+						&:last-child
+							border-right-width 1px
+							border-right-style dotted
+						&:first-child 
+							border-left none
+
+				[ng-disabled]
+					border none
+
+				.btn
+					transition .3s linear background
+					&:hover
+						border-radius 0
+					&.active
+						border none
+						border-radius 0
+						span
+							font-weight 400
+					&:focus
+						outline none
+						box-shadow none
+/* FIN ESTILOS NECESARIOS PARA CALENDARIO EN FORMULARIO */
+
+/*Fix para que Datepicker no quede detras de un disable de Step*/
+.datepicker-fix-step
+	ul
+		z-index 101 !important

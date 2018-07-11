@@ -1,0 +1,69 @@
+{
+  "name": "cl.bancochile.canales.web",
+  "version": "",
+  "authors": [
+    "Disegno<disegno@bancochile.cl>"
+  ],
+  "description": "plataforma-taurus",
+  "keywords": [
+    "webkit"
+  ],
+  "devDependencies": {
+    "angular": "1.3.20",
+    "angular-animate": "1.3.11",
+    "angular-bootstrap": "0.14.3",
+    "angular-sanitize": "1.3.10",
+    "angular-mocks": "~1.3.8",
+    "bootstrap": "~3.3.1",
+    "angular-ui-router": "~0.2",
+    "angular-svg-round-progressbar": "~0.2.0",
+    "orion-directivas-tablas":"#dep-webkit"
+  },
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "angular-ui-select": "~0.9.9",
+    "angular-ui-utils": "~0.1.1",
+    "highcharts": "4.0.4",
+    "highcharts-ng": "0.0.7",
+    "ng-scrollbar": "~0.0.7",
+    "ionicons": "2.0.1",
+    "angular-rangeslider": "~0.0.11",
+    "angular-ladda": "~0.1.9",
+    "orion-ui-ionicons": "~0.0.4",
+    "angular-svg-round-progressbar": "~0.2.0",
+    "sweetalert-ui": "1.0.7",
+    "angular-scrollto": "~0.1.4",
+    "angular-datatables": "0.5.1",
+    "datatables-buttons": "1.0.3",
+    "font-awesome": "4.5.0",
+    "animate.css": "~3.3.0",
+    "jquery.easy-pie-chart": "2.1.6",
+    "clockpicker": "0.0.7",
+    "angular-toastr": "~1.7.0",
+    "angular-progress-button-styles": "0.1.0"
+  },
+  "resolutions": {
+    "angular": "1.3.20"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "build.config.js",
+    "package.json",
+    "proxy.js",
+    "Gruntfile.js",
+    "bin",
+    "build",
+    "karma",
+    "node_modules",
+    "protractor",
+    "reports",
+    "vendor",
+    "src/app",
+    "src/assets",
+    "src/common",
+    "src/less",
+    "src/index.html",
+    "src/README.md"
+  ]
+}

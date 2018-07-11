@@ -1,0 +1,209 @@
+table
+	thead
+		background $color-6
+		tr
+			th
+				color $default-color
+				border-color $default-color
+				i
+					color $default-color !important
+				&.active
+					background-color $color-5 !important
+					&:hover
+						background-color $color-5 !important
+				&:hover
+					background-color $color-5 !important
+	tbody
+		tr
+			background-color $default-color
+			border-bottom-color $color-13
+			&:hover
+				background $color-15
+			td
+				color $color-11
+		.action-table
+			div
+				background $info-color
+				color $default-color
+			&:hover
+				div
+					display block
+					right 0
+	&.tabla-sort
+		thead
+			tr
+				th
+					&.sort-true
+						background-color $corporative-blue
+						color $default-color
+						&:after
+							color $corporative-blue
+						&.sort-true
+							&:before
+								color $corporative-blue
+							&.sort-down
+								&:after
+									color $default-color
+							&.sort-up
+								&:after
+									color $default-color
+	.dropdown
+		&.acciones-tabla
+			.dropdown-toggle
+				&:hover
+					background-color $corporative-blue-thin
+					border-color $corporative-blue
+					color $default-color
+			.dropdown-menu
+				li
+					a
+						span
+							color $corporative-blue-thin
+				&:after
+					border-color rgba(136, 183, 213, 0)
+					border-bottom-color $default-color
+				&:before
+					border-color: rgba(194, 225, 245, 0)
+					border-bottom-color $grey-three
+
+	&.tabla-toggle
+		thead
+			tr
+				th
+					.plusicon-circular
+						background-color lightness($info-color, 40%)
+						color $default-color
+		tbody
+			tr
+				td
+					.herramientas-tabla-mov
+						&::selection
+							background inherit
+						&::-moz-selection
+							background inherit
+						*
+							&::selection
+								background inherit
+							&::-moz-selection
+								background inherit
+						span.iconShowRemove
+							background-color $info-color
+							i
+								color $default-color
+						.text-default
+							color lighten($grey-two, 30%)
+			&.active
+				tr
+					td
+						span
+							&.iconShowRemove
+								background-color $marketing-light-blue  
+			&:hover
+				background-color $grey-five
+				tr
+					td
+						span.iconShowRemove
+							background-color $marketing-light-blue
+			&:nth-child(odd)
+				background-color $corporative-light-grey
+				&:hover
+					background-color $grey-four
+
+		.contenido-oculto
+			& > td
+				background-color $grey-four
+			.wrap-cont-movimiento
+				&:before
+					border-left-color transparent
+					border-right-color transparent
+					border-bottom-color $grey-four
+				.detalle-movimiento
+					background-color $grey-five
+					table
+						tbody
+						tr
+							background inherit
+						tr
+							td
+								border-bottom-color $grey-six
+								.ion-ios-arrow-right
+									color $info-color
+							&:last-child
+								td
+									border-bottom none
+						tbody
+							&:hover
+								background-color inherit
+				.herramientas-movimiento
+					.list-inline
+						li
+							a
+								color $grey-two
+								&:hover
+									color $info-color
+
+.table-actions-icons
+	a
+		color $grey-one
+		&:hover
+			color $corporative-light-blue
+	&.open
+		.dropdown-menu
+			a
+				color $grey-one
+				&:hover
+					color $corporative-light-blue
+					background-color inherit !important
+				i
+					color $corporative-light-blue
+
+.bch-subtitulo
+	& > div
+		border-bottom-color $grey-four
+	h4
+		color $marketing-blue-two
+		border-bottom-color $marketing-blue-one
+	.table-actions-icons
+		ul
+			li
+				a
+					span
+						&:before
+							color $corporative-blue-thin
+
+.table-collapse
+	tr
+		td, th
+			i
+				color $color-13
+				&:hover
+					color $color-5
+			.bch-custom-check
+				div
+					input:checked + i
+						color $info-color !important
+
+	.carga-masiva
+		tr
+			background transparent
+			&.header-masivo
+				background rgba(56,154,212,0.08)
+				border-bottom-color $table-blue-three
+				p
+					color $color-12
+					i
+						border-color $info-color
+						color $info-color
+						&.ion-chevron-down
+							background $info-color
+							color $default-color
+				&:hover
+					p
+						i
+							background $info-color
+							color $default-color
+			.sub-table
+				.table-responsive
+					tr
+						&:hover
+							background $grey-seven

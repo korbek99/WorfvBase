@@ -1,0 +1,39 @@
+.steps
+	.step
+		border-left-color $color-14
+		& > h3
+			color $color-4
+		&:before
+			color $default-color !important
+			background $color-3
+			border-color $color-3
+		&.disabled
+			&:before
+				color $color-11
+				background $color-14
+				border 1px solid $color-14
+		&.done
+			border-left-color $color-3
+			&:before
+				background $color-3
+				border-color $color-3
+				color $default-color
+				
+.steps-horizontales-numerados
+	&__step
+		h6
+			color $color-13
+		&--active
+			&:before
+				background-color $color-3
+				border-color $color-3 !important
+				color $default-color !important
+			h6
+				color $color-4
+		&--done
+			&:before
+				background-color $default-color
+				border-color $color-3 !important
+				color $color-3 !important
+			h6
+				color $color-3

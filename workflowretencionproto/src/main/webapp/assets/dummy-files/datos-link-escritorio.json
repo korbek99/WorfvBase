@@ -1,0 +1,5153 @@
+{
+  "informes": {
+    "descripcion": "Informes",
+    "icono": "bch-q1-BancoEnLineaSeguridad",
+    "eid_asset": "informes",
+    "aside": {
+      "descripcion": "Aside para INFORMES",
+      "controller": "InformesCtrl",
+      "size": "xs",
+      "windowClass": "modal-detalle",
+      "controllerAs": "informes",
+      "nombre": "INFORMES",
+      "sid_asset": "1462843791522",
+      "templateUrl": "components/informes/informes_tpl.html",
+      "animation": true
+    },
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Informes"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_VENTREGATAL_EJECUTAR",
+      "ROLE_VENTREGATAL_REVERTIR"
+    ],
+    "nombre": "Informes",
+    "sid_asset": "1462843839751",
+    "ordenable": false
+  },
+  "gestiones_ejecutivos_dap": {
+    "descripcion": "Enlace Gestiones Ejecutivos DAP",
+    "icono": "icon-ad-DepositoaPlazoInversiones",
+    "eid_asset": "gestiones_ejecutivos_dap",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Gestiones Ejecutivos DAP"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_DAPOPMESACNT_CONSULTAR",
+      "ROLE_DAPDEPPLAZO_SIMULAR",
+      "ROLE_DAPJOURNAL_CONSULTAR",
+      "ROLE_DAPJOURNALCONT_CONSULTAR",
+      "ROLE_DAPJOURNALSUPV_CONSULTAR",
+      "ROLE_DAPCORPORATIVA_CURSAR",
+      "ROLE_DAPMANTENERSUPV_CONSULTAR",
+      "ROLE_DAPHISTORICO_CONSULTAR",
+      "ROLE_DAPPOSTVENTA_CONSULTAR",
+      "ROLE_DAPINVTVGTE_CONSULTAR",
+      "ROLE_DAPVENCIMIENTOS_CONSULTAR",
+      "ROLE_DAPBANDSUPERV_CONSULTAR",
+      "ROLE_DAPCONSULCERTIF_CONSULTAR",
+      "ROLE_DAPDESBLOQPAGAD_CONSULTAR"
+    ],
+    "link": {
+      "descripcion": "Link a miplataforma-web",
+      "nombre": "miplataforma-web",
+      "url": "${URL_BASE.captaciones}/index.html#home",
+      "sid_asset": "1462843791396",
+      "target": "_self"
+    },
+    "nombre": "Gestiones Ejecutivos DAP",
+    "sid_asset": "1462843792646",
+    "ordenable": false
+  },
+  "aeval": {
+    "descripcion": "Enlace Aeval",
+    "icono": "icon-ad-Aprobarinstrucciones",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion AEVAL",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/AEVAL/default.aspx",
+      "nombre": "AEVAL",
+      "sid_asset": "1462843791438"
+    },
+    "eid_asset": "aeval",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Autoevaluación"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Aeval",
+    "sid_asset": "1462843792889",
+    "ordenable": false
+  },
+  "solicitud_chequera_emergencia": {
+    "descripcion": "Solicitud Chequera Emergencia",
+    "icono": "caja-interactiva__icono",
+    "eid_asset": "solicitud_chequera_emergencia",
+    "aside": {
+      "descripcion": "Aside CHEQUERA_EMERGENCIA",
+      "controller": "solicitarChequeraEmergenciaCtrl",
+      "size": "md",
+      "windowClass": "modal-detalle",
+      "controllerAs": "chequeraEmergCtrl",
+      "nombre": "CHEQUERA_EMERGENCIA",
+      "sid_asset": "1462843791488",
+      "templateUrl": "components/chequera-emergencia/asides/aside-solicitud-chequera-emergencia_tpl.html",
+      "animation": true
+    },
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Solicitud Chequera Emergencia"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_VTALEMERG_EJECUTAR"
+    ],
+    "nombre": "Solicitud Chequera Emergencia",
+    "sid_asset": "1462843839649",
+    "ordenable": false
+  },
+  "sobregiro": {
+    "descripcion": "Enlaces de sobregiros",
+    "icono": "bch-q1-bolsa",
+    "eid_asset": "sobregiro",
+    "permisosBloqueo": [],
+    "aplicacionWindowsDinamico": {
+      "descripcion": "Aplicacion dinamica Siebel",
+      "protocolo": "navegadorexplorer",
+      "endpoint": "/resolverEnlacesSiebel/resolucionSobregiros",
+      "params": [
+        {
+          "descripcion": "Parametro HOST de Siebel",
+          "value": "WASCRM",
+          "nombre": "HOST_SIEBEL",
+          "key": "host",
+          "sid_asset": "1462843812392"
+        },
+        {
+          "descripcion": "Parametro PORT de Siebel",
+          "value": "80",
+          "nombre": "PORT_SIEBEL",
+          "key": "port",
+          "sid_asset": "1462843812425"
+        }
+      ],
+      "method": "GET",
+      "headers": [],
+      "parametro": "",
+      "nombre": "APLICACION_SIEBEL",
+      "sid_asset": "1462843812914"
+    },
+    "palabrasClaves": [
+      "sobregiro"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Sobregiro",
+    "sid_asset": "1462843813368",
+    "ordenable": false
+  },
+  "mora": {
+    "descripcion": "Enlace a app Mora",
+    "icono": "bch-q1-deterioroTarjeta",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion asociada al enlace Mora",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wss/sites/Sucursales/Red%20Edwards%20CITI%20(REC)",
+      "nombre": "APP_MORA",
+      "sid_asset": "1462843817399"
+    },
+    "eid_asset": "mora",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Mora"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_ESCRITCOMERCJEF_CONSULTAR"
+    ],
+    "nombre": "Mora",
+    "sid_asset": "1462843834020",
+    "ordenable": false
+  },
+  "amortizacion": {
+    "descripcion": "Enlace a app Amortización",
+    "icono": "bch-q1-saldoymovimientos",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion para Saldos",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wss/sites/Sucursales/Red%20Edwards%20CITI%20(REC)/default.aspx?RootFolder=%2fsites%2fSucursales%2fRed%20Edwards%20CITI%20%28REC%29%2fDocumentos%20compartidos%2f08%2e%20Gesti%c3%b3n%20y%20Fidelizaci%c3%b3n%2fAmortizaciones%20Futuras&View=%7bD14F2736%2d4030%2d4B53%2d859C%2d58F587B1B64C%7d",
+      "nombre": "APP_SALDOS",
+      "sid_asset": "1462843791462"
+    },
+    "eid_asset": "amortizacion",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Amortizacion"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_ESCRITCOMERCJEF_CONSULTAR"
+    ],
+    "nombre": "Amortización",
+    "sid_asset": "1462843834368",
+    "ordenable": false
+  },
+  "herramientas_y_consultas_telefonico": {
+    "descripcion": "Enlace a link Herramientas y Consultas",
+    "icono": "icon-icon-tool",
+    "eid_asset": "herramientas_y_consultas_telefonico",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Herramientas y consultas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link asociado a enlace herramientas_y_consultas_telefonico",
+      "nombre": "Herramientas y Consultas Telefonicas",
+      "url": "${URL_BASE.centro-negocios}/#/herramientas-consultas-telefonico",
+      "sid_asset": "1462843817432",
+      "target": "_self"
+    },
+    "nombre": "Herramientas y Consultas",
+    "sid_asset": "1462843834415",
+    "ordenable": false
+  },
+  "herramientas_y_consultas_gestion": {
+    "descripcion": "Enlace a link Herramientas y Consultas Gestion",
+    "icono": "icon-icon-tool",
+    "eid_asset": "herramientas_y_consultas_gestion",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Herramientas y consultas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a herramientas y consultas gestion",
+      "nombre": "Herramientas y Consultas Gestion",
+      "url": "${URL_BASE.centro-negocios}/#/herramientas-consultas-gestion",
+      "sid_asset": "1462843834522",
+      "target": "_self"
+    },
+    "nombre": "Herramientas y Consultas",
+    "sid_asset": "1462843834509",
+    "ordenable": false
+  },
+  "herramientas_y_consultas_comercial": {
+    "descripcion": "Enlace a Link Herramientas y Consultas Comercial ",
+    "icono": "icon-icon-tool",
+    "eid_asset": "herramientas_y_consultas_comercial",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Herramientas y consultas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link asociado a enlace herramientas_y_consultas_comercial",
+      "nombre": "Herramientas y Consultas Comercial",
+      "url": "${URL_BASE.centro-negocios}/#/herramientas-consultas-comercial",
+      "sid_asset": "1462843817466",
+      "target": "_self"
+    },
+    "nombre": "Herramientas y Consultas",
+    "sid_asset": "1462843834610",
+    "ordenable": false
+  },
+  "herramientas_y_consultas_riesgo": {
+    "descripcion": "Enlace a link Herramientas y Consultas Riesgo",
+    "icono": "icon-icon-tool",
+    "eid_asset": "herramientas_y_consultas_riesgo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Herramientas y consultas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link asociado a enlace herramientas_y_consultas_riesgo",
+      "nombre": "Herramientas y Consultas Riesgo",
+      "url": "${URL_BASE.centro-negocios}/#/herramientas-consultas-riesgo",
+      "sid_asset": "1462843817502",
+      "target": "_self"
+    },
+    "nombre": "Herramientas y Consultas",
+    "sid_asset": "1462843834660",
+    "ordenable": false
+  },
+  "filenet": {
+    "descripcion": "Enlace a link Filenet",
+    "icono": "icon-ad-creditosparacomercioexterior",
+    "eid_asset": "filenet",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Filenet"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Filenet",
+      "nombre": "Filenet",
+      "url": "http://filenetprod/Workplace",
+      "sid_asset": "1462843791416",
+      "target": "_blank"
+    },
+    "nombre": "Filenet",
+    "sid_asset": "1462843834746",
+    "ordenable": false
+  },
+  "cibergestion_postventa_hipotecario": {
+    "descripcion": "Enlace a link Cibergestión ",
+    "icono": "",
+    "eid_asset": "cibergestion_postventa_hipotecario",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cibergestión Postventa Hipotecario"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Cibergestion",
+      "nombre": "Cibergestion",
+      "url": "http://bancochile.cibergestion.cl/",
+      "sid_asset": "1462843818060",
+      "target": "_blank"
+    },
+    "nombre": "Cibergestión Postventa Hipotecario",
+    "sid_asset": "1462843835794",
+    "ordenable": false
+  },
+  "control_de_asistencia": {
+    "descripcion": "Enlace a aplicacion Control de Asistencia",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion Control de Asistencia",
+      "protocolo": "rhacceso",
+      "parametro": "",
+      "nombre": "Control Asistencia",
+      "sid_asset": "1462843819249"
+    },
+    "eid_asset": "control_de_asistencia",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Control de Asistencia"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_ESCRITCOMERCJEF_CONSULTAR",
+      "ROLE_ESCRITGESTIOJEF_CONSULTAR"
+    ],
+    "nombre": "Control de Asistencia",
+    "sid_asset": "1462843835915",
+    "ordenable": false
+  },
+  "pricing": {
+    "descripcion": "Enlace a app Pricing",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion Windows asociada a enlace Pricing",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://152.139.48.113/portalprecios/Portal.asp",
+      "nombre": "Pricing",
+      "sid_asset": "1462843818120"
+    },
+    "eid_asset": "pricing",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Pricing"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Pricing",
+    "sid_asset": "1462843836010",
+    "ordenable": false
+  },
+  "simr": {
+    "descripcion": "Enlace a app Simr2000",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion SIMR",
+      "protocolo": "simr2000",
+      "parametro": "",
+      "nombre": "SIMR",
+      "sid_asset": "1462843819193"
+    },
+    "eid_asset": "simr",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Simr"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Simr",
+    "sid_asset": "1462843836102",
+    "ordenable": false
+  },
+  "gestion_e_comercial": {
+    "descripcion": "Enlace Gestion Comercial",
+    "icono": "",
+    "eid_asset": "gestion_e_comercial",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Gestión"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Gestión",
+    "sid_asset": "1462843836200",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "cibergestion_postventa_hipotecario",
+      "control_de_asistencia",
+      "pricing",
+      "simr"
+    ]
+  },
+  "banchile_corredora_de_seguros": {
+    "descripcion": "Enlace a link Banchile Corredores de Seguros - Intranet",
+    "icono": "",
+    "eid_asset": "banchile_corredora_de_seguros",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banchile Corredores de Seguros - Intranet"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link para Banchile Corredora de Seguros",
+      "nombre": "Banchile Corredora de Seguros",
+      "url": "http://banchapp3:90/Paginas/default.aspx",
+      "sid_asset": "1462843819280",
+      "target": "_blank"
+    },
+    "nombre": "Banchile Corredores de Seguros - Intranet",
+    "sid_asset": "1462843836440",
+    "ordenable": false
+  },
+  "banchile_enlace_seguro_vida": {
+    "descripcion": "Enlace a link Banchile Seguros - Enlace (Salud y Vida)",
+    "icono": "",
+    "eid_asset": "banchile_enlace_seguro_vida",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banchile Seguros - Enlace (Salud y Vida)"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Banchile Seguros de Vida",
+      "nombre": "Banchile Seguro de Vida",
+      "url": "http://enlace/",
+      "sid_asset": "1462843819517",
+      "target": "_blank"
+    },
+    "nombre": "Banchile Seguros - Enlace (Salud y Vida)",
+    "sid_asset": "1462843836542",
+    "ordenable": false
+  },
+  "banchile_inversiones": {
+    "descripcion": "Banchile Inversiones",
+    "icono": "",
+    "eid_asset": "banchile_inversiones",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banchile Inversiones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Banchile Inversiones",
+      "nombre": "Banchile Inversiones",
+      "url": "http://portal2.banchile.cl/portal/page?_pageid=295,2411874,295_2411876&_dad=portal&_schema=PORTAL",
+      "sid_asset": "1462843819476",
+      "target": "_blank"
+    },
+    "nombre": "Banchile Inversiones",
+    "sid_asset": "1462843843380",
+    "ordenable": false
+  },
+  "banchile_referidos": {
+    "descripcion": "Enlace a link Banchile Seguros - Referidos Digital",
+    "icono": "",
+    "eid_asset": "banchile_referidos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banchile Referidos",
+      "Banchile Seguros - Referidos Digital"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link para Banchile Referidos",
+      "nombre": "Banchile Referidos",
+      "url": "http://banchweb2/corredora_new/referidos/minisitio/index.html",
+      "sid_asset": "1462843819316",
+      "target": "_blank"
+    },
+    "nombre": "Banchile Seguros - Referidos Digital",
+    "sid_asset": "1462843836752",
+    "ordenable": false
+  },
+  "banchile_tov": {
+    "descripcion": "Enlace a link Banchile Seguros - TOV",
+    "icono": "",
+    "eid_asset": "banchile_tov",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banchile TOV",
+      "Banchile Seguros - TOV"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Banchile Seguros TOV",
+      "nombre": "Banchile Seguros TOV",
+      "url": "http://banchweb2/corredora_new/html_tov/index.html",
+      "sid_asset": "1462843819560",
+      "target": "_blank"
+    },
+    "nombre": "Banchile Seguros - TOV",
+    "sid_asset": "1462843836863",
+    "ordenable": false
+  },
+  "referidos_inversiones": {
+    "descripcion": "Enlace a link Referidos Inversiones",
+    "icono": "",
+    "eid_asset": "referidos_inversiones",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Referidos Inversiones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Referidos Inversiones",
+      "nombre": "Referidos Inversiones",
+      "url": "http://infrapint.banchile.cl:7777/sso/jsp/login-ex.jsp?site2pstoretoken=v1.2~63D52338~88A5DEC8228AACC2B2ACD478481F006C4C2F9A728729F01CDCC5CD5DA343E4F2279F27FF00C2E23D44E28AE4889F1D4EE9A7EB81625473BA7F5F609B94E5764AC1A5DCF6BC216D49CBB3DDBC7709074D18C785EFD5813AF670E661C8E3A1E054BCADAC28CE3BB075BE083B7F0825F1F64AC36B375CA4F2FACF88D04FEE6171E7BAC58C12A33F3ADB347F586A3A1236A733BDB95CC018C40F39D1CC3FEEB916499D30F9707927BC6D23D15F4ED871C0899F51B5815EE26DEA3E705F88E11FA3DA72DF2BB39EA9306BEAB5789A1477C620&p_error_code=&p_submit_url=http%3A%2F%2Finfrapint.banchile.cl%3A7777%2Fsso%2Fauth&p_cancel_url=http%3A%2F%2Fportal2.banchile.cl%2Fpls%2Fportal%2FPORTAL.home&ssousername",
+      "sid_asset": "1462843832321",
+      "target": "_blank"
+    },
+    "nombre": "Referidos Inversiones",
+    "sid_asset": "1462843836991",
+    "ordenable": false
+  },
+  "filiales": {
+    "descripcion": "Enlace a Filiales",
+    "icono": "",
+    "eid_asset": "filiales",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Filiales"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Filiales",
+    "sid_asset": "1462843837023",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "referidos_inversiones",
+      "banchile_consulta_de_seguro_plus",
+      "banchile_corredora_de_seguros",
+      "banchile_inversiones",
+      "banchile_referidos",
+      "banchile_tov",
+      "banchile_enlace_seguro_vida"
+    ]
+  },
+  "bpm": {
+    "descripcion": "BPM",
+    "icono": "icon-AprobarPagosMasivos",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion BPM",
+      "protocolo": "navegadorfirefox",
+      "parametro": "https://bpm/ProcessPortal/login.jsp",
+      "nombre": "BPM",
+      "sid_asset": "1462843819691"
+    },
+    "eid_asset": "bpm",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "BPM"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> navegador Firefox",
+    "permisos": [],
+    "nombre": "BPM",
+    "sid_asset": "1462843838942",
+    "ordenable": false
+  },
+  "aplicaciones_e_comercial": {
+    "descripcion": "Aplicaciones",
+    "icono": "",
+    "eid_asset": "aplicaciones_e_comercial",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Aplicaciones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Aplicaciones",
+    "sid_asset": "1462843839179",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "bpm",
+      "filenet",
+      "intranet",
+      "sistema_de_poderes",
+      "tasaciones",
+      "intranet_lac"
+    ]
+  },
+  "intranet": {
+    "descripcion": "Intranet",
+    "icono": "",
+    "eid_asset": "intranet",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Intranet",
+      "nombre": "Intranet",
+      "url": "http://intranetbch/wps/wcm/connect/intrabch/home?CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE",
+      "sid_asset": "1462843819776",
+      "target": "_blank"
+    },
+    "nombre": "Intranet",
+    "sid_asset": "1462843839182",
+    "ordenable": false
+  },
+  "sistema_de_poderes": {
+    "descripcion": "Sistema de Poderes",
+    "icono": "",
+    "eid_asset": "sistema_de_poderes",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Sistema de Poderes",
+      "nombre": "Sistema de Poderes",
+      "url": "http://signsys/signsys/login.aspx",
+      "sid_asset": "1462843819836",
+      "target": "_blank"
+    },
+    "nombre": "Sistema de Poderes (ILV)",
+    "sid_asset": "1462843839217",
+    "ordenable": false
+  },
+  "tasaciones": {
+    "descripcion": "Tasaciones",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion para Tasaciones",
+      "protocolo": "launcher",
+      "parametro": "SOFTASAC",
+      "nombre": "Tasaciones",
+      "sid_asset": "1462843819219"
+    },
+    "eid_asset": "tasaciones",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tasaciones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Tasaciones",
+    "sid_asset": "1462843839253",
+    "ordenable": false
+  },
+  "intranet_lac": {
+    "descripcion": "Intranet LAC",
+    "icono": "",
+    "eid_asset": "intranet_lac",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Intranet LAC"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Intranet LAC",
+      "nombre": "Intranet LAC",
+      "url": "http://bchapp489/PortalLAC/Default.aspx",
+      "sid_asset": "1462843821810",
+      "target": "_blank"
+    },
+    "nombre": "Intranet LAC",
+    "sid_asset": "1462843839295",
+    "ordenable": false
+  },
+  "panel_comercial": {
+    "descripcion": "Panel Comercial",
+    "icono": "bch-q1-bolsa",
+    "eid_asset": "panel_comercial",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Panel Comercial"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_ESCRITCOMERCJEF_CONSULTAR",
+      "ROLE_ESCRITGESTIOJEF_CONSULTAR"
+    ],
+    "link": {
+      "descripcion": "Link asociado a enlace panel_comercial",
+      "nombre": "Panel Comercial",
+      "url": "http://wss/sites/Sucursales/Detalles/default.aspx",
+      "sid_asset": "1462843817595",
+      "target": "_blank"
+    },
+    "nombre": "Panel Comercial",
+    "sid_asset": "1462843839480",
+    "ordenable": false
+  },
+  "pat": {
+    "descripcion": "PAT",
+    "icono": "bch-q1-pat",
+    "eid_asset": "pat",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "PAT Pago automático con tarjeta"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link asociado a enlace pat",
+      "nombre": "PAT",
+      "url": "https://www.pagoautomaticocontarjetas.cl/nuevopat/login.jsp",
+      "sid_asset": "1462843817639",
+      "target": "_blank"
+    },
+    "nombre": "Pat",
+    "sid_asset": "1462843839701",
+    "ordenable": false
+  },
+  "administracion_de_usuarios_y_accesos": {
+    "descripcion": "Administración de Usuarios y Accesos ",
+    "icono": "",
+    "eid_asset": "administracion_de_usuarios_y_accesos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Administración de Usuarios y Accesos "
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Administración de Usuarios y Accesos",
+      "nombre": "Administracion de Usuarios y Accesos",
+      "url": "http://intranetbch/wps/wcm/connect/intrabch/home/plantilla-flexible/administracion-usuarios",
+      "sid_asset": "1462843819888",
+      "target": "_blank"
+    },
+    "nombre": "Administración de Usuarios y Accesos ",
+    "sid_asset": "1462843839825",
+    "ordenable": false
+  },
+  "autoservicio": {
+    "descripcion": "Autoservicio",
+    "icono": "",
+    "eid_asset": "autoservicio",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Autoservicio"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Autoservicio",
+      "nombre": "Autoservicio",
+      "url": "http://a004.bch.bancodechile.cl:8005/OA_HTML/AppsLocalLogin.jsp",
+      "sid_asset": "1462843819942",
+      "target": "_blank"
+    },
+    "nombre": "Autoservicio",
+    "sid_asset": "1462843839855",
+    "ordenable": false
+  },
+  "gestion_e_gestion": {
+    "descripcion": "Gestión",
+    "icono": "",
+    "eid_asset": "gestion_e_gestion",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Gestión"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Gestión",
+    "sid_asset": "1462843839887",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "administracion_de_usuarios_y_accesos",
+      "banchile_consulta_de_seguro_plus",
+      "sitio_normativas",
+      "banchile_corredora_de_seguros",
+      "banchile_referidos",
+      "banchile_tov",
+      "control_de_asistencia",
+      "banchile_enlace_seguro_vida",
+      "autoservicio"
+    ]
+  },
+  "banchile_consulta_de_seguro_plus": {
+    "descripcion": "Banchile Seguros - Consulta Post Venta",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Banchile Consulta de Seguro Plus",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://canalbcsback/Consulta_Plus/Pages/BuscarRut.aspx",
+      "nombre": "Banchile Consulta de Seguro Plus",
+      "sid_asset": "1462843819437"
+    },
+    "eid_asset": "banchile_consulta_de_seguro_plus",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banchile Consulta de Seguro Plus, Banchile Seguros - Consulta Post Venta"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Banchile Seguros - Consulta Post Venta",
+    "sid_asset": "1462843839889",
+    "ordenable": false
+  },
+  "sitio_normativas": {
+    "descripcion": "Sitio Normativas",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion del Sitio Normativas",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/normativa/default.aspx",
+      "nombre": "Sitio Normativas",
+      "sid_asset": "1462843821046"
+    },
+    "eid_asset": "sitio_normativas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Sitio Normativas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Sitio Normativas",
+    "sid_asset": "1462843839952",
+    "ordenable": false
+  },
+  "info_comercial": {
+    "descripcion": "Enlace a link Info comercial",
+    "icono": "",
+    "eid_asset": "info_comercial",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Info comercial"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Información Comercial",
+      "nombre": "Información Comercial",
+      "url": "http://bchapp489/InfoComercial/Default.aspx",
+      "sid_asset": "1462843838177",
+      "target": "_blank"
+    },
+    "nombre": "Info comercial",
+    "sid_asset": "1462843840560",
+    "ordenable": false
+  },
+  "ahorro_enlace": {
+    "descripcion": "Enlace a manual de Ahorros",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Ahorro",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/MANUAL%20AHORRO.pdf",
+      "nombre": "Ahorro",
+      "sid_asset": "1462843827255"
+    },
+    "eid_asset": "ahorro_enlace",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Ahorro"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Ahorro",
+    "sid_asset": "1462843840709",
+    "ordenable": false
+  },
+  "ahorro_acordeon": {
+    "descripcion": "Enlace Ahorro",
+    "icono": "",
+    "eid_asset": "ahorro_acordeon",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Ahorro"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Ahorro",
+    "sid_asset": "1462843840748",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "ahorro_enlace"
+    ]
+  },
+  "vista_360_enlace": {
+    "descripcion": "Enlace a manual Vista 360 Personas",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "PDF Vista 360",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Manual%20Vista%20360%C2%B0%20Personas.pdf",
+      "nombre": "Vista 360",
+      "sid_asset": "1462843827355"
+    },
+    "eid_asset": "vista_360_enlace",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Vista 360"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Vista 360",
+    "sid_asset": "1462843840786",
+    "ordenable": false
+  },
+  "vista_360_acordeon": {
+    "descripcion": "Enlace a Vista 360",
+    "icono": "",
+    "eid_asset": "vista_360_acordeon",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Vista 360"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Vista 360",
+    "sid_asset": "1462843840840",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "vista_360_enlace"
+    ]
+  },
+  "actividades_que_requieren_supervision": {
+    "descripcion": "Enlace a manual Actividades que requieren supervisión",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Actividades que requieren supervisión",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Actividades-que-requieren-supervisor%20Jefaturas%20DAP.pdf",
+      "nombre": "Actividades que requieren supervisión",
+      "sid_asset": "1462843826228"
+    },
+    "eid_asset": "actividades_que_requieren_supervision",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Actividades que requieren supervisión"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Actividades que requieren supervisión",
+    "sid_asset": "1462843840918",
+    "ordenable": false
+  },
+  "manual_producto_deposito_a_plazo": {
+    "descripcion": "Enlace a Manual Producto depósito a plazo",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Manual Producto depósito a plazo",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/MANUAL%20PATAFORMA%20DEPOSITO%20A%20PLAZO%20PILOTO%2016%20Junio%202017.pdf",
+      "nombre": "Manual Producto depósito a plazo",
+      "sid_asset": "1462843826148"
+    },
+    "eid_asset": "manual_producto_deposito_a_plazo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Manual Producto depósito a plazo"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Manual Producto depósito a plazo",
+    "sid_asset": "1462843841003",
+    "ordenable": false
+  },
+  "manual_dap_bcch": {
+    "descripcion": "Enlace a Manual de controles DAP BCCH",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Manual de controles DAP BCCH",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Manual%20Usuarios%20DAP%20Credichile%2022dic2016cp.pdf",
+      "nombre": "Manual de controles DAP BCCH",
+      "sid_asset": "1462843826395"
+    },
+    "eid_asset": "manual_dap_bcch",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Manual de controles DAP BCCH"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Manual de controles DAP BCCH",
+    "sid_asset": "1462843841055",
+    "ordenable": false
+  },
+  "informe_de_novedades": {
+    "descripcion": "Enlace a Informe de Novedades (Vencimientos)",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Informe de Novedades (Vencimientos)",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Informe-de-Novedades-(Vencimientos).pdf",
+      "nombre": "Informe de Novedades (Vencimientos)",
+      "sid_asset": "1462843826311"
+    },
+    "eid_asset": "informe_de_novedades",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Informe de Novedades"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Informe de Novedades (Vencimientos)",
+    "sid_asset": "1462843841109",
+    "ordenable": false
+  },
+  "condiciones_de_venta_banco_credichile": {
+    "descripcion": "Enlace a Condiciones de venta Banco Credichile",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Condiciones de venta Banco Credichile",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Manual%20Controles%20DAP%20BCCH%20Junio%202016.pdf",
+      "nombre": "Condiciones de venta Banco Credichile",
+      "sid_asset": "1462843826481"
+    },
+    "eid_asset": "condiciones_de_venta_banco_credichile",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Condiciones de venta Banco Credichile"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Condiciones de venta Banco Credichile",
+    "sid_asset": "1462843841165",
+    "ordenable": false
+  },
+  "manual_controles_dap": {
+    "descripcion": "Enlace a Manual de controles DAP",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Manual de controles DAP",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/MANUAL%20Controles%20DAP.pdf",
+      "nombre": "Manual de controles DAP",
+      "sid_asset": "1462843826874"
+    },
+    "eid_asset": "manual_controles_dap",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Manual de controles DAP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Manual de controles DAP",
+    "sid_asset": "1462843841223",
+    "ordenable": false
+  },
+  "manual_de_controles_banco_credichile": {
+    "descripcion": "Enlace a Manual de controles DAP Banco Credichile",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Manual de controles DAP Banco Credichile",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Manual%20Usuarios%20DAP%20Credichile%2022dic2016cp.pdf",
+      "nombre": "Manual de controles DAP Banco Credichile",
+      "sid_asset": "1462843826621"
+    },
+    "eid_asset": "manual_de_controles_banco_credichile",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Manual de controles DAP Banco Credichile"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Manual de controles DAP Banco Credichile",
+    "sid_asset": "1462843841283",
+    "ordenable": false
+  },
+  "dap": {
+    "descripcion": "Enlace DAP",
+    "icono": "",
+    "eid_asset": "dap",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "DAP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "DAP",
+    "sid_asset": "1462843841379",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "actividades_que_requieren_supervision",
+      "condiciones_de_venta_banco_credichile",
+      "informe_de_novedades",
+      "manual_controles_dap",
+      "manual_de_controles_banco_credichile",
+      "manual_dap_bcch",
+      "manual_producto_deposito_a_plazo"
+    ]
+  },
+  "uso_plataforma_postventa": {
+    "descripcion": "Enlace a Uso plataforma Post Venta",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Uso plataforma Post Venta",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Uso%20Plataforma%20Post%20Venta.pdf",
+      "nombre": "Uso plataforma Post Venta",
+      "sid_asset": "1462843826966"
+    },
+    "eid_asset": "uso_plataforma_postventa",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Uso plataforma Post Venta"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Uso plataforma Post Venta",
+    "sid_asset": "1462843841543",
+    "ordenable": false
+  },
+  "emergencias_bancarias": {
+    "descripcion": "Enlace a Emergencias Bancarias",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Emergencias Bancarias",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Manual%20Emergencias%20Bancarias.pdf",
+      "nombre": "Emergencias Bancarias",
+      "sid_asset": "1462843827060"
+    },
+    "eid_asset": "emergencias_bancarias",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Emergencias Bancarias"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Emergencias Bancarias",
+    "sid_asset": "1462843841624",
+    "ordenable": false
+  },
+  "seguros_postventa": {
+    "descripcion": "Enlace a Seguros Post Venta",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Seguros Post Venta",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Manual%20Seguros%20Post_Venta.pdf",
+      "nombre": "Seguros Post Venta",
+      "sid_asset": "1462843827157"
+    },
+    "eid_asset": "seguros_postventa",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Seguros Post Venta"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Seguros Post Venta",
+    "sid_asset": "1462843841692",
+    "ordenable": false
+  },
+  "meson": {
+    "descripcion": "Mesón",
+    "icono": "",
+    "eid_asset": "meson",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Mesón"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Mesón",
+    "sid_asset": "1462843841694",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "sistema_de_poderes",
+      "claves_de_internet",
+      "reversas_pac",
+      "viajeros_tc"
+    ]
+  },
+  "postventa": {
+    "descripcion": "Enlace Postventa",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "postventa",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Postventa"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Postventa",
+    "sid_asset": "1462843841764",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "emergencias_bancarias",
+      "seguros_postventa",
+      "uso_plataforma_postventa"
+    ]
+  },
+  "claves_de_internet": {
+    "descripcion": "Claves de Internet\r\n ",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion Claves de Internet",
+      "protocolo": "launcher",
+      "parametro": "SBINTADM",
+      "nombre": "Claves de Internet",
+      "sid_asset": "1462843822174"
+    },
+    "eid_asset": "claves_de_internet",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      " Claves de Internet  "
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Claves de Internet",
+    "sid_asset": "1462843841766",
+    "ordenable": false
+  },
+  "manuales": {
+    "descripcion": "Enlace Manuales",
+    "icono": "",
+    "eid_asset": "manuales",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Manuales"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Manuales",
+    "sid_asset": "1462843842033",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "ahorro_acordeon",
+      "dap",
+      "postventa",
+      "vista_360_acordeon"
+    ]
+  },
+  "nuevas_funcionalidades_dap": {
+    "descripcion": "Enlace a Nuevas funcionalidades DAP",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "PDF Nuevas funcionalidades DAP",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Nuevas%20Funcionalidades%20DAP.pdf",
+      "nombre": "Nuevas funcionalidades DAP",
+      "sid_asset": "1462843828036"
+    },
+    "eid_asset": "nuevas_funcionalidades_dap",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Nuevas funcionalidades DAP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Nuevas funcionalidades DAP",
+    "sid_asset": "1462843842124",
+    "ordenable": false
+  },
+  "nuevas_preguntas_frecuentes_dap": {
+    "descripcion": "Enlace a Nuevas preguntas frecuentes DAP",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "PDF Nuevas preguntas frecuentes DAP",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Nuevas%20Preguntas%20Frecuentes%20DAP.pdf",
+      "nombre": "Nuevas preguntas frecuentes DAP",
+      "sid_asset": "1462843827995"
+    },
+    "eid_asset": "nuevas_preguntas_frecuentes_dap",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Nuevas preguntas frecuentes DAP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Nuevas preguntas frecuentes DAP",
+    "sid_asset": "1462843842200",
+    "ordenable": false
+  },
+  "panel_de_ayuda_plataforma_dap": {
+    "descripcion": "Enlace a Panel de ayuda plataforma DAP",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "PDF Panel de ayuda plataforma DAP",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Panel%20de%20Ayuda%20Plataforma%20DAP.pdf",
+      "nombre": "Panel de ayuda plataforma DAP",
+      "sid_asset": "1462843827690"
+    },
+    "eid_asset": "panel_de_ayuda_plataforma_dap",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Panel de ayuda plataforma DAP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Panel de ayuda plataforma DAP",
+    "sid_asset": "1462843842278",
+    "ordenable": false
+  },
+  "preguntas_centro_de_negocios_jefe_de_gestion": {
+    "descripcion": "Enlace a Preguntas Centro de Negocios Jefe de Gestión",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "PDF Preguntas Centro de Negocios Jefe de Gestión",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Preguntas%20Centro%20de%20Negocios%20Jefes%20de%20Gesti%C3%B3n.pdf",
+      "nombre": "Preguntas Centro de Negocios Jefe de Gestión",
+      "sid_asset": "1462843827723"
+    },
+    "eid_asset": "preguntas_centro_de_negocios_jefe_de_gestion",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Preguntas Centro de Negocios Jefe de Gestión"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Preguntas Centro de Negocios Jefe de Gestión",
+    "sid_asset": "1462843842385",
+    "ordenable": false
+  },
+  "preguntas_frecuentes_dap": {
+    "descripcion": "Enlace a Preguntas frecuentes DAP",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "PDF Preguntas frecuentes DAP",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Preguntas%20Frecuentes%20DAP.pdf",
+      "nombre": "Preguntas frecuentes DAP",
+      "sid_asset": "1462843827857"
+    },
+    "eid_asset": "preguntas_frecuentes_dap",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Preguntas frecuentes DAP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Preguntas frecuentes DAP",
+    "sid_asset": "1462843842507",
+    "ordenable": false
+  },
+  "deposito_a_plazo": {
+    "descripcion": "Enlace Depósito a Plazo",
+    "icono": "",
+    "eid_asset": "deposito_a_plazo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Depósito a Plazo"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Depósito a Plazo",
+    "sid_asset": "1462843842607",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "nuevas_funcionalidades_dap",
+      "nuevas_preguntas_frecuentes_dap",
+      "panel_de_ayuda_plataforma_dap",
+      "preguntas_centro_de_negocios_jefe_de_gestion",
+      "preguntas_frecuentes_dap"
+    ]
+  },
+  "plataforma_operativa_enlace": {
+    "descripcion": "Enlace a Plataforma Operativa",
+    "icono": "icon-icon-pdf",
+    "aplicacionWindows": {
+      "descripcion": "PDF Plataforma Operativa",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/personasyorganizacion/intranet/Documentos%20compartidos/Preguntas%20Frecuentes%20Plataforma%20Operativa.pdf",
+      "nombre": "Plataforma Operativa",
+      "sid_asset": "1462843827615"
+    },
+    "eid_asset": "plataforma_operativa_enlace",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Plataforma Operativa"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Plataforma Operativa",
+    "sid_asset": "1462843842643",
+    "ordenable": false
+  },
+  "plataforma_operativa_acordeon": {
+    "descripcion": "Enlace Plataforma Operativa",
+    "icono": "",
+    "eid_asset": "plataforma_operativa_acordeon",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Plataforma Operativa"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Plataforma Operativa",
+    "sid_asset": "1462843842679",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "plataforma_operativa_enlace"
+    ]
+  },
+  "preguntas_frecuentes": {
+    "descripcion": "Enlace Preguntas Frecuentes",
+    "icono": "",
+    "eid_asset": "preguntas_frecuentes",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Preguntas Frecuentes"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Preguntas Frecuentes",
+    "sid_asset": "1462843842715",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "deposito_a_plazo",
+      "plataforma_operativa_acordeon"
+    ]
+  },
+  "boletines_enlace": {
+    "descripcion": "Enlace a link Boletines",
+    "icono": "",
+    "eid_asset": "boletines_enlace",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Boletines"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "boletines_enlace_link",
+      "nombre": "boletines_enlace_link",
+      "url": "http://intwcc/wcc/boletines2017/boletines%202017.htm",
+      "sid_asset": "1462843827725",
+      "target": "_blank"
+    },
+    "nombre": "Boletines",
+    "sid_asset": "1462843842754",
+    "ordenable": false
+  },
+  "boletines": {
+    "descripcion": "Enlace Boletines",
+    "icono": "",
+    "eid_asset": "boletines",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Boletines"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Boletines",
+    "sid_asset": "1462843842806",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "boletines_enlace"
+    ]
+  },
+  "reversas_pac": {
+    "descripcion": "Reversas PAC",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Reversas PAC",
+      "protocolo": "pilpac",
+      "parametro": "PAC",
+      "nombre": "Reversas PAC",
+      "sid_asset": "1462843822238"
+    },
+    "eid_asset": "reversas_pac",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Reversas PAC"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Reversas PAC",
+    "sid_asset": "1462843842872",
+    "ordenable": false
+  },
+  "apertura_cuenta_corriente": {
+    "descripcion": "Enlace a link Apertura Cuenta Corriente",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "apertura_cuenta_corriente",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Apertura Cuenta Corriente"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "apertura_cuenta_corriente_link",
+      "nombre": "apertura_cuenta_corriente_link",
+      "url": "http://intwcc/wcc/Apertura%20cta.%20cte..pdf",
+      "sid_asset": "1462843827997",
+      "target": "_blank"
+    },
+    "nombre": "Apertura Cuenta Corriente",
+    "sid_asset": "1462843842874",
+    "ordenable": false
+  },
+  "carreras_y_universidades_en_convenio": {
+    "descripcion": "Enlace a Carreras y Universidades en Convenio",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "carreras_y_universidades_en_convenio",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Carreras y Universidades en Convenio"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Carreras y Universidades en Convenio",
+      "nombre": "Carreras y Universidades en Convenio",
+      "url": "http://intwcc/wcc/carreras-y-universidades-en-convenio-2016.pdf",
+      "sid_asset": "1462843828211",
+      "target": "_blank"
+    },
+    "nombre": "Carreras y Universidades en Convenio",
+    "sid_asset": "1462843842958",
+    "ordenable": false
+  },
+  "cierre_cuenta_corriente": {
+    "descripcion": "Enlace a Cierre Cuenta Corriente",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "cierre_cuenta_corriente",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cierre Cuenta Corriente"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Cierre Cuenta Corriente",
+      "nombre": "Cierre Cuenta Corriente",
+      "url": "http://intwcc/wcc/cierre%20cta.%20cte..pdf",
+      "sid_asset": "1462843828243",
+      "target": "_blank"
+    },
+    "nombre": "Cierre Cuenta Corriente",
+    "sid_asset": "1462843843009",
+    "ordenable": false
+  },
+  "documentos_para_aperturar": {
+    "descripcion": "Enlace a Documentos para Aperturar",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "documentos_para_aperturar",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Documentos para Aperturar"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Documentos para Aperturar",
+      "nombre": "Documentos para Aperturar",
+      "url": "http://intwcc/wcc/Documentos para aperturar cta. cte..pdf",
+      "sid_asset": "1462843828302",
+      "target": "_blank"
+    },
+    "nombre": "Documentos para Aperturar",
+    "sid_asset": "1462843843062",
+    "ordenable": false
+  },
+  "viajeros_tc": {
+    "descripcion": "Viajeros TC",
+    "icono": "",
+    "eid_asset": "viajeros_tc",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Viajeros TC"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Viajeros TC",
+      "nombre": "Viajeros TC",
+      "url": "http://bchag002/Prevencion/Fraudes.html",
+      "sid_asset": "1462843822295",
+      "target": "_blank"
+    },
+    "nombre": "Viajeros TC",
+    "sid_asset": "1462843843148",
+    "ordenable": false
+  },
+  "tipos_de_cuenta_corriente": {
+    "descripcion": "Enlace a Tipos de Cuenta Corriente",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "tipos_de_cuenta_corriente",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tipos de Cuenta Corriente"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Tipos de Cuenta Corriente",
+      "nombre": "Tipos de Cuenta Corriente",
+      "url": "http://intwcc/wcc/Tipos%20de%20cta.%20cte..pdf",
+      "sid_asset": "1462843828582",
+      "target": "_blank"
+    },
+    "nombre": "Tipos de Cuenta Corriente",
+    "sid_asset": "1462843843150",
+    "ordenable": false
+  },
+  "cuenta_corriente": {
+    "descripcion": "Enlace Cuenta Corriente",
+    "icono": "",
+    "eid_asset": "cuenta_corriente",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cuenta Corriente"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Cuenta Corriente",
+    "sid_asset": "1462843843287",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "apertura_cuenta_corriente",
+      "carreras_y_universidades_en_convenio",
+      "cierre_cuenta_corriente",
+      "documentos_para_aperturar",
+      "tipos_de_cuenta_corriente"
+    ]
+  },
+  "otros": {
+    "descripcion": "Otros",
+    "icono": "",
+    "eid_asset": "otros",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Otros"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Otros",
+    "sid_asset": "1462843843316",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "coldview",
+      "banchile_inversiones",
+      "bpm",
+      "cibergestion_postventa_hipotecario",
+      "gestor_paperless",
+      "iron_mountain",
+      "saldos_inmovilizados",
+      "sernac_financiero",
+      "servibanca_imagenes"
+    ]
+  },
+  "cuenta_vista_enlace": {
+    "descripcion": "Enlace a pdf cuenta vista",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "cuenta_vista_enlace",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cuentas Vista"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Qué es una cuenta vista",
+      "nombre": "Qué es una cuenta vista",
+      "url": "http://intwcc/wcc/cuentas%20Vistas.pdf",
+      "sid_asset": "1462843830538",
+      "target": "_blank"
+    },
+    "nombre": "Qué es una cuenta vista",
+    "sid_asset": "1462843843376",
+    "ordenable": false
+  },
+  "coldview": {
+    "descripcion": "Coldview",
+    "icono": "",
+    "eid_asset": "coldview",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Coldview"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Coldview",
+      "nombre": "Coldview",
+      "url": "http://mpapp:8011/CVERM_Frontend/",
+      "sid_asset": "1462843822321",
+      "target": "_blank"
+    },
+    "nombre": "Coldview",
+    "sid_asset": "1462843843378",
+    "ordenable": false
+  },
+  "cuenta_vista_acordeon": {
+    "descripcion": "Cuentas Vista",
+    "icono": "",
+    "eid_asset": "cuenta_vista_acordeon",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cuentas Vista"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Cuentas Vista",
+    "sid_asset": "1462843847232",
+    "ordenable": false,
+    "subEnlacesRef": [
+      "cuenta_vista_enlace"
+    ]
+  },
+  "cheques": {
+    "descripcion": "Enlace a Cheques",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "cheques",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cheques"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Cheques",
+      "nombre": "Cheques",
+      "url": "http://intwcc/wcc/Cheques.pdf",
+      "sid_asset": "1462843830624",
+      "target": "_blank"
+    },
+    "nombre": "Cheques",
+    "sid_asset": "1462843843570",
+    "ordenable": false
+  },
+  "gestor_paperless": {
+    "descripcion": "Gestor Paperless",
+    "icono": "",
+    "eid_asset": "gestor_paperless",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Gestor Paperless"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Gestor Paperless",
+      "nombre": "Gestor Paperless",
+      "url": "http://filenetprod/navigator/",
+      "sid_asset": "1462843822413",
+      "target": "_blank"
+    },
+    "nombre": "Gestor Paperless",
+    "sid_asset": "1462843843572",
+    "ordenable": false
+  },
+  "aclaracion_de_protestos": {
+    "descripcion": "Enlace a Aclaración de Protestos",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "aclaracion_de_protestos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Aclaración de Protestos"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Aclaración de protestos",
+      "nombre": "Aclaración de protestos",
+      "url": "http://intwcc/wcc/Aclaraci%C3%B3n%20de%20protesto.pdf",
+      "sid_asset": "1462843830745",
+      "target": "_blank"
+    },
+    "nombre": "Aclaración de Protestos",
+    "sid_asset": "1462843843637",
+    "ordenable": false
+  },
+  "iron_mountain": {
+    "descripcion": "Iron Mountain",
+    "icono": "",
+    "eid_asset": "iron_mountain",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Iron Mountain",
+      "nombre": "Iron Mountain",
+      "url": "http://www.imrmcs055.cl/adm_sistema/login.asp",
+      "sid_asset": "1462843822475",
+      "target": "_blank"
+    },
+    "nombre": "Iron Mountain",
+    "sid_asset": "1462843843705",
+    "ordenable": false
+  },
+  "san": {
+    "descripcion": "SAN",
+    "icono": "bch-q1-tarjeta",
+    "eid_asset": "san",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "SAN"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link asociado a enlace SAN",
+      "nombre": "SAN",
+      "url": "https://browser.nexussa.cl/nexussa/",
+      "sid_asset": "1462843817769",
+      "target": "_blank"
+    },
+    "nombre": "SAN",
+    "sid_asset": "1462843843734",
+    "ordenable": false
+  },
+  "saldos_inmovilizados": {
+    "descripcion": "Saldos Inmovilizados",
+    "icono": "",
+    "eid_asset": "saldos_inmovilizados",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Saldos Inmovilizados"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Saldos Inmovilizados",
+      "nombre": "Saldos Inmovilizados",
+      "url": "http://bchapp109/Net_Informes/ASPXInformes/Principal.aspx",
+      "sid_asset": "1462843822539",
+      "target": "_blank"
+    },
+    "nombre": "Saldos Inmovilizados",
+    "sid_asset": "1462843843809",
+    "ordenable": false
+  },
+  "onp": {
+    "descripcion": "Enlace a ONP",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "onp",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "ONP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "ONP",
+      "nombre": "ONP",
+      "url": "http://intwcc/wcc/ONP.pdf",
+      "sid_asset": "1462843830801",
+      "target": "_blank"
+    },
+    "nombre": "ONP",
+    "sid_asset": "1462843843811",
+    "ordenable": false
+  },
+  "sernac_financiero": {
+    "descripcion": "Sernac Financiero",
+    "icono": "",
+    "eid_asset": "sernac_financiero",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Sernac Financiero"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Sernac Financiero",
+      "nombre": "Sernac Financiero",
+      "url": "http://intranetbch/wps/wcm/connect/intrabch-banca-personas-sucursales/home/plantilla-flexible/sernac-financiero/sernac-financiero",
+      "sid_asset": "1462843822605",
+      "target": "_blank"
+    },
+    "nombre": "Sernac Financiero",
+    "sid_asset": "1462843843880",
+    "ordenable": false
+  },
+  "protestos": {
+    "descripcion": "Enlace a Protestos",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "protestos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Protestos"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Protestos",
+      "nombre": "Protestos",
+      "url": "http://intwcc/wcc/Protestos.pdf",
+      "sid_asset": "1462843830827",
+      "target": "_blank"
+    },
+    "nombre": "Protestos",
+    "sid_asset": "1462843843921",
+    "ordenable": false
+  },
+  "servibanca_imagenes": {
+    "descripcion": "Servibanca - Imágenes",
+    "icono": "",
+    "eid_asset": "servibanca_imagenes",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Servibanca - Imágenes"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Servibanca - Imágenes",
+      "nombre": "Servibanca - Imágenes",
+      "url": "http://192.168.69.75:2785/PortalOpera/AppFront/login.aspx",
+      "sid_asset": "1462843822673",
+      "target": "_blank"
+    },
+    "nombre": "Servibanca - Imágenes",
+    "sid_asset": "1462843843998",
+    "ordenable": false
+  },
+  "documentos_bancarios": {
+    "descripcion": "Enlace Documentos Bancarios",
+    "icono": "",
+    "eid_asset": "documentos_bancarios",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Documentos Bancarios"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Documentos Bancarios",
+    "sid_asset": "1462843844068",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "cheques",
+      "aclaracion_de_protestos",
+      "onp",
+      "protestos"
+    ]
+  },
+  "activacion_de_folio": {
+    "descripcion": "Activación de Folio",
+    "icono": "",
+    "eid_asset": "activacion_de_folio",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Activación de Folio"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Activación de Folio",
+      "nombre": "Activación de Folio",
+      "url": "http://bchapp20:18080/claves/Newlogin.do",
+      "sid_asset": "1462843822743",
+      "target": "_blank"
+    },
+    "nombre": "Activación de Folio",
+    "sid_asset": "1462843844141",
+    "ordenable": false
+  },
+  "administracion_de_contratos": {
+    "descripcion": "Administración de Contratos",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Administración de Contratos",
+      "protocolo": "admbcx",
+      "parametro": "-wxwe",
+      "nombre": "Administración de Contratos",
+      "sid_asset": "1462843822815"
+    },
+    "eid_asset": "administracion_de_contratos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Administración de Contratos"
+    ],
+    "tooltip": "Aseúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Administración de Contratos",
+    "sid_asset": "1462843844245",
+    "ordenable": false
+  },
+  "tipos_y_caracteristicas_de_hipotecarios": {
+    "descripcion": "Enlace a Tipos y características de Hipotecarios",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "tipos_y_caracteristicas_de_hipotecarios",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tipos y características de Hipotecarios"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Tipos y características de Hipotecarios",
+      "nombre": "Tipos y características de Hipotecarios",
+      "url": "http://intwcc/wcc/HIPOTECARIOS.pdf",
+      "sid_asset": "1462843830919",
+      "target": "_blank"
+    },
+    "nombre": "Tipos y características de Hipotecarios",
+    "sid_asset": "1462843844318",
+    "ordenable": false
+  },
+  "administrador_de_autorizadores": {
+    "descripcion": "Administrador de Autorizadores",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Administrador de Autorizadores",
+      "protocolo": "admauto",
+      "parametro": "",
+      "nombre": "Administrador de Autorizadores",
+      "sid_asset": "1462843822895"
+    },
+    "eid_asset": "administrador_de_autorizadores",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Administrador de Autorizadores"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Administrador de Autorizadores",
+    "sid_asset": "1462843844372",
+    "ordenable": false
+  },
+  "hipotecarios": {
+    "descripcion": "Enlace Hipotecarios",
+    "icono": "",
+    "eid_asset": "hipotecarios",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Hipotecarios"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Hipotecarios",
+    "sid_asset": "1462843844446",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "tipos_y_caracteristicas_de_hipotecarios"
+    ]
+  },
+  "alaya": {
+    "descripcion": "Alaya",
+    "icono": "",
+    "eid_asset": "alaya",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Alaya"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Alaya",
+      "nombre": "Alaya",
+      "url": "http://186.10.39.217:4800/default.aspx",
+      "sid_asset": "1462843823048",
+      "target": "_blank"
+    },
+    "nombre": "Alaya",
+    "sid_asset": "1462843844500",
+    "ordenable": false
+  },
+  "cuentas_de_ahorro": {
+    "descripcion": "Enlace a Cuentas de Ahorro",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "cuentas_de_ahorro",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cuentas de Ahorro"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Cuentas de Ahorro",
+      "nombre": "Cuentas de Ahorro",
+      "url": "http://intwcc/wcc/Cuenta%20de%20Ahorro.pdf",
+      "sid_asset": "1462843830981",
+      "target": "_blank"
+    },
+    "nombre": "Cuentas de Ahorro",
+    "sid_asset": "1462843844626",
+    "ordenable": false
+  },
+  "depositos_a_plazo": {
+    "descripcion": "Enlace a link Depósitos a Plazo",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "depositos_a_plazo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Depósitos a Plazo"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Depositos a Plazo",
+      "nombre": "Depositos a Plazo",
+      "url": "http://intwcc/wcc/DEPOSITO%20A%20PLAZO.pdf",
+      "sid_asset": "1462843831045",
+      "target": "_blank"
+    },
+    "nombre": "Depósitos a Plazo",
+    "sid_asset": "1462843844752",
+    "ordenable": false
+  },
+  "fondos_mutuos": {
+    "descripcion": "Enlace a liink Fondos Mutuo",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "fondos_mutuos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Fondos Mutuo"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Fondos Mutuo",
+      "nombre": "Fondos Mutuo",
+      "url": "http://intwcc/wcc/FONDOS%20MUTUOS.pdf",
+      "sid_asset": "1462843831111",
+      "target": "_blank"
+    },
+    "nombre": "Fondos Mutuo",
+    "sid_asset": "1462843844834",
+    "ordenable": false
+  },
+  "manual_ahorro_en_centro_de_negocios": {
+    "descripcion": "Enlace a link Manual Ahorro en Centro de Negocios",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "manual_ahorro_en_centro_de_negocios",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Manual Ahorro en Centro de Negocios"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Manual Ahorro en Centro de Negocios",
+      "nombre": "Manual Ahorro en Centro de Negocios",
+      "url": "http://intwcc/wcc/MANUAL%20AHORRO%2019.08.17.pdf",
+      "sid_asset": "1462843831179",
+      "target": "_blank"
+    },
+    "nombre": "Manual Ahorro en Centro de Negocios",
+    "sid_asset": "1462843844918",
+    "ordenable": false
+  },
+  "inversiones": {
+    "descripcion": "Enlace Inversiones",
+    "icono": "",
+    "eid_asset": "inversiones",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Inversiones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Inversiones",
+    "sid_asset": "1462843845004",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "cuentas_de_ahorro",
+      "depositos_a_plazo",
+      "fondos_mutuos",
+      "manual_ahorro_en_centro_de_negocios"
+    ]
+  },
+  "caracteristicas_lc": {
+    "descripcion": "Enlace a link Características LC",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "caracteristicas_lc",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Características LC"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Caracteristícas LC",
+      "nombre": "Caracteristícas LC",
+      "url": "http://intwcc/wcc/Caracteristicas%20LC.pdf",
+      "sid_asset": "1462843828688",
+      "target": "_blank"
+    },
+    "nombre": "Características LC",
+    "sid_asset": "1462843845108",
+    "ordenable": false
+  },
+  "costos_lc": {
+    "descripcion": "Enlace a link Costos LC",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "costos_lc",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Costos LC"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Costos LC",
+      "nombre": "Costos LC",
+      "url": "http://intwcc/wcc/Costos%20de%20LC.pdf",
+      "sid_asset": "1462843828850",
+      "target": "_blank"
+    },
+    "nombre": "Costos LC",
+    "sid_asset": "1462843845142",
+    "ordenable": false
+  },
+  "tipo_de_lc": {
+    "descripcion": "Enlace a link Tipo de LC",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "tipo_de_lc",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tipo de LC"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Tipo de LC",
+      "nombre": "Tipo de LC",
+      "url": "http://intwcc/wcc/Tipos%20de%20LC.pdf",
+      "sid_asset": "1462843829186",
+      "target": "_blank"
+    },
+    "nombre": "Tipo de LC",
+    "sid_asset": "1462843845178",
+    "ordenable": false
+  },
+  "linea_de_credito": {
+    "descripcion": "Enlace Línea de Crédito",
+    "icono": "",
+    "eid_asset": "linea_de_credito",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Línea de Crédito"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Línea de Crédito",
+    "sid_asset": "1462843845216",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "caracteristicas_lc",
+      "costos_lc",
+      "tipo_de_lc"
+    ]
+  },
+  "oficinas_compra_venta_euros": {
+    "descripcion": "Enlace a link Oficinas compra/venta Euros",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "oficinas_compra_venta_euros",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Oficinas compra/venta Euros"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Oficinas compra/venta Euros",
+      "nombre": "Oficinas compra/venta Euros",
+      "url": "http://intwcc/wcc/Oficinas%20que%20compran%20y%20venden%20euros.pdf",
+      "sid_asset": "1462843831279",
+      "target": "_blank"
+    },
+    "nombre": "Oficinas compra/venta Euros",
+    "sid_asset": "1462843845256",
+    "ordenable": false
+  },
+  "tarifas_mercado_corredores": {
+    "descripcion": "Enlace a link Tarifas Mercado corredores",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "tarifas_mercado_corredores",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tarifas Mercado corredores"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Tarifas Mercado corredores",
+      "nombre": "Tarifas Mercado corredores",
+      "url": "http://intwcc/wcc/tarifado%20mercado%20corredores.pdf",
+      "sid_asset": "1462843831352",
+      "target": "_blank"
+    },
+    "nombre": "Tarifas Mercado corredores",
+    "sid_asset": "1462843845298",
+    "ordenable": false
+  },
+  "unidad_swift": {
+    "descripcion": "Enlace a link Unidad Swift",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "unidad_swift",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Unidad Swift"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Unidad Swift",
+      "nombre": "Unidad Swift",
+      "url": "http://intwcc/wcc/MERCADO%20DE%20CORREDORES.pdf",
+      "sid_asset": "1462843831452",
+      "target": "_blank"
+    },
+    "nombre": "Unidad Swift",
+    "sid_asset": "1462843845342",
+    "ordenable": false
+  },
+  "mercado_de_corredores": {
+    "descripcion": "Enlace Mercado de Corredores",
+    "icono": "",
+    "eid_asset": "mercado_de_corredores",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Mercado de Corredores"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Mercado de Corredores",
+    "sid_asset": "1462843845388",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "oficinas_compra_venta_euros",
+      "tarifas_mercado_corredores",
+      "unidad_swift"
+    ]
+  },
+  "acumulacion_de_dolares_premio": {
+    "descripcion": "Enlace a link Acumulación de dólares premio",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "acumulacion_de_dolares_premio",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Acumulación de dólares premio"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Acumulación de dolares premio",
+      "nombre": "Acumulación de dolares premio",
+      "url": "http://intwcc/wcc/ACUMULACION%20DOLARES%20PREMIOS.pdf",
+      "sid_asset": "1462843829265",
+      "target": "_blank"
+    },
+    "nombre": "Acumulación de dólares premio",
+    "sid_asset": "1462843845437",
+    "ordenable": false
+  },
+  "beneficios_mastercard": {
+    "descripcion": "Enlace a link Beneficios Mastercard",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "beneficios_mastercard",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Beneficios Mastercard"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Beneficios Mastercard",
+      "nombre": "Beneficios Mastercard",
+      "url": "http://intwcc/wcc/Capacitaci%C3%B3n%20Campa%C3%B1as%2015%20de%20Mayo.pdf",
+      "sid_asset": "1462843829783",
+      "target": "_blank"
+    },
+    "nombre": "Beneficios Mastercard",
+    "sid_asset": "1462843845487",
+    "ordenable": false
+  },
+  "beneficios_visa": {
+    "descripcion": "Enlace a link Beneficios Visa",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "beneficios_visa",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Beneficios Visa"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Beneficios Visa",
+      "nombre": "Beneficios Visa",
+      "url": "http://intwcc/wcc/Taller%20de%20Beneficios%20Banco%20de%20Chile.pdf",
+      "sid_asset": "1462843829937",
+      "target": "_blank"
+    },
+    "nombre": "Beneficios Visa",
+    "sid_asset": "1462843845539",
+    "ordenable": false
+  },
+  "cupo_parametrico_compras_internacionales_online_tdc": {
+    "descripcion": "Enlace a link Cupo paramétrico Compras Internacionales Online TC",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "cupo_parametrico_compras_internacionales_online_tdc",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cupo paramétrico Compras Internacionales Online TC"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Cupo parametrico Compras Internacionales Online TC",
+      "nombre": "Cupo parametrico Compras Internacionales Online TC",
+      "url": "http://intwcc/wcc/Cupo%20parametrico%20compras%20internacionales%20online%20con%20TC.pdf",
+      "sid_asset": "1462843829990",
+      "target": "_blank"
+    },
+    "nombre": "Cupo paramétrico Compras Internacionales Online TC",
+    "sid_asset": "1462843845593",
+    "ordenable": false
+  },
+  "ingreso_a_salones_vip": {
+    "descripcion": "Enlace a link Ingreso a salones VIP",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "ingreso_a_salones_vip",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Ingreso a salones VIP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Ingreso a salones VIP",
+      "nombre": "Ingreso a salones VIP",
+      "url": "http://intwcc/wcc/salones%20vip%202017%20(segundo%20semestre).pdf",
+      "sid_asset": "1462843830022",
+      "target": "_blank"
+    },
+    "nombre": "Ingreso a salones VIP",
+    "sid_asset": "1462843845649",
+    "ordenable": false
+  },
+  "mastercard_corporate": {
+    "descripcion": "Enlace a link Mastercard Corporate",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "mastercard_corporate",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Mastercard Corporate"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Mastercard Corporate",
+      "nombre": "Mastercard Corporate",
+      "url": "http://intwcc/wcc/Mastercard%20Corporate%20Executive%20Noviembre%202016_C.PDF",
+      "sid_asset": "1462843830056",
+      "target": "_blank"
+    },
+    "nombre": "Mastercard Corporate",
+    "sid_asset": "1462843845707",
+    "ordenable": false
+  },
+  "pago_seguro": {
+    "descripcion": "Enlace a link Pago Seguro",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "pago_seguro",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Pago Seguro"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Pago Seguro",
+      "nombre": "Pago Seguro",
+      "url": "http://intwcc/wcc/PAGO%20SEGURO.pdf",
+      "sid_asset": "1462843830092",
+      "target": "_blank"
+    },
+    "nombre": "Pago Seguro",
+    "sid_asset": "1462843845767",
+    "ordenable": false
+  },
+  "tipos_de_tc": {
+    "descripcion": "Enlace a link Tipos de TC",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "tipos_de_tc",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tipos de TC"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Tipos de TC",
+      "nombre": "Tipos de TC",
+      "url": "http://intwcc/wcc/TIPOS%20DE%20TC.pdf",
+      "sid_asset": "1462843830235",
+      "target": "_blank"
+    },
+    "nombre": "Tipos de TC",
+    "sid_asset": "1462843845829",
+    "ordenable": false
+  },
+  "visa_signature": {
+    "descripcion": "Enlace a link Visa Signature",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "visa_signature",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Visa Signature"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Visa Signature",
+      "nombre": "Visa Signature",
+      "url": "http://intwcc/wcc/Visa%20Signature%20Corporate%202016_Noviembre.pdf",
+      "sid_asset": "1462843830275",
+      "target": "_blank"
+    },
+    "nombre": "Visa Signature",
+    "sid_asset": "1462843845893",
+    "ordenable": false
+  },
+  "priority_pass": {
+    "descripcion": "Enlace a link Priority Pass",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "priority_pass",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Priority Pass"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Priority Pass",
+      "nombre": "Priority Pass",
+      "url": "http://intwcc/wcc/Priority%20Pass.pdf",
+      "sid_asset": "1462843830317",
+      "target": "_blank"
+    },
+    "nombre": "Priority Pass",
+    "sid_asset": "1462843845959",
+    "ordenable": false
+  },
+  "tarjeta_de_credito": {
+    "descripcion": "Enlace Tarjeta de Crédito",
+    "icono": "",
+    "eid_asset": "tarjeta_de_credito",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tarjeta de Crédito"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Tarjeta de Crédito",
+    "sid_asset": "1462843846027",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "acumulacion_de_dolares_premio",
+      "beneficios_mastercard",
+      "beneficios_visa",
+      "cupo_parametrico_compras_internacionales_online_tdc",
+      "ingreso_a_salones_vip",
+      "mastercard_corporate",
+      "pago_seguro",
+      "tipos_de_tc",
+      "visa_signature",
+      "priority_pass"
+    ]
+  },
+  "aplicativo_prevencion_de_fraude_sigo": {
+    "descripcion": "Aplicativo Prevención de Fraude SIGO",
+    "icono": "",
+    "eid_asset": "aplicativo_prevencion_de_fraude_sigo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Aplicativo Prevención de Fraude SIGO"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Aplicativo Prevención de Fraude SIGO",
+      "nombre": "Aplicativo Prevención de Fraude SIGO",
+      "url": "http://intwcc:83/login.aspx",
+      "sid_asset": "1462843823128",
+      "target": "_blank"
+    },
+    "nombre": "Aplicativo Prevención de Fraude SIGO",
+    "sid_asset": "1462843846044",
+    "ordenable": false
+  },
+  "codigo_de_rechazo_en_rei": {
+    "descripcion": "Enlace a link Código de Rechazo en REI",
+    "icono": "icon-icon-xls",
+    "eid_asset": "codigo_de_rechazo_en_rei",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Código de Rechazo en REI"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Código de rechazo en REI",
+      "nombre": "Código de rechazo en REI",
+      "url": "http://intwcc/wcc/Archivo%201%20rei.xlsm",
+      "sid_asset": "1462843830361",
+      "target": "_blank"
+    },
+    "nombre": "Código de Rechazo en REI",
+    "sid_asset": "1462843846121",
+    "ordenable": false
+  },
+  "artikos": {
+    "descripcion": "Artikos",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Artikos",
+      "protocolo": "navegadorexplorer",
+      "parametro": "https://art-p-ptk.artikos.cl/servicios/",
+      "nombre": "Artikos",
+      "sid_asset": "1462843822969"
+    },
+    "eid_asset": "artikos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Artikos"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Artikos",
+    "sid_asset": "1462843846153",
+    "ordenable": false
+  },
+  "back_office_aumentos_de_cupo": {
+    "descripcion": "Back_office Aumentos de Cupo",
+    "icono": "",
+    "eid_asset": "back_office_aumentos_de_cupo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Back_office Aumentos de Cupo"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Backoffice Aumentos de Cupo",
+      "nombre": "Backoffice Aumentos de Cupo",
+      "url": "http://promociones.bancochile.cl/promocion/AumentoCupos/admin/reportes/incritos/default.asp",
+      "sid_asset": "1462843823210",
+      "target": "_blank"
+    },
+    "nombre": "Back_office Aumentos de Cupo",
+    "sid_asset": "1462843846274",
+    "ordenable": false
+  },
+  "tarjeta_debito_enlace": {
+    "descripcion": "Enlace a link Tarjeta Débito",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "tarjeta_debito_enlace",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tarjeta Débito"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Tarjeta Débito",
+      "nombre": "Tarjeta Débito",
+      "url": "http://intwcc/wcc/TD.pdf",
+      "sid_asset": "1462843830407",
+      "target": "_blank"
+    },
+    "nombre": "Tarjeta Débito",
+    "sid_asset": "1462843846283",
+    "ordenable": false
+  },
+  "back_office_mi_pass": {
+    "descripcion": "Backoffice Mi Pass",
+    "icono": "",
+    "eid_asset": "back_office_mi_pass",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Backoffice Mi Pass"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Backoffice Mi Pass",
+      "nombre": "Backoffice Mi Pass",
+      "url": "http://152.139.82.222:8009/soft-token-backoffice/login/auth",
+      "sid_asset": "1462843823294",
+      "target": "_blank"
+    },
+    "nombre": "Backoffice Mi Pass",
+    "sid_asset": "1462843846320",
+    "ordenable": false
+  },
+  "rei": {
+    "descripcion": "REI",
+    "icono": "icon-ad-PagoTCNacional",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion windows asociada a enlace REI",
+      "protocolo": "navegadorexplorer",
+      "parametro": "https://calipso.redbanc.rbi/portal/pls/portal/rbc_intraweb.html.login",
+      "nombre": "REI",
+      "sid_asset": "1462843817817"
+    },
+    "eid_asset": "rei",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "REI"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "REI",
+    "sid_asset": "1462843846355",
+    "ordenable": false
+  },
+  "back_office_pagos": {
+    "descripcion": "Backoffice Pagos",
+    "icono": "",
+    "eid_asset": "back_office_pagos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Backoffice Pagos"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Backoffice Pagos",
+      "nombre": "Backoffice Pagos",
+      "url": "http://bchlnx173:9003/BackOffice/Security/login",
+      "sid_asset": "1462843823380",
+      "target": "_blank"
+    },
+    "nombre": "Backoffice Pagos",
+    "sid_asset": "1462843846393",
+    "ordenable": false
+  },
+  "banjoven": {
+    "descripcion": "Banjoven",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Banjoven",
+      "protocolo": "tarjuv01",
+      "parametro": "",
+      "nombre": "Banjoven",
+      "sid_asset": "1462843823558"
+    },
+    "eid_asset": "banjoven",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banjoven"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Banjoven",
+    "sid_asset": "1462843846567",
+    "ordenable": false
+  },
+  "tarjeta_debito_visa_enlace": {
+    "descripcion": "Enlace a link Tarjeta Débito Visa",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "tarjeta_debito_visa_enlace",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tarjeta Débito Visa"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Tarjeta Débito Visa",
+      "nombre": "Tarjeta Débito Visa",
+      "url": "http://intwcc/wcc/TD%20VISA.pdf",
+      "sid_asset": "1462843830487",
+      "target": "_blank"
+    },
+    "nombre": "Tarjeta Débito Visa",
+    "sid_asset": "1462843846569",
+    "ordenable": false
+  },
+  "safa": {
+    "descripcion": "SAFA",
+    "icono": "icon-pec-tarjetadecredito",
+    "eid_asset": "safa",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "SAFA"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link asociado a enlace SAFA",
+      "nombre": "SAFA",
+      "url": "http://bchapp254/safa/login.aspx",
+      "sid_asset": "1462843818002",
+      "target": "_blank"
+    },
+    "nombre": "SAFA",
+    "sid_asset": "1462843846570",
+    "ordenable": false
+  },
+  "cca": {
+    "descripcion": "CCA",
+    "icono": "",
+    "eid_asset": "cca",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "CCA"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link CCA",
+      "nombre": "CCA",
+      "url": "http://192.168.110.80/WebNewTef/",
+      "sid_asset": "1462843823468",
+      "target": "_blank"
+    },
+    "nombre": "CCA",
+    "sid_asset": "1462843846652",
+    "ordenable": false
+  },
+  "tarjeta_debito_acordeon": {
+    "descripcion": "Enlace Tarjeta Débito",
+    "icono": "",
+    "eid_asset": "tarjeta_debito_acordeon",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Tarjeta Débito"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Tarjeta Débito",
+    "sid_asset": "1462843846789",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "tarjeta_debito_enlace",
+      "codigo_de_rechazo_en_rei",
+      "tarjeta_debito_visa_enlace"
+    ]
+  },
+  "ccpulse": {
+    "descripcion": "CCPulse",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación CCPulse",
+      "protocolo": "callcenter",
+      "parametro": "",
+      "nombre": "CCPulse",
+      "sid_asset": "1462843823660"
+    },
+    "eid_asset": "ccpulse",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "CCPulse"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_ESCRITBANCATJEF_CONSULTAR"
+    ],
+    "nombre": "CCPulse",
+    "sid_asset": "1462843846833",
+    "ordenable": false
+  },
+  "cibergestion": {
+    "descripcion": "Cibergestión",
+    "icono": "",
+    "eid_asset": "cibergestion",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cibergestión"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Cibergestion",
+      "nombre": "Cibergestion",
+      "url": "http://bancochile.cibergestion.cl/",
+      "sid_asset": "1462843818060",
+      "target": "_blank"
+    },
+    "nombre": "Cibergestión",
+    "sid_asset": "1462843846884",
+    "ordenable": false
+  },
+  "aplicaciones_e_telefonico": {
+    "descripcion": "Aplicaciones",
+    "icono": "",
+    "eid_asset": "aplicaciones_e_telefonico",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Aplicaciones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Aplicaciones",
+    "sid_asset": "1462843846918",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "filenet",
+      "banchile_consulta_de_seguro_plus",
+      "eccom",
+      "activacion_de_folio",
+      "administrador_de_autorizadores",
+      "alaya",
+      "consulta_transacciones_atm",
+      "ficha_corporativa",
+      "back_office_pagos",
+      "cca",
+      "cibergestion",
+      "consulta_de_vales_vista",
+      "tweetdeck",
+      "inicializacion_clave_fonobank",
+      "nuevo_motor_de_pagos",
+      "workforce",
+      "banchile_referidos",
+      "administracion_de_contratos",
+      "back_office_mi_pass",
+      "banchile_enlace_seguro_vida",
+      "aplicativo_prevencion_de_fraude_sigo",
+      "artikos",
+      "back_office_aumentos_de_cupo",
+      "consulta_tasas_mn_me",
+      "banjoven",
+      "mob_id",
+      "gestion_medios_de_pago",
+      "idg",
+      "singsys",
+      "multiedwards",
+      "pil_de_pagos",
+      "sonda",
+      "stw",
+      "traductor_chilecard"
+    ]
+  },
+  "productos": {
+    "descripcion": "Enlace Productos",
+    "icono": "",
+    "eid_asset": "productos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Productos"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Productos",
+    "sid_asset": "1462843846966",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "cuenta_corriente",
+      "cuenta_vista_acordeon",
+      "documentos_bancarios",
+      "hipotecarios",
+      "inversiones",
+      "linea_de_credito",
+      "mercado_de_corredores",
+      "tarjeta_de_credito",
+      "tarjeta_debito_acordeon"
+    ]
+  },
+  "eccom": {
+    "descripcion": "ECCOM",
+    "icono": "",
+    "eid_asset": "eccom",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "ECCOM"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_ESCRITBANCATJEF_CONSULTAR"
+    ],
+    "link": {
+      "descripcion": "Link a ECCOM",
+      "nombre": "ECCOM",
+      "url": "http://bchlnx313:30340/#",
+      "sid_asset": "1462843824240",
+      "target": "_blank"
+    },
+    "nombre": "ECCOM",
+    "sid_asset": "1462843847013",
+    "ordenable": false
+  },
+  "configuration_manager": {
+    "descripcion": "Configuration Manager",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Configuration Manager",
+      "protocolo": "sce",
+      "parametro": "",
+      "nombre": "Configuration Manager",
+      "sid_asset": "1462843824268"
+    },
+    "eid_asset": "configuration_manager",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_ESCRITBANCATJEF_CONSULTAR"
+    ],
+    "nombre": "Configuration Manager",
+    "sid_asset": "1462843847066",
+    "ordenable": false
+  },
+  "consulta_de_vales_vista": {
+    "descripcion": "Consulta de Vales Vista",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Consulta de Vales Vista",
+      "protocolo": "pilsdp",
+      "parametro": "PIL_SDP",
+      "nombre": "Consulta de Vales Vista",
+      "sid_asset": "1462843824380"
+    },
+    "eid_asset": "consulta_de_vales_vista",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Consulta de Vales Vista"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Consulta de Vales Vista",
+    "sid_asset": "1462843847148",
+    "ordenable": false
+  },
+  "consulta_tasas_mn_me": {
+    "descripcion": "Consulta Tasas MN-ME",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Consulta Tasas MN-ME",
+      "protocolo": "tasacn",
+      "parametro": "",
+      "nombre": "Consulta Tasas MN-ME",
+      "sid_asset": "1462843824412"
+    },
+    "eid_asset": "consulta_tasas_mn_me",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Consulta Tasas MN-ME"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Consulta Tasas MN-ME",
+    "sid_asset": "1462843847304",
+    "ordenable": false
+  },
+  "consulta_transacciones_atm": {
+    "descripcion": "Consulta Transacciones ATM",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Consulta Transacciones ATM",
+      "protocolo": "wrei",
+      "parametro": "",
+      "nombre": "Consulta Transacciones ATM",
+      "sid_asset": "1462843824444"
+    },
+    "eid_asset": "consulta_transacciones_atm",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Consulta Transacciones ATM"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Consulta Transacciones ATM",
+    "sid_asset": "1462843847447",
+    "ordenable": false
+  },
+  "ficha_corporativa": {
+    "descripcion": "Ficha Corporativa",
+    "icono": "",
+    "eid_asset": "ficha_corporativa",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Ficha Corporativa"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Ficha Corporativa",
+      "nombre": "Ficha Corporativa",
+      "url": "http://intwcc/wcc/Ficha%20Corporativa/FICHANEW.EXE",
+      "sid_asset": "1462843824479",
+      "target": "_blank"
+    },
+    "nombre": "Ficha Corporativa",
+    "sid_asset": "1462843847512",
+    "ordenable": false
+  },
+  "gestion_medios_de_pago": {
+    "descripcion": "Gestión Medios de Pago",
+    "icono": "",
+    "eid_asset": "gestion_medios_de_pago",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Gestión Medios de Pago"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Gestión Medios de Pago",
+      "nombre": "Gestión Medios de Pago",
+      "url": "https://www.empresas.bancochile.cl/eft/html/gestion.html",
+      "sid_asset": "1462843824595",
+      "target": "_blank"
+    },
+    "nombre": "Gestión Medios de Pago",
+    "sid_asset": "1462843847620",
+    "ordenable": false
+  },
+  "idg": {
+    "descripcion": "IDG",
+    "icono": "",
+    "eid_asset": "idg",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_ESCRITBANCATJEF_CONSULTAR"
+    ],
+    "link": {
+      "descripcion": "Link a IDG",
+      "nombre": "IDG",
+      "url": "https://idg:8444/IdentityGuardAdmin/do/Logout",
+      "sid_asset": "1462843824719",
+      "target": "_blank"
+    },
+    "nombre": "IDG",
+    "sid_asset": "1462843847756",
+    "ordenable": false
+  },
+  "inicializacion_clave_fonobank": {
+    "descripcion": "Inicialización Clave Fonobank",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Inicialización Clave Fonobank",
+      "protocolo": "firmacto",
+      "parametro": "",
+      "nombre": "Inicialización Clave Fonobank",
+      "sid_asset": "1462843824761"
+    },
+    "eid_asset": "inicializacion_clave_fonobank",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Inicialización Clave Fonobank"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Inicialización Clave Fonobank",
+    "sid_asset": "1462843847916",
+    "ordenable": false
+  },
+  "mob_id": {
+    "descripcion": "Mob. ID",
+    "icono": "",
+    "eid_asset": "mob_id",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Mob. ID"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_ESCRITBANCATJEF_CONSULTAR"
+    ],
+    "link": {
+      "descripcion": "Link a Mob. ID",
+      "nombre": "Mob. ID",
+      "url": "http://bchilesuite.mobid.cl/",
+      "sid_asset": "1462843824931",
+      "target": "_blank"
+    },
+    "nombre": "Mob. ID",
+    "sid_asset": "1462843848000",
+    "ordenable": false
+  },
+  "multiedwards": {
+    "descripcion": "Multiedwards",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Multiedwards",
+      "protocolo": "contibae",
+      "parametro": "",
+      "nombre": "Multiedwards",
+      "sid_asset": "1462843824887"
+    },
+    "eid_asset": "multiedwards",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Multiedwards"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_ESCRITBANCATJEF_CONSULTAR"
+    ],
+    "nombre": "Multiedwards",
+    "sid_asset": "1462843848154",
+    "ordenable": false
+  },
+  "nuevo_motor_de_pagos": {
+    "descripcion": "Nuevo Motor de Pagos",
+    "icono": "",
+    "eid_asset": "nuevo_motor_de_pagos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Nuevo Motor de Pagos"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Nuevo Motor de Pagos",
+      "nombre": "Nuevo Motor de Pagos",
+      "url": "http://152.139.83.228:8021/BankVisibility/login",
+      "sid_asset": "1462843824979",
+      "target": "_blank"
+    },
+    "nombre": "Nuevo Motor de Pagos",
+    "sid_asset": "1462843848329",
+    "ordenable": false
+  },
+  "pil_de_pagos": {
+    "descripcion": "Pil de Pagos",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Pil de Pagos",
+      "protocolo": "pilsdp",
+      "parametro": "PIL_SDP",
+      "nombre": "Pil de Pagos",
+      "sid_asset": "1462843825029"
+    },
+    "eid_asset": "pil_de_pagos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Pil de Pagos"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Pil de Pagos",
+    "sid_asset": "1462843848512",
+    "ordenable": false
+  },
+  "q_finity": {
+    "descripcion": "Q Finity",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Q Finity",
+      "protocolo": "applicationmanager",
+      "parametro": "",
+      "nombre": "Q Finity",
+      "sid_asset": "1462843825081"
+    },
+    "eid_asset": "q_finity",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Q Finity"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_ESCRITBANCATJEF_CONSULTAR"
+    ],
+    "nombre": "Q Finity",
+    "sid_asset": "1462843848550",
+    "ordenable": false
+  },
+  "singsys": {
+    "descripcion": "Singsys",
+    "icono": "",
+    "eid_asset": "singsys",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Singsys"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Singsys",
+      "nombre": "Singsys",
+      "url": "http://signsys/signsys/login.aspx",
+      "sid_asset": "1462843825173",
+      "target": "_blank"
+    },
+    "nombre": "Singsys",
+    "sid_asset": "1462843848590",
+    "ordenable": false
+  },
+  "sonda": {
+    "descripcion": "SONDA",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación SONDA",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://200.1.128.91/webpcfbch/framesetprincipal.htm",
+      "nombre": "SONDA",
+      "sid_asset": "1462843825229"
+    },
+    "eid_asset": "sonda",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "SONDA"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "SONDA",
+    "sid_asset": "1462843848628",
+    "ordenable": false
+  },
+  "stw": {
+    "descripcion": "STW",
+    "icono": "",
+    "eid_asset": "stw",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "STW"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a STW",
+      "nombre": "STW",
+      "url": "http://163.250.250.222/Bloqueo/index.jsp",
+      "sid_asset": "1462843825287",
+      "target": "_blank"
+    },
+    "nombre": "STW",
+    "sid_asset": "1462843848630",
+    "ordenable": false
+  },
+  "traductor_chilecard": {
+    "descripcion": "Traductor Chilecard",
+    "icono": "",
+    "eid_asset": "traductor_chilecard",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Traductor Chilecard"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Traductor Chilecard",
+      "nombre": "Traductor Chilecard",
+      "url": "http://wascrm/postventa/canales/tarjetas/transfTarjeta.jsp?",
+      "sid_asset": "1462843825347",
+      "target": "_blank"
+    },
+    "nombre": "Traductor Chilecard",
+    "sid_asset": "1462843848631",
+    "ordenable": false
+  },
+  "transbank_pat": {
+    "descripcion": "Transbank (PAT)",
+    "icono": "",
+    "eid_asset": "transbank_pat",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Transbank (PAT)"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Transbank (PAT)",
+      "nombre": "Transbank (PAT)",
+      "url": "https://www.pagoautomaticocontarjetas.cl/nuevopat/login.jsp",
+      "sid_asset": "1462843825409",
+      "target": "_blank"
+    },
+    "nombre": "Transbank (PAT)",
+    "sid_asset": "1462843848752",
+    "ordenable": false
+  },
+  "tweetdeck": {
+    "descripcion": "Tweetdeck",
+    "icono": "",
+    "eid_asset": "tweetdeck",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_ESCRITBANCATJEF_CONSULTAR"
+    ],
+    "link": {
+      "descripcion": "Link a Tweetdeck",
+      "nombre": "Tweetdeck",
+      "url": "https://tweetdeck.twitter.com/",
+      "sid_asset": "1462843825474",
+      "target": "_blank"
+    },
+    "nombre": "Tweetdeck",
+    "sid_asset": "1462843848753",
+    "ordenable": false
+  },
+  "workforce": {
+    "descripcion": "Workforce",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Workforce",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://10.150.2.38:8080/wfm/",
+      "nombre": "Workforce",
+      "sid_asset": "1462843825540"
+    },
+    "eid_asset": "workforce",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Workforce"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Workforce",
+    "sid_asset": "1462843848754",
+    "ordenable": false
+  },
+  "campañas_banco": {
+    "descripcion": "Campañas Banco",
+    "icono": "",
+    "eid_asset": "campañas_banco",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Campañas Banco"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Campañas Banco",
+      "nombre": "Campañas Banco",
+      "url": "http://intranetbch/wps/wcm/connect/intrabch-banca-personas-sucursales/Home/Campanias/bancapersonas-haztecliente/",
+      "sid_asset": "1462843825608",
+      "target": "_blank"
+    },
+    "nombre": "Campañas Banco",
+    "sid_asset": "1462843848894",
+    "ordenable": false
+  },
+  "centro_de_procesos": {
+    "descripcion": "Centro de Procesos",
+    "icono": "",
+    "eid_asset": "centro_de_procesos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Centro de Procesos"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Centro de Procesos",
+      "nombre": "Centro de Procesos",
+      "url": "http://bchapp489/intranetcdp/",
+      "sid_asset": "1462843825836",
+      "target": "_blank"
+    },
+    "nombre": "Centro de Procesos",
+    "sid_asset": "1462843849025",
+    "ordenable": false
+  },
+  "comunicados_servicio_cliente": {
+    "descripcion": "Comunicados Servicio Cliente",
+    "icono": "",
+    "eid_asset": "comunicados_servicio_cliente",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Comunicados Servicio Cliente"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Comunicados Servicio Cliente",
+      "nombre": "Comunicados Servicio Cliente",
+      "url": "http://intranetbch/wps/wcm/connect/intrabch-banca-personas-sucursales/home/plantilla-flexible/multicanalidad/comunicados-clientes",
+      "sid_asset": "1462843825994",
+      "target": "_blank"
+    },
+    "nombre": "Comunicados Servicio Cliente",
+    "sid_asset": "1462843849091",
+    "ordenable": false
+  },
+  "aplicaciones_bca_telefonica": {
+    "descripcion": "Aplicaciones",
+    "icono": "",
+    "eid_asset": "aplicaciones_bca_telefonica",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Aplicaciones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Aplicaciones",
+    "sid_asset": "1462843849796",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "siebel_laboratorio",
+      "banco_en_linea_2017",
+      "aplicaciones_banco"
+    ]
+  },
+  "aplicaciones_banco": {
+    "descripcion": "Aplicaciones Banco",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "aplicaciones_banco",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Aplicaciones Banco"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Aplicaciones Banco",
+      "nombre": "Aplicaciones Banco",
+      "url": "http://intwcc/wcc/Manuales/Aplicaciones%20Banco.pdf",
+      "sid_asset": "1462843831530",
+      "target": "_blank"
+    },
+    "nombre": "Aplicaciones Banco",
+    "sid_asset": "1462843849838",
+    "ordenable": false
+  },
+  "banco_en_linea_2017": {
+    "descripcion": "Banco en Línea 2017",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "banco_en_linea_2017",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banco en Línea 2017"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Banco en Lí­nea 2017",
+      "nombre": "Banco en Lí­nea 2017",
+      "url": "http://intwcc/wcc/Manuales/MANUAL%20BANCO%20EN%20LINEA%202017.pdf",
+      "sid_asset": "1462843831631",
+      "target": "_blank"
+    },
+    "nombre": "Banco en Línea 2017",
+    "sid_asset": "1462843849978",
+    "ordenable": false
+  },
+  "siebel_laboratorio": {
+    "descripcion": "Siebel Laboratorio",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "siebel_laboratorio",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Siebel Laboratorio"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Siebel Laboratorio",
+      "nombre": "Siebel Laboratorio",
+      "url": "http://intwcc/wcc/Manuales/Manual%20de%20Siebel%20Laboratorio.pdf",
+      "sid_asset": "1462843831673",
+      "target": "_blank"
+    },
+    "nombre": "Siebel Laboratorio",
+    "sid_asset": "1462843850149",
+    "ordenable": false
+  },
+  "manual_tarjeta_de_credito": {
+    "descripcion": "Manual Tarjeta de Crédito",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "manual_tarjeta_de_credito",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Manual Tarjeta de Crédito"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Manual Tarjeta de Crédito",
+      "nombre": "Manual Tarjeta de Crédito",
+      "url": "http://intwcc/wcc/Manuales/Manual%20Tarjeta%20de%20Cr%C3%A9dito.pdf",
+      "sid_asset": "1462843831827",
+      "target": "_blank"
+    },
+    "nombre": "Manual Tarjeta de Crédito",
+    "sid_asset": "1462843850817",
+    "ordenable": false
+  },
+  "centro_de_procesos_cdp": {
+    "descripcion": "Centro de Procesos CDP",
+    "icono": "",
+    "eid_asset": "centro_de_procesos_cdp",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Centro de Procesos CDP",
+      "nombre": "Centro de Procesos CDP",
+      "url": "http://bchapp489/intranetcdp/Default.aspx",
+      "sid_asset": "1462843819737",
+      "target": "_blank"
+    },
+    "nombre": "Centro de Procesos CDP",
+    "sid_asset": "1462843850875",
+    "ordenable": false
+  },
+  "productos_bancarios": {
+    "descripcion": "Productos Bancarios",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "productos_bancarios",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Productos Bancarios"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Productos Bancarios",
+      "nombre": "Productos Bancarios",
+      "url": "http://intwcc/wcc/Manual%20de%20productos%20Bancarios.pdf",
+      "sid_asset": "1462843831911",
+      "target": "_blank"
+    },
+    "nombre": "Productos Bancarios",
+    "sid_asset": "1462843851078",
+    "ordenable": false
+  },
+  "administracion_atm": {
+    "descripcion": "Administración ATM",
+    "icono": "",
+    "eid_asset": "administracion_atm",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Administración ATM"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Administración ATM",
+      "nombre": "Administración ATM",
+      "url": "https://www.seguimientofallasatm.cl",
+      "sid_asset": "1462843821223",
+      "target": "_blank"
+    },
+    "nombre": "Administración ATM",
+    "sid_asset": "1462843851133",
+    "ordenable": false
+  },
+  "productos_bca_telefonica": {
+    "descripcion": "Productos",
+    "icono": "",
+    "eid_asset": "productos_bca_telefonica",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Productos",
+    "sid_asset": "1462843851148",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "manual_tarjeta_de_credito",
+      "productos_bancarios"
+    ]
+  },
+  "carga_de_atm": {
+    "descripcion": "Carga de ATM",
+    "icono": "",
+    "eid_asset": "carga_de_atm",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Carga de ATM"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Carga de ATM",
+      "nombre": "Carga de ATM",
+      "url": "http://bchapp489/ATM_Branch/Default.asp#",
+      "sid_asset": "1462843821253",
+      "target": "_blank"
+    },
+    "nombre": "Carga de ATM",
+    "sid_asset": "1462843851189",
+    "ordenable": false
+  },
+  "manuales_bca_telefonica_acordeon": {
+    "descripcion": "Manuales",
+    "icono": "",
+    "eid_asset": "manuales_bca_telefonica_acordeon",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Manuales"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Manuales",
+    "sid_asset": "1462843851222",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "aplicaciones_bca_telefonica",
+      "productos_bca_telefonica",
+      "ventas_bca_telefonica"
+    ]
+  },
+  "administracion_de_refrendas": {
+    "descripcion": "Administración de Refrendas",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion Administración de Refrendas",
+      "protocolo": "launcher",
+      "parametro": "ADMREFRE",
+      "nombre": "Refrendas",
+      "sid_asset": "1462843821530"
+    },
+    "eid_asset": "administracion_de_refrendas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Administración de Refrendas"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Administración de Refrendas",
+    "sid_asset": "1462843851264",
+    "ordenable": false
+  },
+  "ventas_bca_telefonica": {
+    "descripcion": "Ventas",
+    "icono": "",
+    "eid_asset": "ventas_bca_telefonica",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Ventas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Ventas",
+    "sid_asset": "1462843851301",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "ventas_bca_telefonica_enlace"
+    ]
+  },
+  "ventas_bca_telefonica_enlace": {
+    "descripcion": "Ventas",
+    "icono": "icon-icon-pdf",
+    "eid_asset": "ventas_bca_telefonica_enlace",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Ventas",
+      "nombre": "Ventas",
+      "url": "http://intwcc/wcc/Manuales/Manual%20de%20ventas.pdf",
+      "sid_asset": "1462843831997",
+      "target": "_blank"
+    },
+    "nombre": "Ventas",
+    "sid_asset": "1462843851350",
+    "ordenable": false
+  },
+  "cobranzas": {
+    "descripcion": "Cobranzas",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion Cobranzas",
+      "protocolo": "comppago",
+      "parametro": "",
+      "nombre": "Cobranzas",
+      "sid_asset": "1462843821572"
+    },
+    "eid_asset": "cobranzas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cobranzas"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Cobranzas",
+    "sid_asset": "1462843851352",
+    "ordenable": false
+  },
+  "hc_comercial_tab_cdn": {
+    "descripcion": "Centro de Negocios",
+    "icono": "",
+    "eid_asset": "hc_comercial_tab_cdn",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Centro de Negocios"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Centro de Negocios",
+    "sid_asset": "1462843851706",
+    "ordenable": true,
+    "enlaceBch": {
+      "nombreVista": "HERRAMIENTAS_CONSULTAS_COMERCIAL_CDN",
+      "nombreSeccion": "ACCESOS_ACORDEON",
+      "nombre": "hc_comercial_tab_cdn",
+      "sid_asset": "1462843851886"
+    }
+  },
+  "cupones_de_pago_hipotecario": {
+    "descripcion": "Cupones de Pago Hipotecario",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Cupones de Pago Hipotecario",
+      "protocolo": "vbcredit",
+      "parametro": "",
+      "nombre": "Cupones de Pago Hipotecario",
+      "sid_asset": "1462843821606"
+    },
+    "eid_asset": "cupones_de_pago_hipotecario",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cupones de Pago Hipotecario"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Cupones de Pago Hipotecario",
+    "sid_asset": "1462843851901",
+    "ordenable": false
+  },
+  "distribucion_de_informes": {
+    "descripcion": "Distribución de Informes",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicacion Distribución de Informes",
+      "protocolo": "listmur",
+      "parametro": "listados",
+      "nombre": "Distribución de Informes",
+      "sid_asset": "1462843821642"
+    },
+    "eid_asset": "distribucion_de_informes",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Distribución de Informes"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Distribución de Informes",
+    "sid_asset": "1462843852046",
+    "ordenable": false
+  },
+  "genesis": {
+    "descripcion": "Génesis",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Génesis",
+      "protocolo": "launcher",
+      "parametro": "CGENESIS",
+      "nombre": "Genesis",
+      "sid_asset": "1462843821682"
+    },
+    "eid_asset": "genesis",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Génesis"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Génesis",
+    "sid_asset": "1462843852239",
+    "ordenable": false
+  },
+  "ingreso_refrendas": {
+    "descripcion": "Ingreso Refrendas",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Ingreso de Refrendas",
+      "protocolo": "launcher",
+      "parametro": "REFRBKOF",
+      "nombre": "Ingreso de Refrendas",
+      "sid_asset": "1462843821724"
+    },
+    "eid_asset": "ingreso_refrendas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Ingreso Refrendas"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Ingreso Refrendas",
+    "sid_asset": "1462843852376",
+    "ordenable": false
+  },
+  "hc_gestion_tab_cdn": {
+    "descripcion": "Centro de Negocios",
+    "icono": "",
+    "eid_asset": "hc_gestion_tab_cdn",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Centro de Negocios",
+    "sid_asset": "1462843852535",
+    "ordenable": true,
+    "enlaceBch": {
+      "nombreVista": "HERRAMIENTAS_CONSULTAS_GESTION_CDN",
+      "nombreSeccion": "ACCESOS_ACORDEON",
+      "nombre": "hc_gestion_tab_cdn",
+      "sid_asset": "1462843852708"
+    }
+  },
+  "leasing": {
+    "descripcion": "Leasing",
+    "icono": "",
+    "eid_asset": "leasing",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Leasing"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Leasing",
+      "nombre": "Leasing",
+      "url": "http://leasingweb:6302/",
+      "sid_asset": "1462843821856",
+      "target": "_blank"
+    },
+    "nombre": "Leasing",
+    "sid_asset": "1462843852557",
+    "ordenable": false
+  },
+  "pedidos_de_remesa": {
+    "descripcion": "Pedidos de Remesa",
+    "icono": "",
+    "eid_asset": "pedidos_de_remesa",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Pedidos de Remesa"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Pedidos de Remesa",
+      "nombre": "Pedidos de Remesa",
+      "url": "https://www.icom.fiserv.com/iComWeb/cl/login.mvc",
+      "sid_asset": "1462843821904",
+      "target": "_blank"
+    },
+    "nombre": "Pedidos de Remesa",
+    "sid_asset": "1462843852645",
+    "ordenable": false
+  },
+  "recaudaciones": {
+    "descripcion": "Recaudaciones",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación de Recaudaciones",
+      "protocolo": "pilsdr",
+      "parametro": "pil_sdr",
+      "nombre": "Recaudaciones",
+      "sid_asset": "1462843822122"
+    },
+    "eid_asset": "recaudaciones",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Recaudaciones"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [
+      "ROLE_SELFSRVLEGACY_CONSULTAR"
+    ],
+    "nombre": "Recaudaciones",
+    "sid_asset": "1462843852748",
+    "ordenable": false
+  },
+  "hc_telefonico_tab_cdn": {
+    "descripcion": "Centro de Negocios",
+    "icono": "",
+    "eid_asset": "hc_telefonico_tab_cdn",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Centro de Negocios",
+    "sid_asset": "1462843852798",
+    "ordenable": true,
+    "enlaceBch": {
+      "nombreVista": "HERRAMIENTAS_CONSULTAS_TELEFONICO_CDN",
+      "nombreSeccion": "ACCESOS_ACORDEON",
+      "nombre": "hc_telefonico_tab_cdn",
+      "sid_asset": "1462843852800"
+    }
+  },
+  "hc_telefonico_tab_bca_telefonica": {
+    "descripcion": "hc_telefonico_tab_bca_telefonica",
+    "icono": "",
+    "eid_asset": "hc_telefonico_tab_bca_telefonica",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banca Telefónica,"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Banca Telefónica",
+    "sid_asset": "1462843852963",
+    "ordenable": true,
+    "enlaceBch": {
+      "nombreVista": "HERRAMIENTAS_CONSULTAS_TELEFONICO_TELEFONICA",
+      "nombreSeccion": "ACCESOS_ACORDEON",
+      "nombre": "hc_telefonico_tab_bca_telefonica",
+      "sid_asset": "1462843852965"
+    }
+  },
+  "sinacofi": {
+    "descripcion": "Sinacofi",
+    "icono": "icon-custom-seguimiento",
+    "eid_asset": "sinacofi",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Sinacofi",
+      "nombre": "Sinacofi",
+      "url": "https://www.sinacofi.cl/",
+      "sid_asset": "1462843832085",
+      "target": "_blank"
+    },
+    "nombre": "Sinacofi",
+    "sid_asset": "1462843853118",
+    "ordenable": false
+  },
+  "asignar_remplazo": {
+    "descripcion": "Asignar Reemplazo",
+    "icono": "",
+    "eid_asset": "asignar_remplazo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_REEMPLAZO_CONSULTAR"
+    ],
+    "link": {
+      "descripcion": "Asignar Reemplazo",
+      "nombre": "Asignar Reemplazo",
+      "url": "${URL_BASE.escalamiento}/index.html#/estructura_comercial/reemplazos",
+      "sid_asset": "1462843832175",
+      "target": "_self"
+    },
+    "nombre": "Asignar Reemplazo",
+    "sid_asset": "1462843853195",
+    "ordenable": false
+  },
+  "planes_tarifarios": {
+    "descripcion": "Planes Tarifarios",
+    "icono": "",
+    "eid_asset": "planes_tarifarios",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Planes Tarifarios"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Planes Tarifarios",
+      "nombre": "Planes Tarifarios",
+      "url": "http://intranetbch/wps/wcm/connect/intrabch-banca-personas-sucursales/home/plantilla-flexible/hoja-resumen-cuenta-corriente/hoja-resumen-cuenta-corriente",
+      "sid_asset": "1462843832427",
+      "target": "_blank"
+    },
+    "nombre": "Planes Tarifarios",
+    "sid_asset": "1462843853496",
+    "ordenable": false
+  },
+  "sitio_hipotecario": {
+    "descripcion": "Sitio Hipotecario",
+    "icono": "",
+    "eid_asset": "sitio_hipotecario",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Sitio Hipotecario"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Sitio Hipotecario",
+      "nombre": "Sitio Hipotecario",
+      "url": "http://intranetbch/wps/wcm/connect/intrabch-banca-personas-sucursales/Home/plantilla-flexible/Canales-Complementarios-Hipotecario/Sitio-Hipotecario",
+      "sid_asset": "1462843832526",
+      "target": "_blank"
+    },
+    "nombre": "Sitio Hipotecario",
+    "sid_asset": "1462843853594",
+    "ordenable": false
+  },
+  "informe_de_tasas": {
+    "descripcion": "Informe de Tasas",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Informe de Tasas",
+      "protocolo": "tasacn",
+      "parametro": "TASA",
+      "nombre": "Informe de Tasas",
+      "sid_asset": "1462843828120"
+    },
+    "eid_asset": "informe_de_tasas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Informe de Tasas"
+    ],
+    "tooltip": "Asegúrese de tener instalado el <br> aplicativo en su computador",
+    "permisos": [],
+    "nombre": "Informe de Tasas",
+    "sid_asset": "1462843853667",
+    "ordenable": false
+  },
+  "aplicaciones_e_riesgo": {
+    "descripcion": "Aplicaciones",
+    "icono": "",
+    "eid_asset": "aplicaciones_e_riesgo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Aplicaciones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Aplicaciones",
+    "sid_asset": "1462843853892",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "intranet_lac",
+      "busqueda_centralizada_extranjeros_ofac",
+      "consulta_avanzada",
+      "convenios_microempresas",
+      "comportamiento_credito",
+      "consulta_empresas_en_convenio",
+      "fogape",
+      "excluir_clientes_futuras_companas_de_potenciacion",
+      "consulta_abono_remuneraciones_credichile",
+      "fogain",
+      "portal_consulta_pep",
+      "sistema_ele_x",
+      "sistema_mantenedor_tasas",
+      "administrador_de_campanas",
+      "sistema_de_poderes",
+      "bpm",
+      "intranet",
+      "tasaciones",
+      "renegociaciones_web_bch_y_bcch"
+    ]
+  },
+  "busqueda_centralizada_extranjeros_ofac": {
+    "descripcion": "Búsqueda centralizada de Extranjeros (Ofac)",
+    "icono": "",
+    "eid_asset": "busqueda_centralizada_extranjeros_ofac",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Búsqueda centralizada de Extranjeros (Ofac)"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Búsqueda centralizada de Extranjeros (Ofac)",
+      "nombre": "Búsqueda centralizada de Extranjeros (Ofac)",
+      "url": "http://cumplimiento.ceroyuno.cl",
+      "sid_asset": "1462843832625",
+      "target": "_blank"
+    },
+    "nombre": "Búsqueda centralizada de Extranjeros (Ofac)",
+    "sid_asset": "1462843854726",
+    "ordenable": false
+  },
+  "comportamiento_credito": {
+    "descripcion": "Comportamiento de crédito",
+    "icono": "",
+    "eid_asset": "comportamiento_credito",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Comportamiento de crédito"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Comportamiento de crédito",
+      "nombre": "Comportamiento de crédito",
+      "url": "http://bchapp349/comportamiento/",
+      "sid_asset": "1462843832652",
+      "target": "_blank"
+    },
+    "nombre": "Comportamiento de crédito",
+    "sid_asset": "1462843854519",
+    "ordenable": false
+  },
+  "consulta_abono_remuneraciones_credichile": {
+    "descripcion": "Consulta abono de remuneraciones en CrediChile",
+    "icono": "",
+    "eid_asset": "consulta_abono_remuneraciones_credichile",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Consulta abono de remuneraciones en CrediChile",
+      "nombre": "Consulta abono de remuneraciones en CrediChile",
+      "url": "http://crmcch.bch.bancodechile.cl:84/fichaclienteatl_cch/",
+      "sid_asset": "1462843832899",
+      "target": "_blank"
+    },
+    "nombre": "Consulta abono de remuneraciones en CrediChile",
+    "sid_asset": "1462843854674",
+    "ordenable": false
+  },
+  "consulta_avanzada": {
+    "descripcion": "Consulta Avanzada",
+    "icono": "",
+    "eid_asset": "consulta_avanzada",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Consulta Avanzada"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Consulta Avanzada",
+      "nombre": "Consulta Avanzada",
+      "url": "http://pcsxbf:90/avanzada/LSC_RutAvanzada.asp",
+      "sid_asset": "1462843833012",
+      "target": "_blank"
+    },
+    "nombre": "Consulta Avanzada",
+    "sid_asset": "1462843854806",
+    "ordenable": false
+  },
+  "consulta_empresas_en_convenio": {
+    "descripcion": "Consulta empresas en convenio",
+    "icono": "",
+    "eid_asset": "consulta_empresas_en_convenio",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Consulta empresas en convenio",
+      "nombre": "Consulta empresas en convenio",
+      "url": "http://pclq7a:81/convenios/index_1.asp",
+      "sid_asset": "1462843833106",
+      "target": "_blank"
+    },
+    "nombre": "Consulta empresas en convenio",
+    "sid_asset": "1462843854898",
+    "ordenable": false
+  },
+  "convenios_microempresas": {
+    "descripcion": "Convenios microempresas",
+    "icono": "",
+    "eid_asset": "convenios_microempresas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Convenios microempresas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Convenios microempresas",
+      "nombre": "Convenios microempresas",
+      "url": "http://bchapp457/Intranet_ConvMicro/frame.asp",
+      "sid_asset": "1462843833299",
+      "target": "_blank"
+    },
+    "nombre": "Convenios microempresas",
+    "sid_asset": "1462843854914",
+    "ordenable": false
+  },
+  "excluir_clientes_futuras_companas_de_potenciacion": {
+    "descripcion": "Excluir Clientes de Futuras Campañas de Potenciación",
+    "icono": "",
+    "eid_asset": "excluir_clientes_futuras_companas_de_potenciacion",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Excluir Clientes de Futuras Campañas de Potenciación"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Excluir Clientes de Futuras Campañas de Potenciación",
+      "nombre": "Excluir Clientes de Futuras Campañas de Potenciación",
+      "url": "http://bchapp349/potenciadores_pyme/",
+      "sid_asset": "1462843833426",
+      "target": "_blank"
+    },
+    "nombre": "Excluir Clientes de Futuras Campañas de Potenciación",
+    "sid_asset": "1462843855089",
+    "ordenable": false
+  },
+  "fogape": {
+    "descripcion": "Fogape",
+    "icono": "",
+    "eid_asset": "fogape",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Fogape"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Fogape",
+      "nombre": "Fogape",
+      "url": "https://www.servibanca.cl/fogape2/general/Login.aspx",
+      "sid_asset": "1462843833547",
+      "target": "_blank"
+    },
+    "nombre": "Fogape",
+    "sid_asset": "1462843855090",
+    "ordenable": false
+  },
+  "fogain": {
+    "descripcion": "Fogain",
+    "icono": "",
+    "eid_asset": "fogain",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Fogain"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Fogain",
+      "nombre": "Fogain",
+      "url": "http://www2.corfo.cl/gif/ifel_cobertura/COBERTURAS/login_consulta.aspx?",
+      "sid_asset": "1462843833675",
+      "target": "_blank"
+    },
+    "nombre": "Fogain",
+    "sid_asset": "1462843855135",
+    "ordenable": false
+  },
+  "portal_consulta_pep": {
+    "descripcion": "Portal Consulta PEP",
+    "icono": "",
+    "eid_asset": "portal_consulta_pep",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Portal Consulta PEP"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Portal Consulta PEP",
+      "nombre": "Portal Consulta PEP",
+      "url": "https://consultapep.0y1.cl/inicio",
+      "sid_asset": "1462843837920",
+      "target": "_blank"
+    },
+    "nombre": "Portal Consulta PEP",
+    "sid_asset": "1462843855399",
+    "ordenable": false
+  },
+  "sistema_ele_x": {
+    "descripcion": "Sistema Ele-x",
+    "icono": "",
+    "eid_asset": "sistema_ele_x",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Sistema Ele-x"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Sistema Ele-x",
+      "nombre": "Sistema Ele-x",
+      "url": "http://201.29.59.137/LSA.asp",
+      "sid_asset": "1462843837935",
+      "target": "_blank"
+    },
+    "nombre": "Sistema Ele-x",
+    "sid_asset": "1462843855517",
+    "ordenable": false
+  },
+  "sistema_mantenedor_tasas": {
+    "descripcion": "Sistema Mantenedor de tasas",
+    "icono": "",
+    "eid_asset": "sistema_mantenedor_tasas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Sistema Mantenedor de tasas",
+      "nombre": "Sistema Mantenedor de tasas",
+      "url": "http://mpapp:8011/TrfWEB/index.jsp",
+      "sid_asset": "1462843837978",
+      "target": "_blank"
+    },
+    "nombre": "Sistema Mantenedor de tasas",
+    "sid_asset": "1462843855672",
+    "ordenable": false
+  },
+  "informacion_comercial": {
+    "descripcion": "Información Comercial",
+    "icono": "",
+    "eid_asset": "informacion_comercial",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Información Comercial"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Información Comercial",
+      "nombre": "Información Comercial",
+      "url": "http://bchapp489/InfoComercial/Default.aspx",
+      "sid_asset": "1462843838177",
+      "target": "_blank"
+    },
+    "nombre": "Información Comercial",
+    "sid_asset": "1462843855771",
+    "ordenable": false
+  },
+  "politicas_normativas": {
+    "descripcion": "Políticas y Normativas",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "Aplicación Políticas y Normativas",
+      "protocolo": "navegadorexplorer",
+      "parametro": "http://wsp2010/sitios/normativa/default.aspx",
+      "nombre": "Políticas y Normativas",
+      "sid_asset": "1462843828165"
+    },
+    "eid_asset": "politicas_normativas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Políticas y Normativas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Políticas y Normativas",
+    "sid_asset": "1462843856021",
+    "ordenable": false
+  },
+  "hc_riesgo_tab_cdn": {
+    "descripcion": "Centro de Negocios",
+    "icono": "",
+    "eid_asset": "hc_riesgo_tab_cdn",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Centro de Negocios",
+    "sid_asset": "1462843856239",
+    "ordenable": true,
+    "enlaceBch": {
+      "nombreVista": "HERRAMIENTAS_CONSULTAS_RIESGO_CDN",
+      "nombreSeccion": "ACCESOS_ACORDEON",
+      "nombre": "hc_riesgo_tab_cdn",
+      "sid_asset": "1462843856338"
+    }
+  },
+  "riesgo_de_credito": {
+    "descripcion": "Riesgo de Crédito",
+    "icono": "",
+    "eid_asset": "riesgo_de_credito",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Riesgo de Crédito"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Riesgo de crédito",
+      "nombre": "Riesgo de crédito",
+      "url": "http://intranetbch/wps/wcm/connect/intrabch-riesgo-corporativo/home",
+      "sid_asset": "1462843838213",
+      "target": "_blank"
+    },
+    "nombre": "Riesgo de Crédito",
+    "sid_asset": "1462843856277",
+    "ordenable": false
+  },
+  "cajas": {
+    "descripcion": "Cajas",
+    "icono": "",
+    "eid_asset": "cajas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Cajas"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Cajas",
+    "sid_asset": "1462843857056",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "administracion_atm",
+      "administracion_de_refrendas",
+      "carga_de_atm",
+      "cobranzas",
+      "cupones_de_pago_hipotecario",
+      "distribucion_de_informes",
+      "genesis",
+      "ingreso_refrendas",
+      "intranet_lac",
+      "leasing",
+      "pedidos_de_remesa",
+      "recaudaciones"
+    ]
+  },
+  "detalle_reemplazo": {
+    "descripcion": "Detalle Reemplazo",
+    "icono": "",
+    "eid_asset": "detalle_reemplazo",
+    "aside": {
+      "descripcion": "Detalle Reemplazo",
+      "controller": "asideDetalleReemplazoController",
+      "size": "md",
+      "windowClass": "modal-detalle",
+      "controllerAs": "vm",
+      "nombre": "Detalle Reemplazo",
+      "sid_asset": "1462843858236",
+      "templateUrl": "components/replacement/aside/aside-detalle-reemplazo_tpl.html",
+      "animation": true
+    },
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Detalle Reemplazo"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Detalle Reemplazo",
+    "sid_asset": "1462843858283",
+    "ordenable": false
+  },
+  "administrador_de_campanas": {
+    "descripcion": "Administrador de Campañas (Venta Cruzada)",
+    "icono": "",
+    "eid_asset": "administrador_de_campanas",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Administrador de Campañas (Venta Cruzada)"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Administrador de Campañas (Venta Cruzada)",
+      "nombre": "Administrador de Campañas (Venta Cruzada)",
+      "url": "http://bchlnx175:9003/AdminCampana/faces/Pages/Admin/Campanas.xhtml",
+      "sid_asset": "1462843901842",
+      "target": "_blank"
+    },
+    "nombre": "Administrador de Campañas (Venta Cruzada)",
+    "sid_asset": "1462843901872",
+    "ordenable": false
+  },
+  "renegociaciones_web_bch_y_bcch": {
+    "descripcion": "Renegociaciones Web (Bch y Bcch)",
+    "icono": "",
+    "eid_asset": "renegociaciones_web_bch_y_bcch",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Renegociaciones Web (Bch y Bcch)"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Renegociaciones Web (Bch y Bcch)",
+      "nombre": "Renegociaciones Web (Bch y Bcch)",
+      "url": "http://mpapp:8011/renego/",
+      "sid_asset": "1462843903553",
+      "target": "_blank"
+    },
+    "nombre": "Renegociaciones Web (Bch y Bcch)",
+    "sid_asset": "1462843903583",
+    "ordenable": false
+  },
+  "mantenedor_de_grupos": {
+    "descripcion": "Mantenedor de Grupos",
+    "icono": "",
+    "eid_asset": "mantenedor_de_grupos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Mantenedor de Grupos"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_EC_ESCAL_COMERC_ELIMINAR",
+      "ROLE_EC_ESCAL_COMERC_CREAR",
+      "ROLE_EC_ESCAL_COMERC_MODIFICAR",
+      "ROLE_EC_ESCAL_COMERC_CONSULTAR"
+    ],
+    "link": {
+      "descripcion": "Mantenedor de Grupos",
+      "nombre": "Mantenedor de Grupos",
+      "url": "${URL_BASE.escalamiento}/#/mantenedor-grupos",
+      "sid_asset": "1462843928862",
+      "target": "_self"
+    },
+    "nombre": "Mantenedor de Grupos",
+    "sid_asset": "1462843928951",
+    "ordenable": false
+  },
+  "herramientas_y_consultas_operaciones": {
+    "descripcion": "enlace herramientas_y_consultas_operaciones",
+    "icono": "icon-icon-tool",
+    "eid_asset": "herramientas_y_consultas_operaciones",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Herramientas y consultas operaciones"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link asociado a enlace herramientas_y_consultas_operaciones",
+      "nombre": "Herramientas y Consultas Operaciones",
+      "url": "${URL_BASE.centro-negocios}/#/herramientas-consultas-operaciones",
+      "sid_asset": "1462843929411",
+      "target": "_self"
+    },
+    "nombre": "Herramientas y Consultas Operaciones",
+    "sid_asset": "1462843929443",
+    "ordenable": false
+  },
+  "aplicativo_p_y_d": {
+    "descripcion": "Enlace al Aplicativo P&D",
+    "icono": "",
+    "eid_asset": "aplicativo_p_y_d",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Aplicativo P&D"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Enlace Aplicativo P&D",
+      "nombre": "Aplicativo P&D",
+      "url": "http://bchapp136/packing/",
+      "sid_asset": "1462843929712",
+      "target": "_blank"
+    },
+    "nombre": "Aplicativo P&D",
+    "sid_asset": "1462843929740",
+    "ordenable": false
+  },
+  "aplicaciones_e_operaciones": {
+    "descripcion": "Aplicaciones del Escritorio de Operaciones",
+    "icono": "",
+    "eid_asset": "aplicaciones_e_operaciones",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Aplicaciones",
+    "sid_asset": "1462843929781",
+    "ordenable": true,
+    "subEnlacesRef": [
+      "intranet_lac",
+      "administracion_de_usuarios_y_accesos",
+      "sitio_normativas",
+      "viajeros_tc",
+      "iron_mountain",
+      "san",
+      "administracion_atm",
+      "cca",
+      "sgt",
+      "tasaciones",
+      "gestor_paperless",
+      "cibergestion_postventa_hipotecario",
+      "artikos",
+      "rei",
+      "gestion_medios_de_pago",
+      "singsys",
+      "sonda",
+      "stw",
+      "caja_genesis",
+      "aplicativo_p_y_d",
+      "cvdni",
+      "sistema_comercio_exterior_sce",
+      "url_comex",
+      "sistema_de_consultas_hipotecarias",
+      "flexcube_contabilidad",
+      "banchile_enlace_seguros_de_vida_y_salud)",
+      "scr",
+      "previsado",
+      "recaudaciones_site",
+      "leasing_comercial",
+      "portal_proveedores",
+      "coldview_images ",
+      "coldview_ecomm",
+      "reportes_centrales_bo",
+      "flexcube_productos",
+      "leasing_operacional",
+      "sac"
+    ]
+  },
+  "caja_genesis": {
+    "descripcion": "Enlace para la aplicación Caja Génesis",
+    "icono": "",
+    "eid_asset": "caja_genesis",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Aplicación Caja Génesis",
+      "nombre": "Caja Génesis",
+      "url": "http://bchgenesis:81/branchtellerbch/index.html",
+      "sid_asset": "1462843929986",
+      "target": "_blank"
+    },
+    "nombre": "Caja Génesis",
+    "sid_asset": "1462843930023",
+    "ordenable": false
+  },
+  "sgt": {
+    "descripcion": "enlace SGT",
+    "icono": "",
+    "eid_asset": "sgt",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "sgt"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "link SGT",
+      "nombre": "SGT",
+      "url": "http://wascrm/adminsgt/#",
+      "sid_asset": "1462843929983",
+      "target": "_blank"
+    },
+    "nombre": "SGT",
+    "sid_asset": "1462843930175",
+    "ordenable": false
+  },
+  "sistema_comercio_exterior_sce": {
+    "descripcion": "enlace Sistema comercio exterior SCE",
+    "icono": "",
+    "eid_asset": "sistema_comercio_exterior_sce",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Sistema comercio exterior SCE"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "link Sistema comercio exterior SCE",
+      "nombre": "Sistema comercio exterior SCE",
+      "url": "http://comex-ws-vip/Comex/",
+      "sid_asset": "1462843930226",
+      "target": "_blank"
+    },
+    "nombre": "Sistema comercio exterior SCE",
+    "sid_asset": "1462843930312",
+    "ordenable": false
+  },
+  "cvdni": {
+    "descripcion": "Enlace a CVDNI",
+    "icono": "",
+    "eid_asset": "cvdni",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Enlace CVDNI",
+      "nombre": "CVDNI",
+      "url": "http://comex-ws-vip/cvdni_website/",
+      "sid_asset": "1462843930392",
+      "target": "_blank"
+    },
+    "nombre": "CVDNI",
+    "sid_asset": "1462843930430",
+    "ordenable": false
+  },
+  "sistema_de_consultas_hipotecarias": {
+    "descripcion": "enlace Sistema de consultas Hipotecarias",
+    "icono": "",
+    "eid_asset": "sistema_de_consultas_hipotecarias",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Sistema de consultas Hipotecarias"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "link Sistema de consultas Hipotecarias",
+      "nombre": "Sistema de consultas Hipotecarias",
+      "url": "http://200.1.128.91/webpcfbch/framesetprincipal.htm",
+      "sid_asset": "1462843930509",
+      "target": "_blank"
+    },
+    "nombre": "Sistema de consultas Hipotecarias",
+    "sid_asset": "1462843930548",
+    "ordenable": false
+  },
+  "flexcube_contabilidad": {
+    "descripcion": "Enlace Flexcube contabilidad",
+    "icono": "",
+    "eid_asset": "flexcube_contabilidad",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Flexcube contabilidad",
+      "nombre": "Flexcube Contabilidad",
+      "url": "http://intranetbch/wps/portal/Intranet?WCM_GLOBAL_CONTEXT=/wps/wcm/connect/Banco+-+BCH+Intranet/BCH+Intranet/Home/Mis+Aplicaciones/Flexcube+Contabilidad/",
+      "sid_asset": "1462843930552",
+      "target": "_blank"
+    },
+    "nombre": "Flexcube Contabilidad",
+    "sid_asset": "1462843930630",
+    "ordenable": false
+  },
+  "url_comex": {
+    "descripcion": "enlace URL comex",
+    "icono": "",
+    "eid_asset": "url_comex",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "URL comex"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "link URL comex",
+      "nombre": "URL comex",
+      "url": "http://bchapp493/comex",
+      "sid_asset": "1462843930680",
+      "target": "_blank"
+    },
+    "nombre": "URL comex",
+    "sid_asset": "1462843930778",
+    "ordenable": false
+  },
+  "flexcube_productos": {
+    "descripcion": "Enlace Flexcube productos",
+    "icono": "",
+    "eid_asset": "flexcube_productos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Flexcube Productos",
+      "nombre": "Flexcube Productos",
+      "url": "http://intranetbch/wps/portal/Intranet?WCM_GLOBAL_CONTEXT=/wps/wcm/connect/Banco+-+BCH+Intranet/BCH+Intranet/Home/Mis+Aplicaciones/Flexcube+Productos/",
+      "sid_asset": "1462843930735",
+      "target": "_blank"
+    },
+    "nombre": "Flexcube Productos",
+    "sid_asset": "1462843930832",
+    "ordenable": false
+  },
+  "scr": {
+    "descripcion": "enlace SCR",
+    "icono": "",
+    "aplicacionWindows": {
+      "descripcion": "aplicación SCR ",
+      "protocolo": "navegadorexplorer",
+      "parametro": "https://calipso.redbanc.rbi/",
+      "nombre": "SCR",
+      "sid_asset": "1462843931215"
+    },
+    "eid_asset": "scr",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "scr"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "SCR",
+    "sid_asset": "1462843931249",
+    "ordenable": false
+  },
+  "portal_proveedores": {
+    "descripcion": "Enlace Portal de Proveedores",
+    "icono": "",
+    "eid_asset": "portal_proveedores",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Portal de Proveedores",
+      "nombre": "Portal de Proveedores",
+      "url": "http://www.pagos.bancochile.cl/PortalPagos/general/appmiddle/login.aspx",
+      "sid_asset": "1462843931219",
+      "target": "_blank"
+    },
+    "nombre": "Portal de Proveedores",
+    "sid_asset": "1462843931332",
+    "ordenable": false
+  },
+  "previsado": {
+    "descripcion": "Enlace Previsado",
+    "icono": "",
+    "eid_asset": "previsado",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Previsado",
+      "nombre": "Previsado",
+      "url": "http://previsado.cl",
+      "sid_asset": "1462843931450",
+      "target": "_blank"
+    },
+    "nombre": "Previsado",
+    "sid_asset": "1462843931522",
+    "ordenable": false
+  },
+  "reportes_centrales_bo": {
+    "descripcion": "Enlace Reportes Centrales (BO)",
+    "icono": "",
+    "eid_asset": "reportes_centrales_bo",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link Reportes Centrales (BO)",
+      "nombre": "Reportes Centrales (BO)",
+      "url": "http://bchapp338:8080/InfoViewApp/logon.jsp",
+      "sid_asset": "1462843931552",
+      "target": "_blank"
+    },
+    "nombre": "Reportes Centrales (BO)",
+    "sid_asset": "1462843931582",
+    "ordenable": false
+  },
+  "banchile_enlace_seguros_de_vida_y_salud)": {
+    "descripcion": "enlace Banchile Enlace (Seguros de Vida y Salud)",
+    "icono": "",
+    "eid_asset": "banchile_enlace_seguros_de_vida_y_salud)",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Banchile Enlace (Seguros de Vida y Salud)"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Banchile Seguros de Vida",
+      "nombre": "Banchile Seguro de Vida",
+      "url": "http://enlace/",
+      "sid_asset": "1462843819517",
+      "target": "_blank"
+    },
+    "nombre": "Banchile Enlace (Seguros de Vida y Salud)",
+    "sid_asset": "1462843931633",
+    "ordenable": false
+  },
+  "coldview_images ": {
+    "descripcion": "enlace Coldview Images ",
+    "icono": "",
+    "eid_asset": "coldview_images ",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Coldview Images "
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Coldview",
+      "nombre": "Coldview",
+      "url": "http://mpapp:8011/CVERM_Frontend/",
+      "sid_asset": "1462843822321",
+      "target": "_blank"
+    },
+    "nombre": "Coldview Images",
+    "sid_asset": "1462843931666",
+    "ordenable": false
+  },
+  "centro_de_negocion_cdp_short": {
+    "descripcion": "Enlace a Centro de Negocios",
+    "icono": "",
+    "eid_asset": "centro_de_negocion_cdp_short",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Centro de Procesos CDP",
+      "nombre": "Centro de Procesos CDP",
+      "url": "http://bchapp489/intranetcdp/Default.aspx",
+      "sid_asset": "1462843819737",
+      "target": "_blank"
+    },
+    "nombre": "CDP",
+    "sid_asset": "1462843931953",
+    "ordenable": true
+  },
+  "hc_coperaciones_tab_cdn": {
+    "descripcion": "tab centro de negocios para escritorio operaciones",
+    "icono": "",
+    "eid_asset": "hc_coperaciones_tab_cdn",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "tab Centro de Negocios"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "nombre": "Centro de Negocios",
+    "sid_asset": "1462843931955",
+    "ordenable": false,
+    "enlaceBch": {
+      "nombreVista": "HERRAMIENTAS_CONSULTAS_OPERACIONES_CDN",
+      "nombreSeccion": "ACCESOS_ACORDEON",
+      "nombre": "hc_operaciones_tab_cdn",
+      "sid_asset": "1462843931860"
+    }
+  },
+  "coldview_ecomm": {
+    "descripcion": "Enlace a Coldview ECOMM",
+    "icono": "",
+    "eid_asset": "coldview_ecomm",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Coldview ECOMM",
+      "nombre": "Coldview ECOMM",
+      "url": "http://bchlnx273:9095/#",
+      "sid_asset": "1462843932604",
+      "target": "_blank"
+    },
+    "nombre": "Coldview ECOMM",
+    "sid_asset": "1462843932666",
+    "ordenable": false
+  },
+  "leasing_comercial": {
+    "descripcion": "Enlace a Leasing Comercial",
+    "icono": "",
+    "eid_asset": "leasing_comercial",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Leasing Comercial",
+      "nombre": "Leasing Comercial",
+      "url": "http://leasingweb:6301/Login.aspx",
+      "sid_asset": "1462843932920",
+      "target": "_blank"
+    },
+    "nombre": "Leasing Comercial",
+    "sid_asset": "1462843933032",
+    "ordenable": false
+  },
+  "leasing_operacional": {
+    "descripcion": "Enlace a Leasing Operacional",
+    "icono": "",
+    "eid_asset": "leasing_operacional",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a Leasing Operacional",
+      "nombre": "Leasing Operacional",
+      "url": "http://leasingweb:6302/Paginas/Login.aspx",
+      "sid_asset": "1462843933221",
+      "target": "_blank"
+    },
+    "nombre": "Leasing Operacional",
+    "sid_asset": "1462843933347",
+    "ordenable": false
+  },
+  "mantenedor_gestor_integral_de_requerimientos": {
+    "descripcion": "Enlace a Mantenedor Gestor Integral de Requerimientos",
+    "icono": "",
+    "eid_asset": "mantenedor_gestor_integral_de_requerimientos",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "Mantenedor Gestor Integral de Requerimientos"
+    ],
+    "tooltip": "",
+    "permisos": [
+      "ROLE_REQADMTIPOLOG_EJECUTAR"
+    ],
+    "link": {
+      "descripcion": "Links asociado a Mantenedor Gestor Integral de Requerimientos",
+      "nombre": "Mantenedor Gestor Integral de Requerimientos",
+      "url": "${URL_BASE.motor-requerimientos}/index.html#/mantenedor-tipologias",
+      "sid_asset": "1462843932277",
+      "target": "_self"
+    },
+    "nombre": "Mantenedor Gestor Integral de Requerimientos",
+    "sid_asset": "1462843933729",
+    "ordenable": false
+  },
+  "recaudaciones_site": {
+    "descripcion": "Enlace a recaudaciones",
+    "icono": "",
+    "eid_asset": "recaudaciones_site",
+    "permisosBloqueo": [],
+    "palabrasClaves": [],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "Link a recaudaciones",
+      "nombre": "Recaudaciones",
+      "url": "http://www.recaudaciones.bancochile.cl/MiddleOffice/General/AppMiddle/Login.aspx",
+      "sid_asset": "1462843934346",
+      "target": "_blank"
+    },
+    "nombre": "Recaudaciones",
+    "sid_asset": "1462843934378",
+    "ordenable": false
+  },
+  "sac": {
+    "descripcion": "enlace sac",
+    "icono": "",
+    "eid_asset": "sac",
+    "permisosBloqueo": [],
+    "palabrasClaves": [
+      "sac"
+    ],
+    "tooltip": "",
+    "permisos": [],
+    "link": {
+      "descripcion": "link sac",
+      "nombre": "SAC",
+      "url": "http://200.10.8.230/Nexus.CDP.LoginExterno/NexusLogin.aspx",
+      "sid_asset": "1462843942814",
+      "target": "_blank"
+    },
+    "nombre": "SAC",
+    "sid_asset": "1462843942843",
+    "ordenable": false
+  }
+}

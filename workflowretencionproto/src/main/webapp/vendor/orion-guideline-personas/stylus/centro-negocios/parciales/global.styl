@@ -1,0 +1,1694 @@
+/* INICIO ESTILOS LOADER */
+.centro-negocios
+	.bch-empresas-paginador
+		*
+			font-family $regular !important
+		p
+			line-height 30px
+		.form-group
+			margin-bottom 0
+			.ui-select-bootstrap
+				.btn-default
+					border-width 1px
+					border-style solid
+					height 32px
+					border-radius 3px
+					.caret
+						margin-right 20px
+						font-family 'Ionicons' !important
+				ul.ui-select-choices-content
+					margin-top 0px
+					position absolute
+					top -95px
+					width 66px !important
+					li
+						width 66px !important
+						a
+							width 66px !important
+	.progress-empresas
+		z-index 9
+		width 100%
+		display flex
+		justify-content center
+		.spinner
+			opacity 1
+			display flex
+			flex-direction row
+			margin 0px
+			justify-content space-between
+			width 40px
+/* FIN ESTILOS LOADER */
+
+
+/* FIX CHECKBOX y RADIO BUTTON */
+.checkbox, .radio
+	margin 0px !important
+/* FIN FIX CHECKBOX y RADIO BUTTON*/
+	
+/* BUSCADOR TABLAS */
+.buscador-tablas
+	.buscador-tablas-cabecera
+		background $grey-five
+		height 42px
+		line-height 42px
+		&__left-items
+			width calc(100% - 80px)
+			padding 0 15px
+		&__resumen
+			p
+				line-height 40px
+				height 40px
+				margin 0
+		&__acciones
+			line-height 38px
+			.btn
+				padding 3px 12px
+				cursor pointer
+		&__right-items
+			width 80px 
+		&__boton
+			display block
+			width 40px 
+			height 42px
+			float left 
+			text-align center 
+			border-left 1px solid $grey-four
+			cursor pointer
+			> a
+				width 100%
+				height 100%
+				display block
+			i
+				font-size 20px
+				line-height 38px
+			&.active
+				background $grey-three
+	.buscador-tablas-filtros
+		background $grey-three
+		display flex
+		p
+			margin 0
+		.input-group-btn
+			button
+				padding 0 !important
+				height 26px
+				width 30px
+				right 0px
+				text-align center
+				display block
+				border-left 1px solid #000 !important
+				i
+					margin 0
+					padding 0
+		.form-group
+			.form-control
+					min-height 26px !important
+					height 26px
+					border-radius 3px !important
+		&__boton-buscar
+			display flex
+			button
+				align-self flex-end 
+				padding 0 15px !important	
+				height 26px !important
+				line-height 24px !important
+/* FIN BUSCADOR TABLAS */
+
+html
+	&.centro-negocios
+		position relative
+		height 100%
+
+/* ESTILOS PARA PAGINA INICIO WEBKIT */
+.centro-negocios--webkit
+	body
+		padding 0 !important
+		&.no-scroll
+			overflow hidden !important
+		.danger
+			color $white !important
+		.info
+			color $white !important
+		.success
+			color $white !important
+		.primary
+			color $white !important
+	.wbk-btn-popover
+		.click-popover
+			margin-top 2px
+			position absolute
+			margin-left 5px
+	/* PANEL */
+	.panel
+		background $white
+		border-radius 3px
+		box-shadow none !important
+		transition all 0.2s linear
+		padding-top 15px
+		padding-bottom 15px
+		border 1px solid $grey-30
+	/* FIN PANEL */
+	.color-box
+		padding 20px
+		text-align center
+	.bch-empresas-nav
+		margin-bottom 40px
+	/* INICIO ESTILOS BLOQUES DE CODE SNIPPET */
+	.space-empty
+		display block
+		height 65px
+		margin-bottom 20px
+	.section-init
+		margin-top 100px
+		margin-bottom 50px
+		color $grey-four
+		position relative
+		text-align center
+		&:before
+			content ''
+			position absolute
+			height 1px
+			width 40%
+			top 50%
+			left 0
+			background $grey-four
+		&:after
+			content ''
+			position absolute
+			height 1px
+			width 40%
+			top 50%
+			right 0
+			background $grey-four
+	.pretty
+		position relative
+		button.copy
+			position absolute
+			right 1px
+			top 21px
+			border 1px solid #888
+			border-bottom-right-radius 0px
+			border-bottom-left-radius 4px
+			border-top-left-radius 0px
+			border-top-right-radius 4px
+			border-top none !important
+			border-right none !important
+			background rgba(255, 255, 255, 1)
+			transition all 0.4s ease-in-out
+			color $grey-one
+			font-size 12px
+			padding 5px 8px !important
+			&:hover
+				background rgba(225, 225, 225, 1)
+				color $grey-one
+		&.in-tabs
+			button.copy
+				top 1px !important
+		.prettyprint
+			padding 10px
+			padding-right 60px
+			white-space pre-wrap
+			max-height 150px
+			overflow hidden
+			cursor pointer
+			opacity 0.8
+			transition all 0.3s ease-in-out
+			*
+				font-size 13px !important
+				vertical-align inherit !important
+				margin 0 !important
+				padding 0 !important
+				line-height 120%
+				height auto !important
+			ol
+				padding 0
+				.tag 
+					font-size 13px
+					padding 0
+			.atn, .pun, .atv, .tag, .pln, .kwd, .lit, .com, .str
+				font-family $regular
+				font-size 13px
+			&:hover
+				opacity 1
+			&.expanded
+				max-height 100%
+	/* FIN ESTILOS BLOQUES DE CODE SNIPPET */
+	/* INICIO ESTILOS LOADER */
+	.progress-empresas
+		z-index 9
+		width 100%
+		display flex
+		justify-content center
+		.spinner
+			opacity 1
+			display flex
+			flex-direction row
+			margin 0px
+			justify-content space-between
+			width 40px
+	/* FIN ESTILOS LOADER */
+	.footer-empresa
+		display none
+	.webkit-menu
+		width 400px
+		position fixed
+		height 100%
+		top 0px
+		right -400px
+		transition all 0.4s ease-in-out
+		background $white
+		z-index 9999
+		padding 20px
+		box-shadow 0px 0px 10px 0px rgba(0, 0, 0, 0.4)
+		overflow-y scroll
+		ul 
+			list-style none
+			padding 0
+			margin 0 0 15px 0
+			li
+				margin-bottom 0px
+				h3
+					padding 0 4px
+					margin 0
+				a
+					padding 2px 4px
+					border-radius 3px
+					font-size 12px
+					margin-left -5px
+					&:hover
+						background $grey-10
+				&:nth-child(n+2)
+					padding 5px
+		&.open-menu
+			right 0px
+		&::-webkit-scrollbar
+			width 6px
+			background $grey-10
+
+		&::-webkit-scrollbar-button
+			width 8px
+			height 5px
+			display none
+
+		&::-webkit-scrollbar-track
+			background $grey-10
+			border thin solid $grey-10
+			box-shadow inset 0 0 6px rgba(0,0,0,0.2)
+			//border-radius 2px
+
+		&::-webkit-scrollbar-thumb
+			background $brand-complementary
+			border-radius 2px
+			transition all 0.3s ease-in-out
+			&:hover
+				background $brand-secondary
+			&:window-inactive
+				background $grey-10
+	.trigger-menu
+		background $info-color
+		height 45px
+		width 45px
+		text-align center
+		display flex
+		flex-direction column
+		align-items center
+		justify-content center
+		cursor pointer
+		transition all 0.2s ease-in-out
+		position fixed
+		top 15px
+		right 15px 
+		border-radius 50%
+		z-index 99999
+		&:hover
+			background $info-color - 10%
+		i
+			color $white
+			font-size 26px
+	.trigger-menu--close
+		background $info-color
+		height 45px
+		width 45px
+		text-align center
+		display none
+		flex-direction column
+		align-items center
+		justify-content center
+		cursor pointer
+		transition all 0.2s ease-in-out
+		position fixed
+		top 15px
+		right 15px 
+		border-radius 50%
+		z-index 99999
+		&:hover
+			background $info-color - 10%
+		i
+			color $white
+			font-size 16px
+	.webkit-container
+		width 100%
+/* FIN ESTILOS PARA PAGINA INICIO WEBKIT */
+
+.centro-negocios
+	/* GENERALES */ 
+	body
+		background $white !important
+		overflow-x hidden
+		margin 0 !important
+		@media print
+			font-family Arial !important
+	input:-webkit-autofill
+	textarea:-webkit-autofill
+	select:-webkit-autofill
+		background-color $white !important
+		box-shadow 0 0 0px 1000px $white inset
+		transition background-color 5000s ease-in-out 0s
+	input:focus
+	textarea:focus
+	select:focus
+		background-color $white !important
+		box-shadow 0px 0px 0px 1000px $white inset
+		transition background-color 5000s ease-in-out 0s
+	.loader-context
+		text-align center
+		font-size 24px
+		color $grey-30
+	.disabled-link
+		pointer-events none
+		opacity 0.5
+	.clear
+		clear both
+		float none
+	.disabled
+		user-select none
+	.dropdown-toggle 
+		cursor pointer
+	/* FIN GENERALES */ 
+	
+	/* STEPS */
+	.steps
+		.step
+			&.disabled
+				&:after
+					z-index 1 !important
+	/* FIN STEPS */
+								
+	/* INFO IN TAB (VISTA 360)*/ 	
+	.section-executive--table
+		.row-section
+			border-bottom 1px solid $grey-10
+			padding-bottom 5px
+			margin-bottom 10px
+			.row-section__text
+				p
+					font-size 1em
+			.row-section__tag
+				p
+					background none !important
+					border none !important
+					color $grey-50
+					position relative
+					span
+						position absolute
+						right -7px
+						top 0px
+						i
+							font-size 16px
+				p > span
+					cursor pointer
+			&:last-child
+				margin-bottom 0
+				border-bottom none
+	.section-executive--add-btn-top
+		margin-top 15px
+		height 91.4% !important			
+	.table-clean
+		width 100%
+		margin-bottom 20px
+		thead
+			background transparent !important
+		thead > tr > th
+			padding 0 10px 10px 10px !important
+			font-size 1em
+			color $grey-80 !important
+			background none !important
+			height auto !important
+		tr > td
+			color $grey-50
+			padding 10px
+			border-bottom 1px solid $grey-10
+		tr > td i
+			font-size 1.5em
+			margin-right 5px
+		tfoot > tr > td
+			border-bottom none
+			color $brand-secondary
+	/* FIN INFO IN TAB */	
+	
+	/* CAJAS DE COLORES CON NUMEROS (vista 360) */
+	.ctn-activities
+			display flex
+			justify-content space-between
+			margin-bottom 36px
+			.activities-panel
+				height 77px
+				display flex
+				justify-content center
+				border-radius 5px
+				flex 1
+				margin 5px
+				position relative
+				.activities-panel-box
+					align-self center
+					text-align center
+					p
+						font-size 2.5em
+						margin-bottom 0
+						line-height 1
+						color white
+					span
+						color white
+						text-transform uppercase
+						font-size 0.9em
+				&.brand-secondary--lighten
+					background $brand-secondary--lighten
+				&.warning--lighten
+					background $warning--lighten
+				&.success--lighten
+					background $success--lighten
+			.activities-panel__circle
+				position absolute
+				width 20px
+				height 20px
+				border-radius 30px
+				background $error
+				border 1px solid $white
+				right 5px
+				top 5px
+	/* FIN CAJAS DE COLORES CON NUMEROS */
+	
+	/* COMPONENTE DE CONTRASTE */
+	bchui-contrast
+		margin-top 25px
+		width 100%
+		input[type=range]
+			-webkit-appearance none
+		input[type=range]:focus
+			outline none
+		input[type=range]::-webkit-slider-thumb
+			background-color #fafafc
+			background-image none
+			border-color #d2d2d4
+			box-shadow inset 0 5px 10px 0 #e6e6e6,0 1px 3px rgba(0,0,0,.2)
+			padding 11px
+			border-radius 50%
+			-webkit-appearance none
+			margin -9px 0 0 0px
+			transition box-shadow .3s linear
+			cursor pointer
+			height 18px
+			width 18px
+			background #efefef
+			border 1px solid #ccc
+			&:hover
+				box-shadow inset 0 5px 10px 0 #e6e6e6,0 0 10px 0 #c8c8c8
+		input[type=range]:focus::-webkit-slider-runnable-track
+			background #367ebd
+		input[type=range]::-webkit-slider-runnable-track
+			background-color #285b9b
+			background-image linear-gradient(#5bc0de,#2f96b4)
+			background-size 100%
+			border-radius 4px
+			width 100%
+			height 8px
+	/* COMPONENTE DE CONTRASTE */
+	
+	/* HEADER PAGE */	
+	.header-page
+		padding 20px 30px
+		background $white
+		display block
+	/* FIN HEADER PAGE */
+	
+	/* WORK AREA */
+	.work-area
+		.box-user
+			position absolute
+			left 0
+			top 0
+			width 100%
+			height 100%
+			background $brand-secondary
+			color #FFF
+			padding 0 15px
+			.box-user__close
+				position absolute
+				right 10px
+				top 10px 
+				height 15px
+				width 15px
+				text-align right
+				cursor pointer
+				&:hover
+					opacity 0.8
+					
+			.box-user__container
+				position relative
+				top 50%
+				-webkit-transform translateY(-50%)
+				-ms-transform translateY(-50%)
+				transform translateY(-50%)
+				p 
+					span 
+						font-size 1.2em
+				h2
+					color $white
+					line-height 120%
+	/*FIN WORK AREA */
+
+	/* TABLA CON SCROLL HORIZONTAL */
+	.content-consulta
+		background $white
+		box-shadow 0 1px 1px rgba(0,0,0,0.15) !important
+		border-radius 3px
+		margin-bottom 15px
+		display inline-block
+		padding 0
+		.btn-con
+			padding 6px 55px
+			margin-top 4px
+			width 100%
+	.consulta-deposito
+		h1
+			margin 10px 0 10px 30px
+		span.filtro-icono
+			position relative
+			top 0px
+		.box-historico
+			padding 0
+			background $white
+			border none !important
+			display flex
+			align-items stretch
+			border-radius 3px
+			.btn-secmento 
+				top 18px
+			> div
+				margin-bottom 0
+				padding-top 15px
+				padding-bottom 20px
+			p
+				margin-bottom 0
+		.box-datos-cp 
+			top 11px
+			.bch-custom-check
+				margin-top 5px
+				font-size 12px
+		.formato-btn 
+			margin 5px 0  10px 5px
+		hr
+			color red
+			padding cero
+		.datos-usuario-dap
+			color $brand-secondary
+			span
+				margin-left 2px
+		
+		table.tabla-toggle
+			tbody:hover
+				background none !important
+				tr:hover
+					background-color $grey-30	
+
+		.table-responsive
+			overflow-x scroll
+			padding 0px
+			input
+				border-left none
+				border-right none
+				border-top none
+				border-bottom 1px solid $grey-50
+			input::-webkit-input-placeholder
+				font-family $regularc
+				font-size 13px
+				font-weight 100
+			input:-moz-input-placeholder
+				font-family $regularc
+				font-size 13px
+				font-weight 100
+			input:-ms-input-placeholder
+				font-family $regularc
+				font-size 13px
+				font-weight 100
+			input[placeholder]
+				font-family $regularc
+				font-size 13px
+				font-weight 100				
+	td.monto-derecha
+		text-align right
+	td.fecha-centrada
+		text-align center
+	th.monto-derecha
+		text-align right
+	th.fecha-centrada
+		text-align center
+	/* FIN TABLA CON SCROLL HORIZONTAL */
+		
+	
+				
+	/* HOMOLOGACION ANGEL */
+	.icon-loader-puntos
+		width 17px
+		height 17px
+		background url("../assets/images/loader-animated.gif")
+		display inline-block
+		border-radius 50%
+
+	/* ANGEL BOX */
+	.datos-producto__credito
+		&.data_group
+			p
+				margin-bottom 20px !important
+	.datos-credito__credito
+		&.data_group
+			p
+				margin-bottom 20px !important
+
+
+	/* Homologación Rodrigo 08/07/2016 */
+
+	.button-loader--circle
+		&.progress-button
+			background transparent
+			border 1px solid $grey-30
+			color $grey-30
+		.progress-inner
+			background $grey-50
+		.content:after, .content:before
+			color $grey-30
+
+	.button-loader--circle-default
+		&.progress-button
+			background $brand-secondary !important
+			border 1px solid $brand-secondary !important
+			color $white
+		.progress-inner
+			background $brand-complementary !important
+		.content:after, .content:before
+			color $white
+			
+	p.input-group.datepicker
+		width 100%
+	.buttons-bottom
+		display flex
+		flex-direction row
+		justify-content flex-end
+		margin-bottom 0px
+		top 25px
+		button
+			&:first-child
+				margin-right 10px !important
+		.loader-context
+			text-align center
+			font-size 24px
+			color $grey-30
+
+	input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
+		background-color $white !important
+		box-shadow 0 0 0px 1000px $white inset !important
+		transition background-color 5000s ease-in-out 0s !important
+	input:focus, textarea:focus, select:focus
+		background-color $white !important
+		box-shadow 0px 0px 0px 1000px $white inset !important
+		transition background-color 5000s ease-in-out 0s !important	
+	
+	/* ELEMENTO VIEW NAV, SUB MENÚ VISTA 360*/
+	.view-nav
+		margin-bottom 20px
+		.view-nav__tabs
+			display flex
+			a
+				background $grey-80
+				padding 12px 10px
+				flex 1
+				color $white
+				font-size 1em
+				border-right 1px solid $grey-50
+				small
+					display block
+					font-size 0.8em
+				span
+					font-weight bold
+				&.view-nav__preaprobado
+					background $brand-secondary--lighten
+				&.view-nav__cliente
+					background $brand-secondary
+					flex 2
+	/* FIN ELEMENTO VIEW NAV */
+
+	/* MODIFICADOR PARA PANEL BUSQUEDA CLIENTE */
+	.buscador-datos
+		margin-bottom 0
+		.titular-datos
+			.dates-perfil
+				p
+					position relative
+					span.since
+						float right
+						text-align right
+						position absolute
+						right 5px
+						font-size 11px							
+		&.info-in-tab
+		.display-flex
+			>div
+				padding 0 !important
+		.contactability
+			.section-executive
+				.row-section:nth-child(2)
+					border-bottom none
+					margin-bottom 25px
+		.section-executive
+			border none
+			border-right 1px solid $grey-10
+			margin 0
+			padding-bottom 10px
+			
+			.row-section
+				border-bottom 1px solid $grey-10
+				padding-bottom 5px
+				margin-bottom 10px
+				.row-section__text
+					p
+						font-size 1em
+				.row-section__tag
+					p
+						background none !important
+						border none !important
+						color $grey-50
+						position relative
+						span
+							position absolute
+							right -7px
+							top 0px
+							i
+								font-size 16px
+					p > span
+						cursor pointer
+				&:last-child
+					margin-bottom 0
+					border-bottom none				
+	/* FIN MODIFICADOR PARA PANEL BUSQUEDA CLIENTE */
+		
+	/* SECTION EXECUTIVE */			
+	.section-executive
+		background $white
+		border 1px solid #DBE0E4
+		padding 12px 23px 24px
+		height 100%
+		ul.dropdown-menu
+			> li
+				line-height 120%
+				color #212a3a
+				font-size 12px
+				padding 4px 15px
+				width 340px
+			&.dates-family
+				background $grey-50
+				padding 10px 0
+				> li
+					max-width 340px
+					width auto
+				p
+					padding 0
+					color $white !important
+				h2
+					color $white
+					white-space nowrap
+					margin-bottom 0
+				&.dates-family--bch
+					background $brand-secondary
+				&.dates-family--edwards
+					background $brand-secondary
+				&.dates-family--cch
+					background $brand-secondary
+				&.dates-family--no-client
+					background $grey-50
+		.negative-results
+			color $error !important
+		.row-section
+			display flex
+			align-items center
+			justify-content space-between
+			margin-bottom 10px
+			.search-campaign
+				margin-top 0px !important
+				input
+					height inherit !important
+				span
+					top 5px !important	
+			.row-section__text
+				p
+					font-size 1.2em
+					margin-bottom 1px
+				span
+					color $grey-50
+			.row-section__tag
+				p
+					padding 0px 10px
+					background $grey-body
+					border 1px solid $grey-10
+					margin 0
+					border-radius 12px
+					color black
+			.row-section__progress
+				display flex
+				justify-content space-between
+				flex-direction column
+				width 100%
+				&--label
+					display flex
+					justify-content space-between
+				.progress 
+					margin-bottom 0
+		.row-section--button
+			justify-content center
+			margin-top 39px
+			button
+				background #B4BEC3
+				color $white
+				padding 10px 66px
+				border none
+				border-radius 5px
+				outline none
+				align-items center
+				display flex
+				transition all 0.3s ease-in-out
+				i
+					font-size 2em
+					margin-right 7px
+				&:hover
+					background #696d6f
+	/* FIN SECTION EXECUTIVE */
+
+	/* CLIENT INDICATOR */ 		
+	.client-indicator
+		padding-top 10px !important
+		padding-bottom 10px !important
+		.row 
+			display flex
+			div
+				display flex
+				flex 1
+				padding 0 15px
+				span 
+					margin-right 5px
+				p 
+					margin 0
+					flex 2
+					b
+						font-size 11px
+	/* FIN CLIENT INDICATOR */
+		
+	/* BUTTON ICONS */
+	.buttons-icons
+		&__item
+			display inline-block
+			padding 0 5px
+			>a
+				display inline-block
+				font-size 20px
+				height 30px
+				line-height 30px !important
+		&.pull-right
+			&__item
+				&:last-child
+					padding-right 0
+	/* FIN BUTTON ICONS */
+	
+	/* ICON CHECK (VISTA 360) */ 		
+	.icon-check
+		width 18px
+		height 18px
+		line-height 18px !important
+		font-size 0.8em
+		text-align center
+		border-radius 50%
+		display block
+		color $white
+		&--big
+			width 25px
+			height 25px
+			line-height 25px !important
+			font-size 1em
+		&--success
+			background $success
+		&--error
+			background $grey-50
+	/* FIN ICON CHECK */
+
+	/* CAJAS DE COLOR CON ACTIVIDAD (Ejemplo: 2/3 Actividades) */
+	.ctn-activities
+		display flex
+		justify-content space-between
+		margin-bottom 36px
+		margin-right -5px
+		margin-left -5px
+		.activities-panel
+			border none
+			height 77px
+			display flex
+			justify-content center
+			border-radius 5px
+			flex 1
+			margin 0 5px
+			transition all 0.3s ease-in-out
+			outline none
+			&.campaigns
+				&:hover
+					background $brand-secondary--lighten
+			.activities-panel-box
+				align-self center
+				text-align center
+				p
+					font-size 2.5em
+					margin-bottom 0
+					line-height 1
+					color white
+				span
+					color white
+					text-transform uppercase
+					font-size 0.9em
+			&.brand-secondary--lighten
+				background $brand-secondary--lighten
+			&.problems
+				background #F2883D
+			&.castigada
+				background $castigada
+			&.success--lighten
+				background $success--lighten
+		.popover
+			max-width 100% !important
+			border 1px solid $grey-30
+			display block
+			margin-top 10px
+			&.bottom-left	
+				>.arrow
+					border-bottom-color $grey-30 !important
+					left 45px
+					top -15px
+					&:after
+						content ''
+						top 1px
+						margin-left -10px
+						border-top-width 0
+						border-bottom-color #ffffff
+			.popover-content
+				max-width 100% !important
+				padding 10px 0 0 0 !important
+	/* FIN CAJAS DE COLOR CON ACTIVIDAD */
+		
+	/* ICON SUMMARY (VISTA 360) */
+	.icons-summary
+		display flex
+		margin-bottom 30px
+		justify-content space-between
+		.icons-summary__item
+			flex 1
+			display flex
+			justify-content center
+			flex-direction column
+			align-items center
+			cursor pointer
+			transition all 0.5s ease-in-out
+			background transparent
+			border none
+			outline none
+			max-width 100px
+			&:hover
+				.icons-summary__circle
+					border 5px solid $brand-secondary
+					color $brand-secondary
+					
+			.icons-summary__circle
+				width 80px
+				height 80px
+				border 5px solid $grey-30
+				border-radius 50%
+				text-align center
+				line-height 80px
+				font-size 3em
+				color $grey-50
+				position relative
+				transition all 0.3s ease-in-out
+				span
+					width 26px
+					height 26px
+					background $brand-complementary
+					display block
+					font-size 0.3em
+					line-height 26px 
+					text-align center
+					border-radius 50%
+					color $white
+					position absolute
+					top -4px
+					right -4px
+				&:before
+					width 80px
+					height 14px
+					background transparent
+					content ''
+					border-radius 50%
+					display block
+					position absolute
+					bottom 18px
+					left -5px
+					z-index -1
+					box-shadow 0px 34px 15px #DDD
+				&:after
+					width 40px
+					left 50%
+					margin-left -20px
+					height 10px
+					background transparent
+					content ''
+					border-radius 50%
+					display block
+					position absolute
+					bottom 20px
+					z-index -1
+					box-shadow 0px 34px 12px #CCC
+			h4 
+				padding-top 20px
+			&.icons-summary__item--buy
+				.icons-summary__circle
+					span
+						background $grey-50 !important
+			&.popoverTarjetas + .popover
+				&.bottom
+					margin-left 108px
+					>.arrow
+						left 341px
+		.popover
+			max-width 100% !important
+			border 1px solid $grey-30
+			display block
+			&.bottom
+				margin-top 0px !important
+				>.arrow
+					border-bottom-color $grey-30 !important
+			&.bottom-left	
+				>.arrow
+					border-bottom-color $grey-30 !important
+					left 45px
+					top -15px
+					&:after
+						content ''
+						top 1px
+						margin-left -10px
+						border-top-width 0
+						border-bottom-color #ffffff
+			&.bottom-right
+				margin-left -569px
+				>.arrow
+					border-bottom-color $grey-30 !important
+					right 115px
+					top -15px
+					&:after
+						content ''
+						top 1px
+						margin-left -10px
+						border-top-width 0
+						border-bottom-color #ffffff
+			.popover-content
+				max-width 100% !important
+				padding 0 !important
+	/* FIN ICON SUMMARY */
+
+	/* SUBTITLE (TITULO CON LINEA PARA SEPARACIÓN DE CONTENIDO) */
+	.subtitle-contingency
+		color $grey-30
+		font-size 14px
+		margin-bottom 20px
+		overflow hidden
+		position relative
+		&:after
+			content " "
+			width 100%
+			height 1px
+			background $grey-30
+			position absolute
+			top 50%
+			margin-left 1rem
+		span
+			color $brand-complementary
+			cursor pointer
+			font-size 14px
+			transition all .2s ease-in-out
+			margin-left 5px
+			&:hover
+				color $brand-complementary + 20%
+	/* FIN SUBTITLE */	
+
+	/* PARA REVISAR Y LIMPIAR */
+	.padding-left-none
+		padding-left 0 !important
+	.padding-right-none
+		padding-right 0 !important
+	.animation__slide-toggle
+		&:before
+			background $warning--lighten + 90%
+			width 0%
+			height 100%
+			position absolute
+			transition all 0.7s ease-in-out
+			left 0
+			top 0
+			content ''
+			display block
+		&.active
+			&:before
+				width 100%
+	uib-accordion
+		.panel-group
+			margin-bottom 15px
+			transition all 0.3s ease-in-out
+			.panel
+				&.panel-default
+					padding-top 0px
+					padding-bottom 0px
+					box-shadow none !important
+					border none !important
+					font-family $regular
+					font-size 12px
+					color $grey-80
+					transition all 0.3s ease-in-out
+					.panel-heading
+						cursor pointer
+						transition all 0.3s ease-in-out
+						background-color $grey-10 + 50%
+						border 1px solid $grey-10 + 70%
+						border-bottom none
+						h4
+							font-family $regular
+							font-size 12px
+							color $grey-80
+							transition all 0.3s ease-in-out
+							a
+								width 80%
+								display block;
+								span
+									i
+										&.ion-chevron-right
+											color $brand-primary
+											margin-right 10px
+									i
+										&.ion-chevron-down
+											color $grey-80
+											margin-right 10px
+						.no-save
+							position absolute
+							font-size 10px
+							right 15px
+							top 12px
+							display flex
+							flex-direction row
+							align-items center
+							line-height 1px
+							i
+								background-color $warning
+								color $white
+								width 15px
+								height 15px
+								border-radius 50%
+								text-align center
+								line-height 15px
+								margin-right 5px
+						&:hover
+							background-color $grey-10 + 80%
+					.panel-body
+						border 1px solid $grey-10 + 70%
+						border-top-color $grey-10 + 70% !important
+						h5
+							font-family $regular
+							text-transform uppercase
+							font-size 11px
+							color $grey-30
+							border-bottom 1px solid $grey-30
+							margin-bottom 15px
+							width 100%
+							padding-bottom 5px
+					&.panel-open
+						.panel-heading
+							background-color $white
+							border 1px solid $grey-10 + 70%
+							border-bottom none
+							h4
+								color $brand-primary
+	@media (max-width: 1190px) and (min-width: 1024px)
+		.content-consulta .btn-con
+			padding 6px 40px !important
+		.work-area .box-user .box-user__container h2
+			font-size 1.0em !important
+	.btn-secmento
+		top 18px !important
+	.neutral-dark
+		background $grey-10 !important
+		color $grey-50 !important
+	.animate-fadeInRight
+		&.ng-enter
+			animation $right 0.3s linear
+		&.ng-leave
+			animation $left 0.3s linear
+	ul.ui-select-choices.ui-select-choices-content
+		z-index 2 !important
+	.consulta-deposito
+		.forms-empresas
+			.btn-secmento
+				button.btn-con
+					text-align center !important
+					padding 5px !important
+	.bch-empresas-paginador
+		label
+			margin-right 10px
+		input
+			width 66px
+		.dropdown-menu
+			bottom 35px !important
+			top inherit
+			box-shadow 0 0px 12px rgba(0, 0, 0, 0.175)
+			min-width 20px	
+	.caret
+		border none
+		font-family 'empresas-bch-icon'
+		margin-right 10px
+		margin-top -4px
+		&:before 
+			content "\e617"
+	.footer-fixed
+		background $grey-10 !important
+		box-shadow 0px -2px 10px 0px rgba(50, 50, 50, 0.30)
+		transition all 0.3s ease
+		position fixed
+		bottom 0
+		width calc(100% - 30px)
+	.login
+		form
+			padding 0px !important
+	.login
+		.iniciar-login
+			margin-top 15px
+			width 30%
+	.bch-custom-check
+		font-size 12px
+	/*.bch-custom-check.radiobutton
+		> div
+			i
+				&.radio
+					color $brand-complementary
+					font-size 14px
+					border 1px solid $grey-10
+					border-radius 50px
+					width 19px
+					text-align center
+					padding-left 1px
+					line-height 16px
+					top -12px
+					left -2px
+					height 18px
+					cursor pointer
+					transition all 0.2s ease-in-out
+	.bch-custom-check.radiobutton
+		> div
+			border 1px solid $grey-10
+			transition all 0.2s ease-in-out
+	.bch-custom-check
+		> div
+			border 1px solid $grey-10
+			transition all 0.2s ease-in-out
+			&:hover
+				border 1px solid $brand-complementary
+	.bch-custom-check
+		> div
+			i
+				&.checkbox
+					color $white
+					background-color $brand-complementary
+					padding 1px 4px 1px 3px
+					border-radius 0px
+					margin-left -4px
+					margin-top -4px
+					line-height 13px
+					min-height 18px !important
+	.bch-custom-check
+		> div
+			i.star
+				color $brand-complementary
+				font-size 22px
+	*/
+	table
+		&.tabbla-toggle
+			tbody
+				&:nth-child(odd)
+					background-color $white !important
+	.table-actions
+		ul.status
+			li:first-child
+				padding 5px 5px 9px !important
+				a
+					font-weight bold
+				font-weight bold
+	.tabla-dinamica
+		margin-bottom 30px
+		.complete.table-actions.tabla-dinamica
+			position relative
+			margin-bottom 0px
+			height 110px
+	div#dataTables_Table_0_info
+		padding-top 13px
+	table
+		& #DataTables_Table_0
+			width 100% !important
+			border 1px solid #92a4af
+			margin-top 10px
+			tbody
+				tr
+					height 35px
+					td
+						padding-left 10px
+						font-family $regular
+						color $grey-100
+	#DataTables_Table_0_wrapper
+		position relative
+		margin-top -61px
+		div.dataTables_info
+			padding-top 15px
+			padding-left 17px
+	#DataTables_Table_0_filter
+		label
+			font-family $regular
+			color $grey-100
+			input
+				border-top none
+				border-left none
+				border-right none
+				border-bottom 1px solid $brand-secondary
+				font-family $regular
+				color $grey-50
+				&:placeholder
+					content "Buscar..."
+	div#DataTables_Table_0_length
+		margin-top 15px
+	div#DataTables_Table_0_filter
+		margin-top 15px
+	.dt-buttons a
+		padding 10px
+		background $brand-secondary
+		margin-right 10px
+		color $white
+		font-family $lightc
+		border-radius 5px
+		cursor pointer
+	.dataTables_paginate
+		margin-bottom 20px
+	.dataTables_paginate a.first
+		padding 10px
+		background $brand-secondary
+		margin-right 10px
+		color $white
+		font-family $lightc
+		border-radius 5px
+		cursor pointer
+	.dataTables_paginate a.last
+		padding 10px
+		background $brand-secondary
+		margin-right 10px
+		color $white
+		font-family $lightc
+		border-radius 5px
+		cursor pointer
+	.dataTables_paginate a.previous
+		padding 10px
+		background rgba(255,255,255,1)
+		background linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%)
+		/*filter progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 )*/
+		margin-right 10px
+		color $grey-100
+		border 1px solid $grey-50
+		font-family $lightc
+		border-radius 5px
+		cursor pointer
+	.dataTables_paginate a.next
+		padding 10px
+		background rgba(255,255,255,1)
+		background linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%)
+		margin-right 10px
+		color $grey-100
+		border 1px solid $grey-50
+		font-family $lightc
+		border-radius 5px
+		cursor pointer
+	.dataTables_paginate
+		span
+			a.paginate_button
+				font-family $lightc
+				margin-left 5px
+				margin-right 5px
+				color $grey-100
+			a.paginate_button:last-child
+				margin-right 15px
+			a.paginate_button.current
+				font-family $bold
+	.dt-buttons.ui-buttonset
+		width 150px
+		margin-left 17px
+	.tabla-dinamica
+		padding 0px	 
+	.tabla-dinamica
+		button.btn.btn-default.dropdown-toggle
+			margin-right 10px
+			border none
+			padding 7px 10px 7px 10px
+		.btn
+			font-family $regular !important
+	.tabla-dinamica.nueva
+		padding 10px !important
+		background-color $grey-30
+		border-radius 5px
+	table#tabla_01
+		tbody
+			tr
+				border-bottom 1px solid $grey-30
+				background-color $white
+				td
+					border none
+					padding-top 15px
+					padding-bottom 15px
+					padding-left 5px
+					font-family $regularc
+				td:first-child
+					text-align center
+					padding-left 0px
+			tr:hover
+				background-color #eeeeee !important
+		tfoot
+			td.desplazar-columnas
+				color $white
+				background-color $grey-80
+				line-height 34px
+				border-radius 5px !important
+				-webkit-border-radius 5px !important
+				-moz-border-radius 5px !important
+				ms-border-radius 5px !important
+				-o-border-radius 5px !important			
+	.center-block
+		float none
+		margin-left auto
+		margin-right auto
+	.form-group .form-control
+		min-height 33px !important
+	.input-group
+		.icon-addon
+			.form-control
+				border-radius 0
+	.icon-addon
+		position relative
+		color #555
+		display block
+		&:after
+			clear both
+		&.addon-lg
+			.form-control
+				line-height 1.33
+				height 46px
+				font-size 18px
+				padding 10px 16px 10px 40px
+		&.addon-sm
+			.form-control
+				height 30px
+				padding 5px 10px 5px 28px
+				font-size 12px
+				line-height 1.5
+	.icon-addon:after,
+	.icon-addon:before
+		display inline
+		content " "
+	.icon-addon.addon-md .glyphicon,
+	.icon-addon .glyphicon, 
+	.icon-addon.addon-md .fa,
+	.icon-addon .fa
+		position absolute
+		z-index 2
+		left 10px
+		font-size 14px
+		width 20px
+		margin-left -2.5px
+		text-align center
+		padding 10px 0
+		top 1px
+	.icon-addon.addon-lg .fa,
+	.icon-addon.addon-lg .glyphicon
+		font-size 18px
+		margin-left 0
+		left 11px
+		top 4px
+	.icon-addon.addon-md .form-control,
+	.icon-addon .form-control
+		padding-left 30px
+		float left
+		font-weight normal
+	.icon-addon.addon-sm .fa,
+	.icon-addon.addon-sm .glyphicon
+		margin-left 0
+		font-size 12px
+		left 5px
+		top -1px
+	.icon-addon .form-control:focus + .glyphicon,
+	.icon-addon:hover .glyphicon,
+	.icon-addon .form-control:focus + .fa,
+	.icon-addon:hover .fa
+		color #2580db
+	.selector-muestras
+		width 40%	
+	ul.filtros
+		padding 15px
+		li
+			margin-bottom 15px
+		li:last-child
+			margin-bottom 0px
+	.wrapper-dropdown-3
+		position relative
+		width 185px
+		margin 0 auto
+		font-family $regular
+		color $grey-100
+		font-size 12px
+		padding 5px 0px 5px 5px
+		border 1px solid $grey-30 !important
+		border-radius 5px !important
+		background rgba(226,226,226,1)
+		background linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%)
+		box-shadow 0 1px 1px rgba(50,50,50,0.1)
+		cursor pointer
+		outline none
+		&:after
+			content ""
+			width 0
+			height 0
+			position absolute
+			right 15px
+			top 50%
+			margin-top -3px
+			border-width 6px 6px 0 6px
+			border-style solid
+			border-color #000 transparent
+		.dropdown
+			position absolute
+			top 100%
+			left 0
+			right 0
+			padding 0
+			margin 0
+			background white
+			border 1px solid rgba(0,0,0,0.17)
+			font-weight normal
+			transition all 0.5s ease-in
+			list-style none
+			opacity 0
+			pointer-events none
+	.wrapper-dropdown-3
+		.dropdown
+			li
+				a
+					display block
+					padding 10px
+					text-decoration none
+					color #000
+					border-bottom 1px solid #e6e8ea
+					box-shadow inset 0 1px 0 rgba(255,255,255,1)
+					transition all 0.3s ease-out
+				i
+					float right
+					color inherit
+				&:first-of-type
+					a
+						border-radius 7px 7px 0 0
+				&:last-of-type
+					a
+						border none
+						border-radius 0 0 7px 7px
+				&:hover
+					a
+						background #f3f8f8
+		&.active
+			.dropdown
+				opacity 1
+				pointer-events auto
+	.no-opacity .wrapper-dropdown-3 .dropdown,
+	.no-pointerevents .wrapper-dropdown-3 .dropdown
+		display none
+		opacity 1
+		pointer-events auto
+	.no-opacity .wrapper-dropdown-3.active .dropdown,
+	.no-pointerevents .wrapper-dropdown-3.active .dropdown
+		display block
+	.limpiar
+		button
+			margin-right 10px !important
+	.filtrar
+		button
+			margin-right 0px !important	
+	ul.filtros.dropdown-menu.dropdown-menu-right
+		top 35px
+	.ion-loop
+		animation-name spin
+		animation-duration 1s
+		animation-iteration-count infinite
+		animation-timing-function linear
+	/*
+	.has-spinner
+		&.active
+			cursor progress
+			.spinner
+				opacity 1
+				width auto
+		&.btn-mini
+			&.active
+				.spinner
+					width 10px
+		&.btn-small
+			&.active
+				.spinner
+					width 13px
+		&.btn
+			&.active
+				.spinner
+					width 16px
+		&.btn-large
+			&.active
+				.spinner
+					width 19px
+	*/					
+	/* FIN PARA REVISAR Y LIMPIAR */

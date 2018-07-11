@@ -1,0 +1,164 @@
+/* TRAER ESTILOS HEADER NUEVO HECHO POR SEBA NAVIA CUANDO TENGA UNA VERSIÓN ESTABLE */
+
+/* HEADER */
+$header--height     = 60px
+.centro-negocios
+	.header
+		.header__dropdown
+			width 200px
+			min-height 60px
+			background $white
+			display none
+			position absolute
+			right 0
+			top $header--height
+			flex-wrap wrap
+			border 1px solid $grey-50
+			p
+				text-align left
+				width 100%
+			.arrow-box
+				position absolute
+				right 26px
+				top 0
+			.arrow-box:after 
+			.arrow-box:before
+				bottom 100%
+				left 50%
+				border solid transparent
+				content ''
+				height 0
+				width 0
+				position absolute
+				pointer-events none
+			.arrow-box:after
+				border-bottom-color #FFFFFF
+				border-width 6px
+				margin-left -6px
+			.arrow-box:before
+				border-bottom-color $grey-50
+				border-width 7px
+				margin-left -7px
+		// *::selection 
+		// 	background-color transparent
+		a
+			transition all 0.2s ease
+		// .header__logo
+		// 	height 25px
+		// 	display block
+		// 	float left
+		// 	padding 0 15px
+		// 	img
+		// 		height 100%
+		// 		width auto
+		// .header__nav
+		// 	float left
+		// 	a
+		// 		color $brand-primary
+		// 		font-size 1.1em
+		// 		display block
+		// 		float left
+		// 		margin 0 15px
+		// 		height $header--height
+		// 		line-height $header--height
+		// 		&:hover
+		// 			text-decoration none
+		// 			border-bottom 7px solid $brand-primary
+		// 		&.header__nav--active
+		// 			font-weight bold
+		// 			border-bottom 7px solid $brand-primary
+		.header__nav-secondary
+			padding 0 15px
+			a
+				padding 0 10px
+				line-height $header--height
+				height $header--height
+				font-size 1.8em
+				color $grey-50
+				display block
+				position relative
+				float left
+				.open-box-over
+					cursor pointer
+					&:hover 
+						color $brand-primary
+			.header__indicator 
+				font-size 1em 
+				.header__dropdown
+					padding 15px 15px 5px 15px
+					ul
+						padding 0
+					li 
+						list-style none
+						float left
+						border-bottom 1px dotted $grey-10
+						line-height 30px
+						width 100%
+						color $grey-80
+					.bch-mensaje-empresas
+						&.error
+							article.indicadores
+								padding-left 14px
+								p
+									text-indent 15px
+									border none !important
+									font-size 11px
+							article.indicadores:before
+								color $error
+								float left
+								position relative
+								margin-left -23px
+								font-size 22px
+								width auto
+								line-height 43px
+				.header__date 
+					font-size 1em 
+					font-style italic
+					color $grey-50 !important
+					font-size 0.9em
+					border-bottom none !important
+			.arrow-box
+				right 16px !important
+		.box-user
+			height $header--height
+			cursor pointer
+			margin 0 15px 0 0
+			figure
+				width 40px
+				height 40px
+				line-height 40px
+				background $brand-complementary
+				border-radius 50%
+				text-align center
+				color $white
+				overflow hidden
+			.header__dropdown
+				flex-wrap wrap
+				right 5px
+				padding 15px
+				h6 
+					font-size 1.2em
+					margin 0
+				button 
+					margin 15px 0 0 0
+		.header__dropdown-trigger
+			position relative
+			cursor pointer
+			&:hover
+				color $brand-primary
+		.active
+			.header__dropdown
+				display flex
+				align-items stretch
+				div 
+					flex 1
+					display flex
+					text-align center
+					font-size 0.5em
+					padding 10px 0 0 0
+					cursor pointer
+					transition all 0.3s ease
+					i
+						font-size 3em 
+					&:hover
+						color $brand-primary

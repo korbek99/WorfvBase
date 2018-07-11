@@ -1,0 +1,56 @@
+<div class="drop-multiselect" ng-class="{'ng-invalid': dmsCtrl.data.invalid,'open': dmsCtrl.multiSelectOpen,'drop-multiselect--disabled': dmsCtrl.data.disabled || dmsCtrl.data.opciones.length == 0}" dms-click-outside="dmsCtrl.blurMultiselect()" dms-is-active="dmsCtrl.multiSelectOpen">
+		<div class="drop-multiselect__match">
+			<a href="javascript:void(0);" ng-click="dmsCtrl.abrir()">
+				<span ng-class="{'placeholder-multi':dmsCtrl.placeholderText}">
+					{{dmsCtrl.placeholder(dmsCtrl.data.selecciones)}}
+				</span>
+				<i class="ion-ios-arrow-down" ng-show="!dmsCtrl.multiSelectOpen"></i>
+				<i class="ion-ios-arrow-up" ng-show="dmsCtrl.multiSelectOpen"></i>
+			</a>
+		</div>
+		<div class="drop-multiselect__choises dropdown-menu" ng-class="{'open': dmsCtrl.multiSelectOpen, 'fixed-height': dmsCtrl.data.botones}">
+	
+			<!-- Con buscador -->
+			<div class="col-xs-12 pl-10 pr-10" ng-if="dmsCtrl.data.buscador">
+				<div class="col-xs-12 border-bottom pb-5 pl-0 pr-0 mb-5">
+					<i class="ion-ios-search px-25 pl-0 pr-0 multiselect-icono-izquierda"></i>
+					<input type="text" class="drop-multiselect__search pt-5 pb-5 col-xs-12" ng-model="dmsCtrl.search" placeholder="Buscar...">
+					<i ng-show="dmsCtrl.data.buscador && dmsCtrl.search" ng-click="dmsCtrl.search = undefined" class="ion-ios-close-empty px-25 pl-0 pr-0 text-right multiselect-icono-derecha"></i>
+				</div>
+			</div>
+			<!-- Con buscador -->
+	
+			<ul class="list-unstyled">
+	
+				<!-- Con selectAll -->
+				<li ng-if="dmsCtrl.data.selectAll">
+					<label class="bch-custom-check">
+						<div>
+							<input type="checkbox" ng-click="dmsCtrl.seleccionarTodos(dmsCtrl.data.opciones)" ng-model="dmsCtrl.selectorAll">
+							<i></i>
+						</div>
+						<span>Seleccionar todos</span>
+					</label>
+				</li>
+				<!-- Con selectAll -->
+				
+				<li ng-repeat="item in dmsCtrl.data.opciones | filter:dmsCtrl.search">
+					<label class="bch-custom-check">
+						<div>
+							<input type="checkbox" ng-checked="dmsCtrl.data.selecciones.indexOf(item) > -1" ng-click="dmsCtrl.seleccionar(item)">
+							<i></i>
+						</div>
+						<span>{{item}}</span>
+					</label>
+				</li>
+			</ul>
+		</div>
+	
+		<!-- botones -->
+		<div class="col-xs-12 pl-10 pr-10 text-right footer-choises" ng-if="dmsCtrl.data.botones" ng-class="{'open': dmsCtrl.multiSelectOpen}">
+			<div class="col-xs-12 border-top pb-5 pl-0 pr-0 mb-5 pt-10">
+				<button type="button" class="btn neutro btn-sm" ng-click="dmsCtrl.cancelar()">Cancelar</button>
+				<button type="button" class="btn success btn-sm" ng-click="dmsCtrl.data.funcionAceptar(); dmsCtrl.multiSelectOpen = false">{{dmsCtrl.textoAceptar()}}</button>
+			</div>
+		</div>
+	</div>	

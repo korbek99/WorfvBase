@@ -1,0 +1,113 @@
+.comprobante-empresa
+   background $corporative-light-grey
+   padding 30px
+   margin 0 0 20px
+   position relative
+   h3
+      margin 0 0 20px 0
+   .monto
+      background $default-color
+      margin 0 0 15px 0
+      h2
+         text-align right
+      h4
+         span
+            display block
+            font-size 12px
+            margin 5px 0 0
+            font-family arial, helvetica, sans-serif
+            color $grey-one
+   .datos
+      clearfix()
+      padding 0px 0 15px
+      border-bottom 1px solid $grey-four
+      h5
+         margin 10px 0
+      ul
+         list-style-type none
+         padding 0
+         color $grey-two
+         &:last-child
+            border-left 1px solid $grey-four
+            padding-left 20px
+         li
+            margin 5px 0 
+            b
+               font-weight bold
+               min-width 100px
+               display inline-block
+   .nota
+      color $grey-one
+      padding 10px 0
+      font-size 12px
+      margin 10px 0
+      line-height 150%
+   .icon-logo-banco
+      font-size 50px
+      margin 10px 0 0 -10px
+   .timbre
+      position absolute
+      bottom 15px
+      right 30px
+      opacity .2
+      width 150px
+      height 150px
+      img
+         width 100%
+
+.bch-comprobante-ci
+	.cont-comprobante
+		background-color $grey-six
+		padding 0 40px
+		position relative
+		.list-inline
+			font-size 30px
+			margin 20px 0
+		.caja-comprobante
+			background-color $default-color
+			border 1px solid $grey-four
+			border-radius 3px
+			.monto-comprobante
+				h3
+					color $info-color
+					text-align center
+			h4
+				margin-bottom 0
+		& > .caja-comprobante
+			padding-top 20px
+			padding-bottom 20px
+		.caja-info-comprobante
+			padding-left 0
+			font-family $light
+			margin 40px 0 15px
+			&:last-child
+				padding-right 0
+				padding-left inherit
+			.datos-comprobante
+				border-right 1px solid $grey-four
+				padding-top 25px
+				padding-bottom 25px
+				min-height 275px
+				div
+					margin-bottom 15px
+					&:last-child
+						margin-bottom 0
+				&.datos-right
+					padding-left 0
+					padding-right 0
+					border-right 0
+					div
+						border-bottom 1px solid $grey-four
+						padding-bottom 15px
+						&:last-child
+							border-bottom none
+		.cont-glosa
+			margin-bottom 25px
+			font-family $light
+			.caja-comprobante
+				padding-top 25px
+				padding-bottom 15px
+		.bch-timbre
+			margin-bottom 30px
+			img
+				margin-right 25px

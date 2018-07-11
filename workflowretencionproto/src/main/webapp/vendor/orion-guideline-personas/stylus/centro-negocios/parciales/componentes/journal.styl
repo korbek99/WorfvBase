@@ -1,0 +1,525 @@
+/* CSS LEGADO */
+.centro-negocios
+	/* JOURNAL HEAD */
+	.journal-head
+		padding 0
+		margin-bottom 10px
+		min-height 40px
+		.contenedor-datos-journal
+			margin 0 0 20px 0
+			.dato-journal
+				float left
+				width 160px
+				height 40px
+				background $white
+				margin 0 10px 0 0
+				padding 0px 0px  0 10px
+				border-left 4px solid transparent
+				position relative
+				border-radius 3px
+				cursor pointer
+				display flex
+				flex-direction row
+				align-items center
+				justify-content space-between
+				border 1px solid $grey-10
+				p
+					font-size 1.2em
+					margin-bottom 0px
+					font-family $bold
+					border-left 1px solid $grey-10--lighten
+					height 100%
+					width calc(100% - 100px)
+					text-align center
+					line-height 40px
+				&:after
+					content ''
+					position absolute
+					left 50%
+					margin-left -10px
+					bottom -6px
+					width 15px
+					height 15px
+					background transparent
+					transform: rotate(45deg);
+				&.dato-journal--aprobados
+					border-left 4px solid $success
+					&.dato-journal--current
+						background $success
+						&:after
+							background $success
+				&.dato-journal--pendientes
+					border-left 4px solid $warning
+					&.dato-journal--current
+						background $warning
+						&:after
+							background $warning
+				&.dato-journal--rechazadas
+					border-left 4px solid $error
+					&.dato-journal--current
+						background $error
+						&:after
+							background $error
+				&.dato-journal--cursadas
+					border-left 4px solid $brand-secondary
+					&.dato-journal--current
+						background $brand-secondary
+						&:after
+							background $brand-secondary
+				&.dato-journal--neutral
+					border-left 4px solid $grey-50
+					&.dato-journal--current
+						background $grey-50
+						&:after
+							background $grey-50
+				&.dato-journal--current
+					color #FFF
+		.filtros
+			font-family $regular
+			position absolute
+			bottom 25px
+			right 0
+			.tipo-filtros
+				float left
+				a
+					color $grey-80
+					margin-right 19px
+					i
+						margin-left 5px
+				&:last-child
+					a
+						margin-left 0px
+						margin-right 0px
+	/* FIN JOURNAL HEAD*/
+		
+	/* 	JOURNAL PANEL */ 
+	.journal-panel
+		width 100%
+		background $white
+		margin-bottom 15px
+		border 1px solid #DDD
+		border-left 4px solid $brand-secondary 
+		border-radius 3px
+		box-shadow none
+		position relative
+		&.journal-panel--aprobada
+			border-left 4px solid $success
+		&.journal-panel--pendiente
+			border-left 4px solid $warning
+		&.journal-panel--rechazada
+			border-left 4px solid $error
+		&.cuota-vigente
+			border-left 4px solid $vigente
+		&.cuota-castigada
+			border-left 4px solid $castigada
+		&.cuota-acelerada
+			border-left 4px solid $acelerada
+		&.cuota-morosa
+			border-left 4px solid $morosa
+		p 
+			margin 0
+		.gatillar-abrir-detalle
+			position absolute
+			right 0 
+			top 0
+			width 36px
+			height 40px
+			line-height 40px
+			text-align center
+			i
+				transform rotate(0deg)
+				transition all 0.3s ease
+		.journal-panel__cabecera
+			width 100%
+			border-bottom 1px dotted $grey-10
+			padding 0 15px
+			height 35px
+			p
+				line-height 35px
+				color $grey-50
+			.journal-panel__menu-header
+				padding 0 20px 0 0
+				button
+					background none
+					border none
+					height 35px
+					line-height 35px
+					font-size 1.2em
+		.journal-panel__cuerpo
+			display flex
+			padding 20px 15px
+			width 100%
+		.journal-panel__campo
+			flex 1
+			span
+				display block
+				font-size 0.9em
+			p
+				font-size 1.1em
+				font-family $bold
+		.journal-panel__botones
+			padding 0 25px 0 0
+			display flex
+			align-self center
+			right 0px
+			justify-content flex-end
+			button
+				&:first-child
+					margin-right 10px
+					margin-left 0px
+				&:last-child
+					margin-left 0px
+					margin-right 0px
+		.journal-panel__campo--check
+			width 30px
+			flex inherit
+			padding-top 2px
+		.journal-panel__campo--pequeno
+			flex 0.5
+		.journal-panel__campo--mediano
+			flex 1.5
+		.journal-panel__campo--grande
+			flex 2
+		.journal-panel__campo--chico
+			display flex
+			align-self center
+			justify-content flex-end
+			.form-group
+				margin-bottom 0px
+		.journal-panel__detalle
+			height 0
+			overflow hidden
+			transition all 0.3s ease
+			opacity 0
+			&.journal-panel__cuerpo
+				padding 0 15px
+			ul
+				list-style none
+				flex 1
+				margin 0
+				padding 0
+				li
+					p
+						line-height 160%
+						color $grey-50
+				&.journal-panel__mas-campos
+					border-left 1px dotted $grey-30
+					padding-left 15px
+					&:nth-child(1)
+						border-left none
+						padding-left 0px
+				&.journal-panel__medios-de-pago
+					padding 0 0 0 15px
+					li 
+						color $grey-50
+						span
+							float left
+							margin 0 10px 0 0
+							padding 0 10px 0 0
+							border-right 1px solid $grey-30
+							font-family $bold
+							&:last-child
+								border none
+				
+		&.detalle-abierto
+			.gatillar-abrir-detalle
+				i
+					transform rotate(180deg)
+			.journal-panel__detalle
+				border-top 1px dotted $grey-10
+				background $grey-10+70%
+				height auto
+				opacity 1
+				&.journal-panel__cuerpo
+					padding 20px 15px
+	/* FIN JOURNAL PANEL */
+		
+	/* JOURNAL PANEL COLUMNAS */
+	.journal-panel-columnas
+		display flex
+		.journal-panel__cuerpo
+			padding 20px 0
+		.journal-panel-columnas__hora 
+			width 70px	
+			padding 10px 0 0 0
+		.journal-panel__campo
+			margin 0 0 15px 0
+		.journal-panel__campo--texto-grande
+			p
+				font-size 1.2em
+		.journal-panel__botones--fix
+			position absolute
+			right -10px
+			bottom 0px
+		.journal-panel__botones
+			a 
+				height 34px
+	/* FIN JOURNAL PANEL COLUMNAS */
+	
+	/* DATOS PRODUCTO */	
+	.datos-producto
+		ul
+			list-style none
+			padding 0
+			margin 0
+			&.datos-producto__usuario
+				border-bottom 1px solid #DADADA
+				width 100%
+				display inline-block
+				margin-bottom 10px
+				&.sin-guion
+					border-bottom none
+				li
+					float left
+					margin 15px 15px 0 0
+					color $brand-primary
+			&.datos-producto__credito
+				float left
+				li
+					min-height 40px
+		.btn-radius
+			border-radius 50% !important
+			font-size 12px
+			padding 2px 7px
+			position absolute
+			top 10px
+			right 10px
+			background none !important
+			color #b5bfc4 !important
+			border 1px solid #dce1e5
+	/* FIN DATOS PRODUCTO */	
+	
+	/* JOURNAL CALCULADORA */ 
+	.calculadora
+		color $grey-100
+		background $white
+		position relative
+		margin-bottom 15px
+		box-shadow 0 1px 1px rgba(0,0,0,0.25)
+		padding 0
+		.gatillar-cerrar-calculadora
+			position absolute
+			right 0 
+			top 0
+			width 36px
+			height 40px
+			line-height 40px
+			text-align center
+			cursor pointer
+		.total-pesos
+		.total-dolares
+			color $grey-50
+			padding 20px 15px
+			p 
+				margin 0
+				font-size 1.8em
+				font-family $bold
+				display inline-block
+				line-height 100%
+				span
+					font-size 0.6em
+					font-family $bold
+					display block
+					text-align right
+			h2
+				font-size 1em
+				font-family $regular
+				padding 0 0 15px 0
+				margin 0
+				display block
+				color $grey-50
+			&.total-cuadrado
+				color $brand-complementary
+		.total-pesos
+			border-right 1px solid $grey-10
+	/* FIN JOURNAL CALCULADORA */
+	
+	/* JOURNAL PANEL CABECERA */
+	.journal-panel__cabecera
+		time
+			right 7px !important
+		.estado-caja
+			font-size 11px
+			padding 2px 6px
+			border-radius 4px
+			font-style initial
+			margin-left 10px
+			&.estado-cursada--inactiva
+				background $grey-10
+				color $black
+			&.estado-cursada
+				background $brand-secondary
+				color $white
+			&.estado-cursada--finalizada
+				background $success
+				color $white
+			&.estado-pendiente
+				background $warning
+				color $white
+			&.estado-aprobada
+				background $success
+				color $white
+			&.estado-rechazada
+				background $morosa
+				color $white
+			&.estado-cursada--anulada
+				background $acelerada
+				color $white
+	/* FIN JOURNAL PANEL CABECERA */
+
+	/* REVISAR Y LIMPIAR */
+	.journal-buscador
+		margin 0 !important
+		input
+			margin 0 0 10px 0
+	.journal-panel__not-result
+		background-color $grey-10--lighten
+		height 50px
+		display flex
+		flex-direction row
+		align-items center
+		padding-left 15px
+		margin-bottom 15px
+		border-left 3px solid $grey-50
+		i
+			color $grey-50
+			font-size 24px
+			margin-right 10px
+		span
+			font-family $regular
+			font-size 12px
+			color $grey-50
+			a
+				color $brand-secondary
+				font-weight bold
+				font-family $regular
+		&--aprobada
+			border-left 3px solid $success
+		&--rechazada
+			border-left 3px solid $error
+		&--pendiente
+			border-left 3px solid $warning
+		&--cursada
+			border-left 3px solid $pagada
+	@media (min-width: 1024px) and (max-width: 1230px)
+		.journal-head 
+			.contenedor-datos-journal 
+				.dato-journal
+					width 120px !important
+					p
+						width: calc(100% - 75px) !important
+		.journal-head 
+			.filtros 
+				.tipo-filtros 
+					a
+						margin-right 12px
+		.journal-panel__cabecera
+			p
+				font-size 0.8em !important
+		.journal-panel 
+			.journal-panel__cuerpo
+				width 100%
+				&.journal-data__column
+					display inline-block !important
+	.fecha-journal
+		position absolute
+		right 15px
+		top 10px
+		
+	.journal-panel__group.collapse-Panels
+		margin-bottom 25px
+		.journal-panel:nth-child(1)
+			box-shadow 0 1px 1px rgba(0,0,0,0.25)
+		.journal-panel:nth-child(2)
+			margin-top -135px
+			width 98%
+			cursor pointer
+			box-shadow 0 1px 1px rgba(0,0,0,0.25)
+		.journal-panel:nth-child(3)
+			margin-top -135px
+			width 96%
+			cursor pointer
+			box-shadow 0 1px 1px rgba(0,0,0,0.25)
+		.journal-panel:nth-child(n+4)
+			margin-top -160px
+			width 94%
+		.collapse-journal-group
+			display none
+	.journal-panel__group
+		.journal-panel:nth-child(1)
+			z-index 4
+			box-shadow 0 0px 2px rgba(0,0,0,0.25)
+		.journal-panel:nth-child(2)
+			z-index 3
+			box-shadow 0 0px 2px rgba(0,0,0,0.25)
+		.journal-panel:nth-child(3)
+			z-index 2
+			box-shadow 0 0px 2px rgba(0,0,0,0.25)
+		.journal-panel:nth-child(n+4)
+			z-index 1
+		.journal-panel
+			margin-bottom 0px
+			border-bottom-left-radius 0px
+			border-bottom-right-radius 0px
+			border-top-left-radius 0px
+			border-top-right-radius 0px
+			transition all 0.4s ease-in-out
+			margin-left auto
+			margin-right auto
+			min-height 157px
+			.journal-panel__cabecera
+				border-top 1px dotted #dce1e5
+			&:first-child
+				border-bottom-left-radius 0px
+				border-bottom-right-radius 0px
+				border-top-left-radius 3px
+				border-top-right-radius 3px
+				transition all 0.4s ease-in-out
+				.journal-panel__cabecera
+					border-top 0px dotted #dce1e5
+			&:last-child
+				border-bottom-left-radius 3px !important
+				border-bottom-right-radius 3px !important
+				border-top-left-radius 0px
+				border-top-right-radius 0px
+				margin-bottom 15px
+				transition all 0.4s ease-in-out
+			&__cabecera
+				overflow hidden
+		.journal-panel__cuerpo
+			width 100%
+	.collapse-journal-group
+		background-color #ffffff
+		border-bottom-left-radius 3px
+		border-bottom-right-radius 3px
+		border-top-left-radius 0px
+		border-top-right-radius 0px
+		text-align center
+		font-size 16px
+		width 40px
+		height 20px
+		margin-bottom 15px
+		display flex
+		flex-direction row
+		align-items center
+		justify-content center
+		cursor pointer
+		transition all 0.4s ease-in-out
+		box-shadow 0px 1px 1px 0px rgba(50, 50, 50, 0.43)
+		span
+			color #dce1e5
+			font-size 16px
+			text-align center
+			transition all 0.4s ease-in-out
+		&:hover
+			background-color #cdcdcd
+			span
+				color #212a3a
+	.progress-button
+		background transparent !important
+		border 1px solid #b5bfc4
+		color #b5bfc4
+		.progress-inner
+			background #768087 !important
+	.progress-button .content:after, .progress-button .content:before
+		color #b5bfc4 !important

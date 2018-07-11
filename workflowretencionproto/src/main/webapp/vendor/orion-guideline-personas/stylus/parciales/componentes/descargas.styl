@@ -1,0 +1,82 @@
+// estilo para boton solo
+.boton-descarga-documentos
+	font-size 25px
+	padding 0 !important
+
+// estilo para dropdown
+.dropdown-descarga
+	position relative
+	display inline-block
+	text-align left
+	&.open
+		.dropdown-menu
+			left -470%
+			border-radius 4px !important
+			a
+				font-size 12px
+				font-family $regular
+				padding 0 2px !important
+				i
+					font-size 25px
+					margin-right 5px
+					vertical-align middle
+				&:hover
+					background-color $grey-six !important
+			@media (max-width $bp-desktop)
+				left -880%
+			@media (max-width $bp-large-desktop)
+				left -740%
+			.bch-ico-q2-TXT
+				display inline-block
+				font-size 16px
+				padding 6px
+				
+.dropdown-acciones-empresas
+	display inline-block
+	vertical-align middle
+	.dropdown-toggle
+		display inline-block
+		position relative
+		vertical-align middle
+		i
+			color $grey-two
+			font-size 21px
+		&:hover
+			i
+				color $grey-one
+	
+	.dropdown-menu
+		a
+			i
+				margin-right 5px
+				&:before
+					font-size 19px
+					vertical-align middle
+			.ion-clipboard
+				&:before
+					font-size 17px
+			.icon-icon-clip
+				display inline-block
+				width 14px
+
+	.indicador-notificacion
+		absolute top 0 right -11px
+		border-radius 50%
+		background-color $info-color
+		height 7px
+		width 7px
+		z-index 10
+
+	& + .enlace-detalle-tabla
+		margin-left 16px
+
+// Se sobreescriben valores de subtabs para dropdown	
+.bch-empresas-subtabs
+.bch-empresas-tabs
+	.dropdown-descarga
+		.dropdown-menu
+			margin 0
+			a
+				height inherit
+				&:hover
+					border-bottom none

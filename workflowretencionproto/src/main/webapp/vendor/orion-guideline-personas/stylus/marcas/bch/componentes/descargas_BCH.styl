@@ -1,0 +1,45 @@
+// estilo para boton solo
+.boton-descarga-documentos
+	color $grey-one !important
+	&:hover
+		color $corporative-light-blue !important
+
+// estilo para dropdown
+.dropdown-descarga
+	a
+		color $grey-one !important
+		&:hover
+			color $corporative-light-blue
+	&.open
+		.dropdown-menu
+			a
+				color $grey-one
+				&:hover
+					color $corporative-light-blue
+					background-color inherit !important
+				i
+					color $corporative-light-blue
+			@media (max-width $bp-large-desktop)
+				left -740%
+			@media (max-width $bp-desktop)
+				left -880%
+				
+// Se sobreescriben valores de subtabs para dropdown	
+.bch-empresas-subtabs
+.bch-empresas-tabs
+	.dropdown-descarga
+		background-color inherit
+		border-color inherit
+		&.open
+			.boton-descarga-documentos
+				background-color inherit !important
+				border-color inherit !important
+				&:hover
+				&:focus
+				&:active
+					background-color inherit !important
+					border-color inherit !important
+		.dropdown-menu
+			a
+				border none
+				background-color inherit

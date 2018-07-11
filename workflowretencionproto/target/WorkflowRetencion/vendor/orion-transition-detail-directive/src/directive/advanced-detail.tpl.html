@@ -1,0 +1,18 @@
+<!-- VISTA DETALLE -->
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contenedor-detalle" >
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1">
+            <!-- BOTON VOLVER -->
+            <a href="javascript:void(0);" class="boton-volver"
+               ui-sref="{{ctrl.backState}}" ui-scrollfix="{{ctrl.scrollFixButton}}" >
+                <i class="ion-ios-arrow-left px-18" ></i>
+                <h6 class="text-info hidden-md hidden-lg">Volver</h6>
+                <span class="linea"></span>
+            </a>
+            <!-- END BOTON -->
+        </div>
+        <!-- CONTENIDO VISTA DETALLE -->
+        <ui-view></ui-view>
+    </div>
+</div>
+<!-- END VISTA DETALLE -->

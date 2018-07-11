@@ -1,0 +1,248 @@
+.error-landing-v2
+	background $default-color !important
+	color $color-12
+	font-weight 300
+	padding 50px 0px
+	clearfix()
+	& > section
+		margin-left 0 !important
+		width 100% !important
+	.cont-error-landing
+		background-color $color-16
+		display table
+		float left
+		margin-bottom 15px
+		min-height 90px
+		position relative
+		table-layout fixed
+		width 100%
+		&:before
+			font-family "Ionicons"
+			position absolute
+			top 50%
+			left 35px
+			height 60px
+			width 60px
+			font-size 72px
+			display block
+			margin-top -30px
+			line-height 85%
+			text-align center
+		div
+			border-right 3px solid $default-color
+			padding 0 15px 0 120px
+			display table-cell
+			float none
+			vertical-align middle
+			&:nth-child(2)
+				border none
+				padding-left 30px
+				padding-top 0
+				padding-bottom 0
+				h4
+					font-family $regular !important
+					margin-bottom 0
+				p
+					line-height 170%
+	span
+		font-size 50px
+		margin-left -10px
+	h1
+	h2
+		margin 0 0 5px
+		color $color-11
+		font-family $regular !important
+		line-height 1
+		b
+			font-weight normal
+	p
+		font 16px $light
+		color $color-11
+		margin-bottom 0
+	h5
+	h6
+		margin-bottom 0
+		
+	h4 + h6
+		font-size 16px
+		font-family $light
+	h6 + h5:not(.text-light)
+		font-size 18px
+		font-family $regular
+		
+	h4
+		font-size 14px
+		font-family $regular !important
+	
+	h5 + h4
+		font-size 18px
+
+	&.success
+		.cont-error-landing
+			&:before
+				content '\f3fe'
+	&.error
+		.cont-error-landing
+			&:before
+				content '\f405'
+	&.errorTwo
+		.cont-error-landing
+			&:before
+				content "\e604"
+				font-family 'empresas-bch-icon'
+				left 25px
+	&.information
+		.cont-error-landing
+			&:before
+				content "\f3e5"
+				
+	&.mensaje-sm
+		.cont-error-landing
+			display table
+			min-height 90px
+			&:before
+				font-size 45px
+				height 38px
+				left 40px
+				margin-top -18px
+				width 40px
+			h1
+				font-size 18px
+				font-family $regular
+				margin-bottom 5px
+				line-height 1
+				b
+					font-weight normal
+			p
+				font-size 14px
+				font-family $light
+				margin-bottom 0
+			div
+				border-right 0
+				min-height 90px
+				padding 0 25px 0 115px
+				vertical-align middle
+				width 100%
+				&.col-xs-4
+					display none
+
+.sweet-alert
+	border-radius 0
+	h2
+		display none
+	.icon
+		top 15px!important
+		&.info
+			&:after
+				left 50%
+	.space-box
+		margin-bottom 10px
+		margin-top 15px
+		p
+			font-size 14px
+	button 
+		font-family arial, helvetica, sans-serif
+		font-size 13px
+		margin-top 15px
+
+//Antiguos mensajes
+.error-landing
+	background $default-color
+	color $grey-two
+	font-weight 300
+	padding 50px 0px
+	clearfix()
+	div
+		background $corporative-light-grey
+		min-height 150px
+		padding-left 120px
+		margin-bottom 15px
+		&:nth-child(2)
+			border-left 3px solid $default-color
+			padding-left 15px
+			padding-top 30px
+			h5
+				color $info-color
+				margin-bottom 5px
+	span
+		font-size 50px
+		margin-left -10px
+		color $corporative-blue
+	h3
+		font-weight 300
+		font-size 20px
+		position relative
+		margin-top 30px
+		b
+			color $grey-one
+			font-family $regular
+	h4
+		font-size 15px
+		line-height 145%
+		font-family $light
+		a
+			text-decoration underline
+	&.success
+		h3 b
+			color $grey-two
+		h4
+			&:before
+				content '\f3fe'
+				font-family "Ionicons"
+				position absolute
+				top 60px
+				left 25px
+				height 60px
+				width 60px
+				font-size 80px
+				display block
+				color $success-color
+	&.error
+		h3 b
+			color $grey-two
+		h4
+			&:before
+				content '\f405'
+				font-family "Ionicons"
+				position absolute
+				top 60px
+				left 25px
+				height 60px
+				width 60px
+				font-size 80px
+				display block
+				color $danger-color
+	&.errorTwo
+		h3 b
+			color $grey-two
+		h4
+			&:before
+				content "\e604"
+				font-family "empresas-bch-icon"
+				position absolute
+				top 60px
+				left 25px
+				height 60px
+				width 60px
+				font-size 80px
+				display block
+				color $warning-color
+	&.information
+		h3 b
+			color $grey-two
+		h4
+			&:before
+				content "\f3e5"
+				font-family "Ionicons"
+				position absolute
+				top 40px
+				left 25px
+				height 65px
+				width 65px
+				line-height 65px
+				text-align center
+				border 3px solid $corporative-blue
+				border-radius 50%
+				font-size 50px
+				display block
+				color $corporative-blue

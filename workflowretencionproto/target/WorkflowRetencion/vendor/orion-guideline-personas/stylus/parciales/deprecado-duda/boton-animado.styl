@@ -1,0 +1,66 @@
+.btn-animado
+	position relative
+	vertical-align middle
+	display inline-block
+	.animado
+		background-color $default-color
+		border-radius 50%
+		border 1px solid $grey-three
+		width 22px
+		height 22px
+		position absolute
+		left 0
+		top 0
+		z-index 1
+		transition .2s all linear
+	i
+		display inline-block
+		position relative
+		z-index 2
+		color $grey-two
+		width 22px
+		height 22px
+		padding-top 1px
+		text-align center
+		font-weight bold
+		font-family arial
+		font-style normal
+		font-size 15px
+		margin-right 5px
+		vertical-align middle
+		transition .2s all linear
+	span:not(.animado)
+		margin-top 5px
+		display inline-block
+	&:hover
+		.animado
+			border-width 10px
+			border-style solid
+	&:focus
+		text-decoration none
+
+.btn-animado
+	&.success-btn
+		&:hover
+			.animado
+				border-color $success-color
+			i
+				color $default-color
+	&.info-btn
+		&:hover
+			.animado
+				border-color $info-color
+			i
+				color $default-color
+	&.warning-btn
+		&:hover
+			.animado
+				border-color $warning-color
+			i
+				color $default-color
+	&.danger-btn
+		&:hover
+			.animado
+				border-color $danger-color
+			i
+				color $default-color

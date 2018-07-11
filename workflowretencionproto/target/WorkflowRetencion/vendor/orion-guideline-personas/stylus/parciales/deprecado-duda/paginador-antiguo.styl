@@ -1,0 +1,86 @@
+.bch-empresas-paginador
+	*
+		font-family $regular !important
+	p
+		line-height 30px
+	.form-group
+		margin-bottom 0
+		.ui-select-bootstrap
+			.btn-default
+				border-width 1px
+				border-style solid
+				height 32px
+				border-radius 3px
+				.caret
+					margin-right 20px
+					font-family 'Ionicons' !important
+			ul.ui-select-choices-content
+				margin-top 0px
+	label
+		margin-top 8px
+		text-align right
+		padding-right 0
+		font-size 13px
+	.ui-select-container
+		min-width 70px
+		max-width 70px
+		width auto
+		
+.pagination
+	margin 0
+	> li
+		display inline-block
+		margin-right 5px
+		> a
+			border none
+			border-radius 0 !important
+			font-family $regular
+			font-size 14px
+			transition all .2s linear
+		&.active
+			a
+				border-bottom-style solid
+				border-bottom-width 2px
+				padding-bottom 4px
+				z-index 1 !important
+		&.disabled
+			display none
+		&:last-child
+			margin-right 0
+	.ui-select-container
+		min-width 70px
+		max-width 70px
+		width auto
+
+//Cambio de orden para no cambiar estructuras antiguas
+.bch-empresas-paginador
+	& > .row
+		& > div
+			&:nth-child(1)
+				float right !important
+				width auto
+				p
+					font-family $regular
+					font-size 12px
+			&:nth-child(2)
+				text-align left
+			&:nth-child(3)
+				float right
+				padding-right 0
+				text-align right
+				width auto
+				label
+					display inline-block
+					font-family $regular
+					font-size 12px
+					width auto
+				.ui-select-container
+					display inline-block
+					min-width 70px
+					max-width 70px
+					margin-left 10px
+					margin-right 10px
+					padding 0
+					width auto
+					.ui-select-match
+						width 70px

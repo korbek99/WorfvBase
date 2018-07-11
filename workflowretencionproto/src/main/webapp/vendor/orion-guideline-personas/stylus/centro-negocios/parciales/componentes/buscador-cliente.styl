@@ -1,0 +1,329 @@
+.centro-negocios
+	/* BUSCADOR CLIENTE  SIN DIRECTIVA (CREDITO) */			
+	.buscador-sin-directiva
+		border 1px solid $grey-10 
+		border-top-left-radius 0px !important
+		border-top-right-radius 0px !important
+		border-top 1px solid $grey-10
+		min-height 98px !important
+		border-radius 3px !important
+		overflow inherit !important
+		padding-top 15px !important
+		padding-bottom 15px !important
+		.maintain-high
+			height 100%
+			min-height 77px
+			display flex
+			.data_group
+				margin-bottom 0px !important
+		.titular-datos
+			position absolute !important
+			top -15px !important
+			height calc(100% + 30px) !important
+			background $brand-secondary !important
+			z-index 4 !important
+			padding 11px !important
+			opacity 0 !important
+			visibility hidden !important
+			transition all 0.4s ease-in-out !important
+			left 0px !important
+			margin 0px !important 
+			&.mostrarBox
+				opacity 1 !important
+				visibility visible !important
+				margin 0px !important
+				left 0px !important
+			.dates-perfil
+				height 100%
+				display flex 
+				flex-direction column
+				justify-content center
+				p
+					color $white
+					line-height 120%
+					margin-bottom 0
+					font-size 14px
+					&:last-child
+						font-size 12px
+				h2
+					color $white
+					line-height 120%
+					font-size 20px
+					overflow hidden
+					white-space nowrap
+					text-overflow ellipsis
+					margin 5px 0
+					font-family $light_cn
+					a
+						color $white
+			a
+				&.exit
+					position absolute !important
+					right 15px !important
+					top 1px !important
+					color $white !important
+					font-size 2em !important
+			p
+				color $white !important
+				line-height 120% !important
+			h2
+				color $white !important
+				line-height 120% !important
+				overflow hidden !important
+				white-space nowrap !important
+				text-overflow ellipsis !important
+		.buscador-datos__boton-loader
+			margin-top 18px !important
+		.buscador-datos__buscar
+			padding 0 0 0 15px
+		.data_group
+			margin-bottom 0px !important
+	/* FIN BUSCADOR CLIENTE  SIN DIRECTIVA (CREDITO */
+
+	/* BUSCADOR CLIENTES */
+	.buscador-datos
+		border 1px solid $grey-10
+		border-top-left-radius 0px !important
+		border-top-right-radius 0px !important
+		border-top 0px
+		overflow visible
+	.maintain-high
+		height 100%
+		min-height 77px
+		display flex
+		.data_group
+			margin-bottom 0px !important	
+		ng-buscar-cliente
+			.titular-datos
+				position absolute
+				top -15px
+				height 100%
+				background $brand-secondary
+				z-index 4
+				padding 11px
+				opacity 0
+				visibility hidden
+				transition opacity 0.4s ease-in-out
+				left 0px !important
+				margin 0px !important
+				a
+					&.exit
+						position absolute
+						right 15px
+						top 1px
+						color $white
+						font-size 2em
+				.dates-perfil
+					height 100%
+					display flex 
+					flex-direction column
+					justify-content center
+					p
+						color $white
+						line-height 120%
+						margin-bottom 0
+						font-size 14px
+						&:last-child
+							font-size 12px
+					h2
+						color $white
+						line-height 120%
+						font-size 18px
+						overflow hidden
+						white-space nowrap
+						text-overflow ellipsis
+						margin 5px 0
+						font-family $light_cn
+						a 
+							color $white
+							font-size 18px
+							font-family $light_cn
+				&.mostrarBox
+					opacity 1
+					visibility visible
+					margin 0px !important
+					left 0px !important
+					height calc(100% + 30px)
+					color $white
+				&.titular-datos--bch
+					background $brand-secondary
+				&.titular-datos--edw
+					background $brand-primary--edwards
+				&.titular-datos--cch
+					background $brand-primary--credichile
+			.buscador-datos__boton-loader
+				margin-top 18px !important
+			.buscador-datos__buscar
+				padding 0 0 0 15px
+			.data_group
+				margin-bottom 0px !important
+		.buscador-datos__boton-loader
+			margin-top 18px !important
+		.buscador-datos__buscar
+			padding 0 0 0 15px
+		.data_group
+			margin-bottom 0px !important
+	.buscador-datos--neutro
+		background $grey-10
+		padding-top 15px
+		padding-bottom 15px
+	/* FIN BUSCADOR CLIENTES */
+	
+	/* INFO CLIENTE SOLO DESPLIEGUE DE INFO*/
+	.client-box
+		background $brand-secondary
+		padding 20px 15px
+		.client-box__info
+			h2
+				color $white
+				line-height 120%
+				font-size 1.4em
+				overflow hidden
+				white-space nowrap
+				text-overflow ellipsis
+				margin 5px 0
+				font-family $light_cn
+			p
+				color $white
+				line-height 120%
+				margin-bottom 0
+				font-size 14px
+				&:last-child
+					font-size 12px
+		&--bch
+			background $brand-secondary
+		&--edw
+			background $brand-primary--edwards
+		&--cch
+			background $brand-primary--credichile
+	/* FIN INFO CLIENTE SOLO DESPLIEGUE DE INFO*/
+	
+	/* REVISAR Y LIMPIAR */
+	.buscador-datos--form
+		ng-buscar-cliente
+			display block 
+			.titular-datos
+				height auto 
+				min-height 77px 
+				top -10px 
+				h2
+					margin-bottom 10px
+	.work-area__header
+		display flex !important
+		flex-direction row !important
+		align-items center !important
+		.button-ctn-icons
+			position absolute
+			background transparent
+			border 1px solid transparent
+			right 15px
+			transition all 0.3s ease-in-out !important
+			i
+				font-size 1.2em !important
+				transition all 0.3s ease-in-out !important
+				color $grey-50 !important
+			&:focus
+			&:active
+				i
+					color $grey-50 !important
+			&:hover
+				i
+					color $grey-10 !important
+	.search-global
+		background $grey-10
+		display flex
+		flex-direction column
+		padding 17px 0px
+		margin-bottom 15px
+		margin-left -15px
+		margin-right -15px
+		margin-top -15px
+		transition all 0.2s ease-in-out
+		.search-global_col
+			flex 1
+			display flex
+			.search-global_input
+				input
+					padding 0 43px
+				i
+					position absolute 
+					top 28px
+					left 32px
+					color $grey-10
+					font-weight bold
+			.search-global_btn
+				display flex
+				flex 1
+				justify-content flex-end
+				padding 0 16px
+				flex-direction row
+				align-self center
+				align-items flex-end
+				.btn-secondary
+					margin-right 15px
+			&.search-global_mensaje
+				padding 0 15px
+				a
+					margin-left 10px 
+					color $grey-50
+					text-decoration underline
+			.date-block
+				display flex
+				flex-direction row	
+				.form-group.fechas
+					.datepicker
+						input
+							border-bottom-right-radius 0px !important
+							border-top-right-radius 0px !important
+							border-right none !important
+							&:placeholder-shown
+								color $grey-10 + 50%
+								font-family $light
+								font-size 14px
+							&:hover
+								border-top 1px solid $grey-30 !important
+								border-left 1px solid $grey-30 !important
+								border-right none !important
+								border-bottom 1px solid $grey-30 !important
+							&:focus
+								border-top 1px solid $grey-30 !important
+								border-left 1px solid $grey-30 !important
+								border-right none !important
+								border-bottom 1px solid $grey-30 !important
+						button.fechas-date
+							background $white !important
+							color $grey-10 !important
+							border-top 1px solid $grey-30
+							border-bottom 1px solid $grey-30
+							border-right 1px solid $grey-30
+							border-bottom-right-radius 3px
+							border-top-right-radius 3px
+							border-left $grey-30
+		.search-global_caret
+			position absolute
+			top -18px
+			right 31px
+			i
+				color $grey-10
+		.search-global_close
+			position absolute
+			right 9px
+			top 1px
+			display inline-block
+			width 25px
+			height 25px
+			text-align center
+			i
+				color $grey-30
+				font-size 2em
+	.search-marked
+		background #fff879
+	
+	/* ESTILOS GENERICOS PARA CAJA DE BUSQUEDA CON Y SIN DIRECTIVA */
+	.titular-datos
+		h2 
+			font-size 18px !important
+		.exit 
+			font-size 22px !important
+	/* FIN ESTILOS GENERICOS PARA CAJA DE BUSQUEDA CON Y SIN DIRECTIVA */
+	

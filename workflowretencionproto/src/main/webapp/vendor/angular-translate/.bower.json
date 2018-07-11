@@ -1,0 +1,16 @@
+{
+  "name": "angular-translate",
+  "description": "A translation module for AngularJS",
+  "version": "2.11.1",
+  "main": "./angular-translate.js",
+  "ignore": [],
+  "author": "Pascal Precht",
+  "license": "MIT",
+  "dependencies": {
+    "angular": ">=1.2.26 <1.6"
+  },
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/angular-translate",
+  "_target": "2.11.1",
+  "_release": "2.11.1",
+  "_originalSource": "angular-translate"
+}

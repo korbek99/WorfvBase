@@ -1,0 +1,187 @@
+.form-group
+	.form-control
+		background-color $default-color
+		border-color $color-13
+		&::-webkit-input-placeholder
+			color $color-13
+		&::-moz-placeholder
+			color $color-13
+		&:-ms-input-placeholder
+			color $color-13
+		&:-moz-placeholder 
+			color $color-13
+		&:focus
+			border-color $color-11 !important
+		&.ng-invalid
+			border-color $danger-color
+			color $color-11
+		&.ng-pristine
+			border-color $color-13
+			color $color-12
+		&[disabled]
+			background-color $color-16
+			border-color $color-14
+			color $color-12
+
+	.ui-select-bootstrap
+		.btn-default
+			border-color $color-14
+			&:hover
+				background $default-color
+				color $color-13
+			&:focus
+				border-color $color-11
+			.text-muted
+				color $color-13
+		.btn-default-focus
+			.ui-select-toggle
+				border-color $color-11
+		.ui-select-search
+			&:focus
+				border-color $color-11
+		.ui-select-choices-content
+			border-color $color-13
+			.ui-select-choices-row
+				&.active
+					.ui-select-choices-row-inner
+						background $color-16
+				a
+					color $color-12
+		.ui-select-match
+			span
+				span
+					color $color-12
+		&[disabled]
+			button
+				border-color $color-13
+				span
+					color $color-12 !important
+				.text-muted
+					color $color-12 !important
+		&.ng-invalid
+			&.ng-touched
+				.ui-select-match
+					span
+						&.ui-select-toggle
+							border-color $danger-color
+
+	.dropdown-menu
+		border-color $color-14
+		.active
+			a
+				background $color-16
+				color $color-11
+		li
+			div
+				table
+					thead
+						background-color $color-12
+						color $default-color
+						.btn
+							background transparent
+							color $default-color
+						th
+							color $color-11
+						tr
+							&:nth-child(even)
+								background-color $color-14
+								border-bottom-color $color-14
+								color $color-11
+					tbody
+						tr
+							td
+								border-bottom-color $color-14
+								border-left-color $color-14
+								&:last-child 
+									border-right-color $color-14
+								button
+									&:disabled
+										color $color-14
+						.btn
+							&:hover
+								background-color $color-13
+							&.active
+								background-color $success-color
+								span
+									color $default-color
+						.text-muted
+							color rgba(0,0,0,.1)
+
+.invalid
+	color $danger-color
+
+label
+	color $color-11
+	&.label-input
+		color $color-11
+
+.bch-custom-check
+	color $color-11
+	> div
+		background-color $default-color
+		border-color $color-14
+		i
+			color $color-3
+	&.favorite
+		i
+			color $color-13
+		div
+			background-color transparent
+		input:checked + i
+			color $color-23 !important
+	&.radiobutton
+		> div
+			i
+				background-color $color-3
+	&.disabled
+		> div
+			background-color $color-13
+
+.switch
+	i
+		background-color $color-16
+		border-color $color-13
+		&:before
+			background white
+			border 1px solid $color-13
+		&:hover
+			&:before
+				box-shadow  0 0 5px rgba(0,0,0,0.5)
+	:checked
+		& + i
+			switch_states($corporative-light-grey)
+	&.success
+	&.error
+	&.warning
+		background inherit
+		color inherit
+	&.success
+		:checked
+			& + i
+				switch_states($success-color)
+	&.error
+		:checked
+			& + i
+				switch_states($danger-color)				
+	&.warning
+		:checked
+			& + i
+				switch_states($warning-color)
+
+.bch-switch-text
+	input
+		&:checked
+			& + .interruptor
+				background-color $success-color
+				i
+					background-color $default-color
+					color $success-color
+				span
+					color $default-color
+	.interruptor
+		border-color $color-14
+		i
+			background-color $color-14
+			color $color-11
+		span
+			color $color-11

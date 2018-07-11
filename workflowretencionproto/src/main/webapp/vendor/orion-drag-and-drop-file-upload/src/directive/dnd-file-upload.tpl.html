@@ -1,0 +1,18 @@
+<div class="bch-file-upload-diretive">
+    <div ngf-drop ngf-select ng-model="dndUpload.files"
+         ngf-drag-over-class="{accept:'dragover', reject:'dragover-err'}"
+         ngf-multiple="true"
+         ngf-allow-dir="true"
+         accept="{{dndUpload.validMimeType}}"
+         ngf-pattern="'{{dndUpload.validMimeType}}'"
+         class="dnd" ng-init="dndUpload.iniciaEscucha()">
+        <div class="upload-box">
+            <i class="ion-ios-cloud-upload"></i>
+            <h5>Arrastrar aquí</h5>
+            <p>Tamaño de Archivo - Máximo {{dndUpload.maxFileSize}} MB</p>
+        </div>
+        <label class="btn info btn-block">Subir Archivo
+        </label>
+        <h5 ngf-no-file-drop>Esta navegador no soporta subida de archivos con arrastre</h5>
+    </div>
+</div>

@@ -1,0 +1,170 @@
+.caja-resumen-modelo-uno
+    margin 0 0 30px
+    padding 10px 0 20px
+    border-bottom-width 4px
+    border-bottom-style solid
+    .ion-ios-help-outline
+        font-size 16px
+        color $grey-three
+    .resumen-header
+        margin-bottom 10px
+        h3
+            display inline-block
+        h1
+        h2
+        h3
+        h4
+        h5
+        h6
+        p
+            margin-bottom 0
+    .resumen-body
+        .caja-contenido
+            .btn-more
+                text-align center
+                display block
+                color $grey-one
+                padding-right 20px
+                .ion-ios-plus-empty
+                  width 13px
+                  height 13px
+                  padding-top 1px
+                  text-align center
+                  border-radius 3px
+                  margin-right 3px
+            &:last-of-type
+                padding-left 0
+            & > div[class^="col-"] 
+                background $default-color
+            div
+                div[class^="col-"]
+                    padding 0
+        .listado-border
+            .col-lg-12
+                padding-right 0
+            ul
+                border-left-width 1px
+                border-left-style solid
+                margin-bottom 0
+                width 100%
+                li
+                    padding 10px
+                    border-bottom-width 1px
+                    border-bottom-style solid
+                    &:before
+                        font-family "Ionicons"
+                        content "\f3d3"
+                        float left
+                        margin-right 5px
+                    &:last-child
+                        border-bottom none
+                    &.sin-bullet
+                        &:before
+                            content ""
+                    p
+                        font-size 12px
+                        display inline-block
+                        margin-bottom 0
+                    .valor
+                        @media (min-width: $bp-tablet)
+                           float inherit
+                        @media (min-width: $bp-desktop)
+                            float right
+        .no-left-padding
+            padding-left 0
+
+.caja-resumen-modelo-tres
+    background-color $grey-five
+    margin 0 0 30px
+    padding 10px 0 20px
+    border-bottom-width 4px
+    border-bottom-style solid
+    .ion-ios-help-outline
+        font-size 16px
+    .resumen-header
+        margin-bottom 10px
+        h3
+            display inline-block
+        h1
+        h2
+        h3
+        h4
+        h5
+        h6
+        p
+            margin-bottom 0
+            
+    .resumen-body
+        background $default-color
+        .row
+            & > div
+                & > div
+                    padding-top 10px
+        .listado-border
+            padding-right 0
+            padding-top 0!important
+            &:last-child
+                padding-left 0
+                padding-right inherit
+            ul
+                border-left-width 1px
+                border-left-style solid
+                margin-bottom 0
+                width 100%
+                li
+                    padding 10px
+                    border-bottom-width 1px
+                    border-bottom-style solid
+                    &:before
+                        font-family "Ionicons"
+                        content "\f3d3"
+                        float left
+                        margin-right 5px
+                    &:last-child
+                        border-bottom none
+                    &.sin-bullet
+                        &:before
+                            content ""
+                    p
+                        font-size 12px
+                        display inline-block
+                        margin-bottom 0
+                    .valor
+                        @media (min-width: $bp-tablet)
+                           float inherit
+                        @media (min-width: $bp-desktop)
+                            float right
+                                        
+.caja-resumen-modelo-dos
+    @extend .caja-resumen-modelo-tres
+    .resumen-body
+        .row
+            & > div
+                padding-top 10px
+                padding-bottom 10px
+                display table
+                & > div
+                    float none
+                    display table-cell
+                    vertical-align top
+                    border-right-width 1px
+                    border-right-style solid
+
+.caja-resumen-modelo-cuatro
+    @extend .caja-resumen-modelo-uno
+
+    .resumen-body
+        .caja-contenido
+            &:first-child
+                padding-right 0
+            &:last-of-type
+                & > div
+                    padding-left 0
+                    &:first-child
+                        & > div
+                            &:first-child
+                                padding-right 5px
+        .border-inverse
+            ul
+                border-right-width 1px
+                border-right-style solid

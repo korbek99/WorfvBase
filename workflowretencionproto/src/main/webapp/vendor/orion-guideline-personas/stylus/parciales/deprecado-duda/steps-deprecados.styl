@@ -1,0 +1,25 @@
+//Steps Horizontales
+
+.steps-horizontales
+	.step
+		color $grey-two 
+		i
+			border-color $table-blue-three
+			color $default-color
+			background-color $default-color
+		&:after
+			border-top-color #D5E4EA
+		&.active
+			color $color-4
+			i
+				border-color $corporative-blue-thin
+				color $corporative-blue-thin
+			&:after
+				border-top-color #D5E4EA
+		&.done
+			color $success-color
+			&:after
+				border-top-color $success-color
+			i
+				border-color $success-color
+				color $success-color

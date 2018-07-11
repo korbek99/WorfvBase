@@ -1,0 +1,356 @@
+.data-bar
+	display flex
+	flex-direction row
+	align-items center
+	min-height 70px
+	background #fff
+	transition all 0.3s linear
+	padding 15px 0 15px 115px !important
+	position relative
+	border 1px solid $color-13
+	z-index inherit
+	&__producto-tipo
+		font-size 20px
+		height 100%
+		background $color-16
+		position absolute
+		display flex
+		min-height 100%
+		max-height 100%
+		left 0
+		top 0
+		width 100px
+		align-items center
+		color $color-3
+		justify-content center
+		transition all 0.3s linear
+		> i
+			font-size 45px
+			color $color-3
+			transition all 0.3s linear
+			height 45px
+			top calc(50% - (45px / 2))
+		.form-group
+			.bch-custom-check
+				> div
+					vertical-align top !important
+	&__estado
+		height 10px
+		width 10px
+		position absolute
+		left 85px
+		z-index 2
+		top 5px
+		transition all 0.2s ease-in-out
+		.state
+			width 10px
+			height 10px
+			border-radius 50px
+			position absolute
+			transition all 0.2s ease-in-out
+			&.green
+				background $color-19
+			&.blue
+				background $color-6
+			&.warning
+				background $color-23
+			&.red
+				background $color-21
+			&.magent
+				background $color-27
+			&.gray
+				background $color-12
+				transition all 0.2s ease-in-out
+		&:hover
+			width 20px
+			left 75px
+			.state
+				width 20px
+	&__resumen-producto
+		display flex
+		flex-direction row
+		align-items stretch
+		width calc(100% - 40px)
+		&--bloque
+			margin-right 15px
+			padding-left 15px
+			border-left 1px solid $color-13
+			transition all 0.3s linear
+			h5
+				font-size 14px
+				color $color-1
+				margin-bottom 0px
+				transition all 0.1s ease-in-out
+				word-break break-all
+			span
+				color $color-12
+				transition all 0.1s ease-in-out
+			&:first-child
+				padding-left 0px
+				border none !important
+			&:last-child
+				margin-right 0px
+		&.no-actions
+			width calc(100% - 15px) !important
+	&__actions
+		width 40px
+		text-align center
+		display flex
+		flex-direction column
+		align-items center
+		justify-content center
+		height 100%
+		position absolute
+		right 0
+		top 0
+		.btn-fill__data-bar
+			.cont-animacion
+				span
+					border-color $color-6 !important
+					box-shadow none !important
+				i.ion-ios-arrow-down
+					transform rotate(0deg) scale(1) skew(1deg) translate(0px)
+					transition all 0.3s ease-in-out
+					color $default-color !important
+					&.voltea
+						transform rotate(-180deg) scale(1) skew(1deg) translate(0px)
+			&:hover
+				.cont-animacion
+					span
+						border-color $color-5 !important
+					i.ion-ios-arrow-down
+						color $default-color
+		.btn-fill
+			.cont-animacion
+				span
+					border-color $color-6 !important
+					box-shadow none !important
+				i.ion-ios-arrow-down
+					transform rotate(0deg) scale(1) skew(1deg) translate(0px)
+					transition all 0.3s ease-in-out
+					color $default-color !important
+					&.voltea
+						transform rotate(-180deg) scale(1) skew(1deg) translate(0px)
+			&:hover
+				.cont-animacion
+					span
+						border-color $color-5 !important
+					i.ion-ios-arrow-down
+						color $default-color
+		.dropdown-menu
+			left initial !important
+			right 0 !important
+
+	&.sin-producto-tipo
+		padding 15px 0 15px 15px !important
+	//TIPOS DE DATA BAR
+	&--buttons
+		border-bottom none
+		.data-bar__resumen-producto
+			width calc(100% - 40px)
+			justify-content space-between
+			.data-bar__resumen-producto--bloque
+				h5
+					color $color-1
+					font-family $regular
+					font-weight normal
+					font-size 14px
+					margin-bottom 0px
+					margin-top 0px
+				p
+					font-size 14px
+					color $color-11
+					margin-bottom 0px
+			.data-bar__resumen-producto--actions
+				display flex
+				flex-direction row
+				align-items center
+				a.btn-fill__data-bar
+					margin-left 15px
+				a.btn-fill
+					margin-left 15px
+				div.dropdown
+					button.dropdown-toggle
+						height 34px
+			&.no-extended
+				width calc(100% - 15px)
+	&--combi
+		border-bottom none
+		.data-bar__resumen-producto
+			.data-bar__resumen-producto--bloque
+				h5
+					font-size 14px
+					color $color-1
+					margin-bottom 0px
+					transition all 0.1s ease-in-out
+				span
+					color $color-12
+					transition all 0.1s ease-in-out
+	&--dropdown-nav
+		z-index inherit
+		.data-bar__resumen-producto
+			width calc(100% - 80px)
+			.data-bar__resumen-producto--bloque
+				h5
+					font-size 14px
+					color $color-1
+					margin-bottom 0px
+					transition all 0.1s ease-in-out
+				span
+					color $color-12
+					transition all 0.1s ease-in-out
+		.data-bar__actions
+			width 80px
+			text-align center
+			display flex
+			flex-direction row
+			align-items center
+			justify-content center
+			height 100%
+			position absolute
+			right 0
+			top 0
+			.dropdown
+				margin-right 10px
+				cursor pointer
+				a.dropdown-toggle
+					font-size 25px
+					color $color-6
+					transition all 0.2s ease-in-out
+				&:hover
+					a.dropdown-toggle
+						color $color-5
+			.btn-fill__data-bar
+				.cont-animacion
+					i.ion-ios-arrow-down
+						transform rotate(0deg) scale(1) skew(1deg) translate(0px)
+						transition all 0.3s ease-in-out
+						&.voltea
+							transform rotate(-180deg) scale(1) skew(1deg) translate(0px)
+			.btn-fill
+				.cont-animacion
+					i.ion-ios-arrow-down
+						transform rotate(0deg) scale(1) skew(1deg) translate(0px)
+						transition all 0.3s ease-in-out
+						&.voltea
+							transform rotate(-180deg) scale(1) skew(1deg) translate(0px)
+		&.desglose
+			border-bottom none
+	&--link
+		overflow hidden
+		.data-bar__resumen-producto
+			.data-bar__resumen-producto--bloque
+				h5
+					font-size 14px
+					color $color-1
+					margin-bottom 0px
+					transition all 0.1s ease-in-out
+				span
+					color $color-12
+					transition all 0.1s ease-in-out
+		.come-back
+			transition all 0.2s ease-in-out
+			.box-back
+				background $color-16
+				text-align center
+				width 40px
+				height 100%
+				position absolute
+				cursor pointer
+				display flex
+				flex-direction column
+				align-items center
+				justify-content center
+				transition all 0.3s linear
+				top 0px
+				right 0px
+				i
+					color $color-6
+					font-size 25px
+					transform rotate(180deg)
+					transition all 0.3s linear
+				&:hover
+					background $color-6
+					i
+						color $default-color
+	&.data-bar--active
+		background $color-15
+		border-bottom none
+		.data-bar__estado
+			.state.gray
+				background $color-17
+		.data-bar__producto-tipo
+			background $color-3
+			color $default-color
+			> i
+				color $default-color
+		.data-bar__resumen-producto--bloque
+			border-left 1px solid $color-13
+		&.data-bar--link
+			.come-back
+				.box-back
+					background $color-6
+					cursor pointer
+					transition all 0.3s linear
+					top 0px
+					right 0px
+					i
+						transform rotate(0deg)
+						color $default-color
+				&:hover
+					background $color-5
+				
+.data-bar--desglose
+	border 1px solid $color-13
+	border-top none
+	max-height 0px
+	overflow hidden
+	transition all 0.3s linear
+	margin-top -30px
+	z-index 1
+	table
+		border-bottom 1px solid $color-13
+		position relative
+		top -15px
+		tr
+			border none !important
+			background none !important
+			&:hover
+				background none !important
+			td
+				border none !important
+				padding 10px 0px !important
+				&:first-child
+					vertical-align top !important
+					width 25% !important
+				&:nth-child(n + 2)
+					width 25% !important
+				p:last-child
+					margin-bottom 0px !important
+		&:first-child
+			position relative
+			top -20px
+		&:last-child
+			border-bottom none
+	&_lista
+		list-style none
+		padding 0
+		margin-bottom 0
+		li
+			float left
+			margin-bottom 15px
+			padding-right 15px
+			&:nth-child(4n+1)
+				clear left
+			p
+				color $color-12
+				margin-bottom 5px
+				& + p
+					color black
+					margin-bottom 0
+	&.expandido
+		padding 0px 15px 0px 15px
+		max-height 10000px
+		margin-top -30px
+		margin-bottom 30px
+		overflow visible

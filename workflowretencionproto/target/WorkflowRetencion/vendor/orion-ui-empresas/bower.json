@@ -1,0 +1,25 @@
+{
+  "name": "orion-ui-empresas",
+  "version": "1.0.2-REFERENCE.1",
+  "authors": [
+    "Juan Vallejos <jvallejosg@bancochile.cl>"
+  ],
+  "description": "Referencia a estilos base para proyectos empresas",
+  "keywords": [
+    "ui",
+    "diseno",
+    "front",
+    "stylus",
+    "guidelines"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

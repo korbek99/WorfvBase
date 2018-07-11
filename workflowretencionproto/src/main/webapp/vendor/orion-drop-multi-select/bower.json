@@ -1,0 +1,37 @@
+{
+	"name": "orion-drop-multi-select",
+	"version": "1.0.13",
+	"authors": [
+		"LokoHanks <dhansc.3it@bancochile.cl>"
+	],
+	"description": "Directiva selector dropdown con multiples opciones",
+	"main": "*",
+	"license": "MIT",
+	"private": false,
+	"ignore": [
+		"**/.*",
+		"build",
+		"karma",
+		"node_modules",
+		"protractor",
+		"reports",
+		"vendor",
+		"bower_components",
+		"test",
+		"tests",
+		"src/constants/constants.js",
+		"build.config.js",
+		"Gruntfile.js",
+		"module.prefix",
+		"module.suffix",
+		"package.json",
+		"proxy.js",
+		"assets/dummy-files",
+		"npm-debug.log",
+		"src/devapp",
+		"**/*.spec.js"
+	],
+	"dependencies": {},
+	"devDependencies": {},
+	"resolutions": {}
+}

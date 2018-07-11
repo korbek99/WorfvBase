@@ -1,0 +1,91 @@
+.bch-empresas-nav
+  margin 0
+  border-top-width 4px
+  border-top-style solid
+  .nav-vtwo
+    height 40px
+    .nav-pills
+      display inline-block
+      li
+        a
+          font-size 1em
+          padding 10px 15px
+          animacion(0.25s)
+          .ion-chevron-down
+            margin-left 10px
+      & > li
+        border-left-width 1px
+        border-left-style solid
+        & + li
+          margin-left 0px
+        & > a
+          text-align center
+      .bch-nav-dropdown
+        position relative
+        min-width 120px
+        &:hover
+          .subitems-menu-container
+            display block
+        &:last-child
+          border-right-width 1px
+          border-right-style solid            
+        .subitems-menu-container
+          position absolute
+          z-index 20
+          min-width 30px
+          width auto
+          display none
+          white-space nowrap
+          max-width 469px
+          overflow hidden
+          z-index 102
+          .cont-padres-links
+            display table-cell
+            vertical-align top
+            padding-left 0
+            width auto
+            min-width 189px
+            border-right-width 2px
+            border-right-style solid
+            li
+              min-height 38px
+              a
+                display block
+                text-decoration none
+                border-left-width 4px
+                border-left-style solid
+                padding 10px 5px
+                position relative
+                width 102%
+                cursor pointer
+                &:hover
+                &:focus
+                  text-decoration none
+                  border-left-width 4px
+                  border-left-style solid
+                .ion-chevron-right
+                  font-size 8px
+                  position absolute
+                  right 12px
+                  top 11px
+          .cont-children-links
+            min-width 280px
+            display table-cell
+            vertical-align top
+            height 100%
+            border-left-width 2px
+            border-left-style solid
+            .list-unstyled
+              margin 5px 0 0 15px
+            li
+              margin-bottom 6px
+              &:before
+                content "• "
+                font-size 19px
+              a
+                padding 10px 5px
+                text-decoration none
+                animacion(0.25s)
+                &:hover
+                  text-decoration none
+                  cursor pointer

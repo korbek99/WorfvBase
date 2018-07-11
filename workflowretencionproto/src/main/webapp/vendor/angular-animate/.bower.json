@@ -1,0 +1,13 @@
+{
+  "name": "angular-animate",
+  "version": "v1.3.20",
+  "main": "./angular-animate.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": "1.3.20"
+  },
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/angular-animate",
+  "_target": "1.3.20",
+  "_release": "v1.3.20",
+  "_originalSource": "angular-animate"
+}

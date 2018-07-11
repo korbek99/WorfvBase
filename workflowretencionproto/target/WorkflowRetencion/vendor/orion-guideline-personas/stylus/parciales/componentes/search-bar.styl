@@ -1,0 +1,156 @@
+.search-bar
+	background-color $color-15
+	min-height 45px
+	position relative
+	width 100%
+	p
+		display inline-block
+		margin 15px 0 0 15px
+		&.monto
+			margin-left 150px
+			span
+				margin-left 20px
+	&__btn-periodo
+		display inline-block
+		font-size 14px
+		font-family $regular !important
+		margin-left 15px
+		margin-top 15px
+		padding-bottom 3px
+		i
+			vertical-align middle
+	&__caja-periodos
+		absolute top 45px left 0
+		background-color $color-15
+		box-shadow 2px 5px 7px 0px rgba(50, 50, 50, 0.35)
+		text-align center
+		z-index 50
+	&__dateSet
+		float left
+		padding-top 15px
+		width 180px
+		button
+			margin 0 0 15px
+			position relative
+			width 140px
+			&.active
+				border-color $color-13
+				box-shadow none
+				&:before
+				&:after
+					content ''
+					cursor default
+					width 0
+					height 0
+					position absolute
+					border-style solid
+					border-width 10px 0 10px 10px
+					border-color transparent transparent transparent $color-13
+					right -31px
+				&:after
+					border-color transparent transparent transparent $color-15
+					right -29px
+			&:focus
+			&:active
+				border-color $color-13 !important
+				box-shadow none
+	&__datepickers
+		background-color $color-16
+		border-left 1px solid $color-13
+		float left
+		padding-top 15px
+		width 435px
+		> button
+			margin 10px 18px 15px 0 !important
+	&__calendar
+		float left
+		height 160px
+		margin-left 22px
+		width 190px
+		button
+			padding 2px 7px
+			text-transform capitalize
+		table
+			thead
+				th
+					padding 1px !important
+					.glyphicon-chevron-right
+					.glyphicon-chevron-left
+						font-size 10px !important
+			tbody
+				tr
+					td
+					button
+						font-size 10px !important
+	&__actions
+		float right
+		list-style none
+		margin 0
+		& > li
+			float left
+			margin-left -1px
+			& > a
+				color $color-12
+				float left
+				height 45px    
+				font-size 20px
+				padding-top 14px
+				position relative
+				line-height 1
+				text-align center
+				width 45px
+				&:hover
+				&.active
+					background-color $color-16
+				i
+					&:after
+						absolute left -1px top 10px
+						border-left 1px solid $color-13
+						content ''
+						height 25px
+			.dropdown-menu
+					a
+						padding 3px 10px
+						font-size 14px
+					i
+						font-size 20px
+						margin-right 5px
+						text-align center
+						vertical-align middle
+						width 20px
+						&.bch-ico-q2-TXT
+							font-size 12px
+							margin-right 10px
+							margin-left 5px
+	&__filters
+		align-items stretch
+		background-color $color-16
+		display flex
+		width 100%
+		&.collapse
+			display none !important
+			&.in
+				display flex !important
+	&__fieldset
+		width calc(100% - 90px)
+		h6
+			color $color-11
+			margin 15px 0 10px 15px
+	&__buttonset
+		align-self flex-end
+		margin-bottom 15px
+		width 90px
+	&--actions
+		margin-top 3px
+		button
+			margin 7px 15px 0 0 !important
+		.dropdown-menu
+			right 15px !important
+			a
+				padding 3px 10px
+			i
+				font-size 20px
+				margin-right 5px
+				text-align center
+				vertical-align middle
+				width 20px

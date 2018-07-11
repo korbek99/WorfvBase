@@ -1,0 +1,113 @@
+/* VARIABLES MENU */
+$header--height     = 60px
+$min-width          = 1000px
+
+.centro-negocios
+	/* GENERALES */
+	p.functionality-in-progress
+		font-size 13px
+		color $grey-30
+		padding 15px 0
+		text-align center
+		
+	body
+		padding-top $header--height
+		padding-bottom 200px
+
+	/* LOADING PAGE */
+	#loading-bar
+		.bar
+			height 5px
+	#loading-bar-spinner
+		display none
+
+	/* PRINCIPAL-CONTAINER */
+	.principal-container
+		min-width $min-width
+		height 100% 
+		  
+	/* WORK-AREA */
+	.work-area
+		width 100%
+		.work-area__header
+			background $white
+			width 100%
+			padding 20px 15px
+			margin 0
+			h1
+				margin 0
+				font-size 1.7em /* Recordatorio: unificar con h1 del webkit */
+				color $brand-primary
+
+	/* ASIDE-NAV-COMPRESSED */
+	.aside-nav-compressed
+		.aside-nav 
+			z-index 3
+			width 50px
+			overflow-y visible
+			li.aside-nav__category
+				position relative
+				width 50px 
+				transition all 0.3s ease
+				a
+					font-size 1.4em
+					span
+						font-size 0
+						opacity 0
+						width 0 
+						height 0
+						display block
+						overflow hidden
+					&:before
+						display none !important
+				ul
+					display none !important
+					opacity 1
+					position absolute
+					left 50px
+					width 200px
+					background $brand-darken--dark
+					padding-left 15px
+					top -1px
+					li 
+						a
+							font-size 1em
+				&:hover
+					ul 
+						display block !important
+						opacity 1
+		.aside-nav-close
+			width 50px
+			i
+				transform rotate(180deg)
+				width 50px
+		.work-area 
+			width calc(100% - 50px)
+		
+	/* POPOVER */
+	.box-over
+		z-index 4
+		position fixed
+		overflow-y auto
+		top 0
+		right -400px
+		width 400px
+		height 100%
+		background $white
+		box-shadow 0 -5px 18px rgba(0,0,0,.22),0 0 3px 0 rgba(0,0,0,.17)
+		transition all 0.3s ease
+		h2
+			background $brand-primary
+			margin 0
+			height 50px
+			line-height 50px
+			font-size 1.2em
+			padding 0 15px
+			color $white
+			i
+				cursor pointer
+				position absolute
+				right 15px
+				top 15px
+		&.box-over--open
+			right 0

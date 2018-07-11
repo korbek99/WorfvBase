@@ -1,0 +1,21 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://osb.bancochile.cl/ESB/ObtieneInformacionFuncionario/OpObtieneInformacionFuncionarioResponse" targetNamespace="http://osb.bancochile.cl/ESB/ObtieneInformacionFuncionario/OpObtieneInformacionFuncionarioResponse" elementFormDefault="qualified">
+    <complexType name="cuerpo">
+        <sequence>
+            <element name="cuerpo" type="tns:CuerpoResponseType"/>
+        </sequence>
+    </complexType>
+    <complexType name="CuerpoResponseType">
+        <sequence>
+            <element name="nombreFuncionario" minOccurs="1" maxOccurs="1" nillable="false" type="string"/>
+            <element name="rutFuncionario" minOccurs="1" maxOccurs="1" nillable="false" type="string"/>
+            <element name="codigoOficina" minOccurs="1" maxOccurs="1" nillable="false" type="string"/>
+            <element name="nombreOficina" minOccurs="1" maxOccurs="1" nillable="false" type="string"/>
+            <element name="emailFuncionario" minOccurs="1" maxOccurs="1" nillable="false" type="string"/>
+            <element name="telefonoFuncionario" minOccurs="1" maxOccurs="1" nillable="false" type="string"/>
+            <element name="cuiFuncionario" type="string"/>
+            <element name="descCuiFuncionario" type="string"/>
+            <element name="cuiArea" type="string"/>
+            <element name="descCuiArea" type="string"/>
+        </sequence>
+    </complexType>
+</schema>

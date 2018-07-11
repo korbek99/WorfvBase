@@ -1,0 +1,46 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mensaje-info-tabla text-default" collpase="orionTablas.collapseInfo">
+
+  <!-- Mensaje cantidad maxima de elementos -->
+  <p class="text-bold mb-10" ng-if="cantidadSeleccionados > cantidadMinimaColumnas">Las tablas muestran hasta un máximo de {{cantidadMaximaColumnas}} columnas
+  </p>
+  <p class="mb-0 px-11" ng-if="cantidadSeleccionados > cantidadMinimaColumnas">
+    <b class="text-bold">Para reemplazar una columna:</b> 
+    debes deseleccionar alguno de los elementos activos y marcar otro.
+  </p>
+
+  <!-- Mensaje cantidad minima de elementos -->
+  <p class="text-bold mb-10 pt-15" ng-if="cantidadSeleccionados <= cantidadMinimaColumnas" >Las tablas sólo muestran hasta un Minimo de {{cantidadMinimaColumnas}} columnas</p>
+
+ <!-- Icono cerrar mensaje info en tabla -->
+  <!-- <a href="javascript:void(0)" class="cerrar" ng-click="orionTablas.!collapseInfo">
+    <i class="ion-ios-close-empty px-30"></i>
+  </a> -->
+  
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 border-bottom mt-5 pb-5">
+    <h6 class="text-marketing-blue-one mb-0">
+        Ítems seleccionados:
+        <span >{{cantidadSeleccionados}}/{{cantidadMaximaColumnas}}</span>
+    </h6>
+</div>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pt-5">
+  <label class="bch-custom-check"
+       ng-class="{'disabled': columnaDisabled(status), 'obligatorio': !status.ocultable}"
+       ng-repeat="status in statusColumnas">
+
+    <i ng-show="!status.ocultable" class="ion-ios-locked-outline"></i>
+    <div>
+        <input type="checkbox" ng-value="true"
+               data-index="{{status.index}}"
+               ng-disabled="columnaDisabled(status)"
+               ng-model="status.visible"
+               ng-click="mostrarOcultarColumnas(status)">
+        <i></i>
+    </div>
+    <span class="nombre">{{status.nombre}}</span>
+</label>
+</div>
+
+

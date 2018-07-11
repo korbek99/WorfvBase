@@ -1,0 +1,18 @@
+{
+  "name": "ng-scrollbar",
+  "version": "v0.0.8",
+  "dependencies": {},
+  "main": [
+    "./dist/ng-scrollbar.js",
+    "./dist/ng-scrollbar.css"
+  ],
+  "devDependencies": {
+    "angular": "latest",
+    "angular-mocks": "latest",
+    "jquery": "latest"
+  },
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/ng-scrollbar",
+  "_target": "0.0.8",
+  "_release": "v0.0.8",
+  "_originalSource": "ng-scrollbar"
+}

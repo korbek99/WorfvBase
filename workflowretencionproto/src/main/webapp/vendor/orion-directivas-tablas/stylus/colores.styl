@@ -1,0 +1,40 @@
+@css{
+/*  
+/* Tabla Interactiva
+/* Juan Vallejos
+*/
+}
+@import '../../orion-guideline-personas/stylus/parciales/variables.styl'
+@import 'webkit.styl'
+@import 'nib'
+
+.tabla-interactiva
+	thead
+		.show-hide
+			> a
+				background-color $color-7
+		.listado-header
+			background-color $color-16
+			border-top-color $default-color
+			.mensaje-info-tabla
+				background-color $color-info
+				.cerrar
+					i
+						color $grey-two !important
+			.bch-custom-check
+				&:hover
+					background-color $grey-three
+				div
+					input:checked
+						& + i
+							color $color-3 !important
+				.nombre
+					color $grey-two
+				&.disabled
+					& > div
+						background-color $color-13
+			.obligatorio
+				.ion-ios-locked-outline
+					color $color-12 !important
+			
+						

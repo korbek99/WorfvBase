@@ -1,0 +1,22 @@
+{
+  "name": "spin.js",
+  "version": "2.0.2",
+  "main": "spin.js",
+  "dependencies": {},
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fgnass/spin.js.git"
+  },
+  "ignore": [
+    "Gruntfile.js",
+    "site",
+    "bower.json",
+    "component.json",
+    "package.json"
+  ],
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/spin.js",
+  "_target": "~2.0.2",
+  "_release": "2.0.2",
+  "_originalSource": "spin.js"
+}

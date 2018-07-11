@@ -1,0 +1,116 @@
+.ngrs-range-slider
+	box-shadow none
+	border none
+	margin-top 20px
+	width 100%
+	padding 0
+	.ngrs-join
+		height 10px
+		margin 0 !important
+		top 0
+	.ngrs-runner
+		border none !important
+		margin 0 !important
+		height 10px
+		border-radius 3px
+	.ngrs-handle
+		padding 11px
+		border-radius 50%
+		margin-top -8px
+		border-width 1px
+		border-style solid
+		transition box-shadow 0.3s linear
+		cursor pointer
+		width auto
+	&.ngrs-focus
+		box-shadow none
+.bottom-slider
+	width 100%
+	margin-left 0
+	margin-top 10px
+	font-size 11px
+	&:before
+		content attr(data-in)
+		float left
+	&:after
+		content attr(data-en)
+		float right
+.range-slider-input
+	.ngrs-range-slider
+		width 100%
+		margin-bottom 15px !important
+	&__meses
+		display flex
+		div
+			flex 1
+			position relative
+			span
+				display block
+				width 14px
+				margin-left -4px
+				text-align center
+			&:last-child
+				max-width 1px
+				span
+					position absolute
+					right -6px
+					
+/* NUEVO SLIDER */
+.rzslider
+	margin-top 0
+	.rz-bar
+		height 10px
+		border-radius 3px
+		background $color-15
+		z-index 1
+		&.rz-selection
+			background $color-3 !important
+			background-color $color-3 !important
+			visibility visible
+			z-index 2
+	.rz-pointer
+		top -7px
+		z-index 3
+		width 24px
+		height 24px
+		cursor pointer
+		background-color white
+		border-radius 16px
+		border 8px solid $color-3
+		&:after
+			display none
+		&:focus
+			outline none
+		&:active
+			outline none
+	.rz-ticks
+		.rz-tick
+			position absolute
+			top 5px
+			left 0
+			width 5px
+			height 5px
+			margin-left 11px
+			text-align center
+			cursor pointer
+			background-color transparent !important
+			border-radius 50%
+	.rz-ticks-values-under
+		.rz-tick-value
+			bottom -30px
+	.rz-tick-value
+		color $color-12
+		font-size 12px !important
+		font-family $regular !important
+	.rz-bubble
+		display none
+		&.rz-limit
+			display none
+			
+	&.selector-con-valor
+		margin-bottom 30px
+		.rz-bubble
+			display inline-block
+			top 25px
+			&.rz-limit
+				display none

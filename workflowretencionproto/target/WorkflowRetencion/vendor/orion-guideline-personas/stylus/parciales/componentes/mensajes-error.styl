@@ -1,0 +1,45 @@
+.mensaje-aviso
+	background-color $color-16
+	color $color-11
+	display flex
+	align-items stretch
+	margin-bottom 15px
+	padding 0 15px
+	min-height 90px
+	width 100%
+	h2
+	h4
+	h5
+	h6
+		margin 0
+	&__icono
+		font-size 60px
+		line-height 1
+		text-align center
+		width 60px
+		i
+			display inline-block
+			margin-top 10px
+	&__texto
+		border-right 1px solid $default-color
+		padding-top 15px
+		padding-bottom 15px
+		min-height 90px
+	&__info-complementaria
+		padding-left 15px
+		padding-top 15px
+		padding-bottom 15px
+		width 315px
+		button
+			margin-top 15px
+		h4
+			@media (min-width $bp-mobile)
+				font-size 14px
+			@media (min-width $bp-tablet)
+				font-size 18px
+		h5
+			@media (min-width $bp-mobile)
+				font-size 14px
+				line-height 1
+			@media (min-width $bp-tablet)
+				font-size 16px

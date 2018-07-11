@@ -1,0 +1,118 @@
+/* ALERTAS Y MENSAJES INFORMATIVOS */
+.bch-mensaje-empresas
+	align-items center
+	border-radius 0
+	clear both
+	display flex
+	margin 10px 0
+	font-family $light
+	font-size 14px
+	padding 15px 15px 15px 70px
+	min-height 70px
+	position relative
+	article
+		color $color-11
+		margin 0
+		h5
+			margin 0 0 5px 0
+			line-height 90%
+		p
+			margin 0
+			font-family $light
+			font-size 14px
+		&:before
+			absolute top 15px left 15px
+			font 45px "Ionicons"
+			height 40px
+			line-height 1
+			text-align center
+			width 40px
+		ul
+			padding-left 20px
+			margin-top 5px
+			li
+				p
+					font-size 13px
+					margin-bottom 0
+	&.success
+		article
+			&:before
+				content '\f3fe'
+
+	&.warning
+		article
+			&:before
+				content '\e604'
+				font-family 'empresas-bch-icon'
+
+	&.error
+		article
+			&:before
+				content '\f405'
+
+	&.information
+		article
+			&:before
+				content "\f44c"
+	&--opciones
+		display block
+		padding 20px 120px 20px 70px
+		transition all .5s linear
+		p 
+			white-space nowrap
+			overflow hidden
+			text-overflow ellipsis
+		&-icono
+			font 30px "Ionicons"
+			height 40px
+			left 15px
+			margin-top -15px
+			position absolute
+			text-align center
+			top 50%
+			width 40px
+		&-derecha
+			height 20px
+			line-height 20px
+			bckground red
+			top 50%
+			margin-top -10px
+			position absolute
+			right 15px	
+	&--texto-visible
+		p
+			white-space normal
+			overflow visible
+/* FIN ALERTAS Y MENSAJES INFORMATIVOS */
+						
+.bch-mensaje-informativo
+	float left
+	min-height 90px
+	padding-top 15px
+	padding-bottom 15px
+	width 100%
+	.icono
+		margin-top 5px
+		i
+			font-size 50px
+			line-height 1
+	h4
+		color $grey-one
+		line-height 1
+		margin-bottom 5px
+		margin-top 4px
+	h6
+		color $grey-one
+		line-height 1
+		margin-bottom 0
+	.texto-colapsado
+		&.in
+		&.collapsing
+			margin-top 5px
+	.actions
+		margin-top 20px
+		.volver
+			font-size 12px
+		.colapsado
+			color $grey-one
+			font-size 14px

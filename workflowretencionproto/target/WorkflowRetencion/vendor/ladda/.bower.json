@@ -1,0 +1,18 @@
+{
+  "name": "ladda",
+  "version": "0.9.8",
+  "main": [
+    "./dist/ladda.min.js",
+    "./dist/ladda.min.css"
+  ],
+  "ignore": [
+    "package.json"
+  ],
+  "dependencies": {
+    "spin.js": "~2.0.2"
+  },
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/ladda",
+  "_target": "~0.9.3",
+  "_release": "0.9.8",
+  "_originalSource": "ladda"
+}

@@ -1,0 +1,20 @@
+.fixed-element
+	position relative
+	transition all 1s
+	display block	
+.fixed-top
+	position  fixed !important
+	top  0
+	width  100%
+	z-index  9
+	animation slide-down 0.7s
+@keyframes slide-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity: 0.9;
+		transform: translateY(0);
+	}
+}

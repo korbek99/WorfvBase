@@ -1,0 +1,160 @@
+.caja-interactiva
+	background $default-color
+	&__propiedades
+		align-items center
+		border-radius 3px
+		display flex
+		justify-content center
+		transition .2s all linear
+		.contexto
+			display flex
+			flex-direction row
+			align-items center
+			.icono-section
+				display flex
+				flex-direction row
+				align-items center
+				i
+					margin-right 15px
+				h4
+					line-height 110%
+			.text-section
+				p
+					color $color-11
+	&__icono
+		font-size 65px
+		line-height 1
+		&--middle
+			vertical-align middle
+	&--hover
+		border-radius 3px
+		border none
+		transition .2s all linear
+		a
+			&:focus
+			&:hover
+				text-decoration none
+		&:hover
+			text-decoration none
+			.contexto
+				.text-section
+					p
+						color $default-color !important
+		&__activa
+			text-decoration none
+			background #234e85
+			&:before
+				bottom -10px !important
+			.contexto
+				.text-section
+					p
+						color $default-color !important
+	&__con-flecha
+		&:before
+			bottom 1px
+			content ""
+			position absolute
+			border-width 11px 11px 0 11px
+			border-style solid
+			left 50%
+			margin-left -11px
+			width 0
+			height 0
+			transition all .2s linear
+			z-index 1
+
+	&__con-enlaces
+		flex-direction column
+		min-height 180px
+		padding 15px
+		position relative
+		overflow hidden
+		transition .3s all linear
+		text-align center
+		&--lista
+			absolute bottom -100% left 15px
+			padding 0 15px
+			width calc( 100% - 30px)
+			li
+				margin-bottom 5px
+				a
+					font-size 14px
+					&:hover
+						text-decoration underline
+				.icon-ionicon--flecha-derecha
+					&:before
+						margin-right 10px
+				&:last-child
+					margin-bottom 0
+					
+		&:hover
+			justify-content flex-start
+			.caja-interactiva__con-enlaces--head
+				margin-bottom 5px
+				text-align left
+				i
+					display inline-block
+					vertical-align middle
+					margin-right 10px
+				h4
+					display inline-block
+					vertical-align middle
+					max-width calc(100% - 80px)
+			.caja-interactiva__con-enlaces
+				&--lista
+					bottom 15px
+					a
+						color $default-color
+	&__nombre
+		align-items center
+		display flex
+		height 100px
+		padding 0 25px
+		.caja-interactiva__icono
+			margin-right 10px
+			
+	&__switch
+		display flex
+		min-height 40px
+		label
+			span
+				color $grey-two !important
+		.switch
+			i
+				margin-top 3px
+	&--disabled
+		background-color $color-16 !important
+		position relative
+		pointer-events none
+		*
+			color $color-13 !important
+		&:before
+			border none !important
+		&:after
+			content ''
+			display block
+			absolute left 0 top 0
+			height 100%
+			width 100%
+			z-index 100
+			
+	&--descarga-documento
+		.grafico-donut
+			margin-right 15px
+			&__percent
+				font-size 12px
+				margin-top -10px
+		.icono-antes-descarga
+			border-radius 50%
+			border 2px solid $color-13
+			color $color-12
+			height 40px
+			padding-top 8px
+			font-size 20px
+			text-align center
+			width 40px
+		&.caja-interactiva--hover
+			&:hover
+				.icono-antes-descarga
+				h4
+					color $default-color !important

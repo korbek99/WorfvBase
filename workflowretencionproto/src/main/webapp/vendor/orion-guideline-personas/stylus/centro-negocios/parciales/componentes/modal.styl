@@ -1,0 +1,737 @@
+/* CSS LEGADO */ 
+.centro-negocios
+	body
+		&.modal-open
+			overflow hidden !important
+			margin-bottom 0 !important
+			height 100%
+	.modal
+		overflow auto !important
+		opacity 1
+		&-backdrop
+			position fixed !important
+			top 0 !important
+			right 0 !important
+			left 0 !important
+			background-color #000 !important
+			bottom 0 !important
+	.modal-detalle.in
+		.modal-dialog
+			.modal-content
+				.modal-header
+					.close-modal
+						span
+							font-size 35px !important
+	.modal-open
+		.modal
+			background rgba(0, 0, 0, .55)
+	.modal-detalle.in
+		.modal-dialog
+			.modal-content
+				.modal-info
+					padding 15px 30px !important
+	.modal-content
+		box-shadow none
+		border-radius 0
+		border none
+	.modal-summary
+		display block
+		height 100%
+		width 100%
+		overflow auto
+		overflow-x hidden
+		position relative
+		&__header
+			background $grey-80
+			border none
+			position relative
+			color $white
+			padding 15px 15px 0
+			h2
+				margin 0px !important
+				color $white
+			span
+				font-size 13px
+				color $grey-30
+			.modal__header-group
+				display flex !important
+				height 60px
+				padding 0 0 15px 0
+				> *
+					 align-self center
+				a
+					i
+						color $white
+						font-size 32px
+						opacity 0.7
+						cursor pointer
+						&:hover
+							opacity 1
+							color $white
+				&--vertical
+					flex-direction column
+					*
+						align-self flex-start
+						margin-bottom 8px
+					h2 
+						line-height 8px
+				.btn-secondary
+					border 1px solid $white !important
+					color $white !important
+					opacity 0.7
+					&:hover
+						border 1px solid $white !important
+						color $white !important
+						background $grey-80 - 30% !important
+						opacity 1
+				.dropdown
+					position relative
+					display inline-block
+					&:hover
+						.dropdown-content
+							display block
+						.btn-secondary
+							border 1px solid $white !important
+							color $white !important
+							background $grey-80 - 30% !important
+				.dropdown-content
+					display none
+					position absolute
+					background-color $grey-80 - 30%
+					padding 0
+					right 0
+					top 46px
+					z-index 2
+					button
+						opacity 0.7
+						border none
+						background transparent
+						padding 10px 15px
+						border-bottom 1px solid $grey-80 + 20%
+						min-width 180px
+						white-space nowrap
+						text-align left
+						width 100%
+						&:hover
+							opacity 1
+					&:after
+						width 100%
+						height 14px
+						position absolute
+						top -12px
+						background transparent
+						display block
+						content ''
+					&:before
+						width 0
+						height 0
+						content ''
+						position absolute
+						top -8px
+						right 35px
+						border-left 8px solid transparent
+						border-right 8px solid transparent
+						border-bottom 8px solid $grey-80 - 30%
+				.modal-state
+					margin 18px 8px 18px 20px
+					display inline-block
+					padding 0 12px
+					color $white
+					border-radius 5px
+					border-top-left-radius 0
+					border-bottom-left-radius 0
+					font-size 11px
+					height 22px
+					line-height 22px
+					position relative
+					&:after 
+						border-bottom 11px solid transparent
+						border-right 8px solid $grey-50
+						border-top 11px solid transparent
+						content ''
+						position absolute
+						left -8px
+						top 0
+					// &:before
+					// 	content ''
+					// 	width 8px
+					// 	height 8px
+					// 	position absolute
+					// 	display block
+					// 	left 0
+					// 	top 7px
+					// 	background $grey-80
+					// 	border-radius 50%
+					&--default
+						background $grey-50
+						&:after
+							border-right 8px solid $grey-50
+					&--success
+						background $success
+						&:after
+							border-right 8px solid $success
+					&--warning
+						background $warning
+						color $black
+						&:after
+							border-right 8px solid $warning
+			.modal__header-options
+				display flex
+				justify-content flex-end
+				> *
+					margin-left 15px 
+		&__body
+			display flex
+			padding 15px
+			.modal-summary__bck
+				flex 1
+				.title-sumary
+					display block
+				label
+					display flex
+					margin-bottom 15px
+					&:last-child
+						margin-bottom 0px
+					span
+						line-height 20px
+				dt
+					color $grey-50--lighten
+					text-transform uppercase
+					font-weight normal
+					font-size 10px !important
+				dd
+					margin 0
+					color $grey-80
+					font-size 12px
+					font-family $regular
+				&:last-child
+					flex 2
+					display flex
+					flex-direction column
+				.modal-summary__inversion-ctn
+					display flex
+					.modal-summary__inversion
+						flex 1
+				.modal-summary__inversion
+					.modal-summary__cnt-data
+						display flex
+						flex-direction column
+						dl
+							flex 1
+				.modal-summary__cnt-data
+					dt
+						color $grey-50--lighten
+						text-transform uppercase
+						font-weight normal
+						font-size 10px !important
+					dd
+						margin 0
+						color $grey-80
+						font-size 12px
+						font-family $regular		
+				.modal-summary__payment
+					margin-bottom 36px	
+					table.table-info
+						width 100%
+						thead
+							tr
+								th
+									background $brand-complementary
+									color $white
+									border-right 1px solid #8bccde
+									&.table-condiciones
+										background $brand-complementary--lighten
+						tbody
+							tr
+								td
+									border-bottom 1px solid #ddd
+									&.table-condiciones
+										background #eef0f2
+						td,th
+							padding 14px 9px
+							&.aling-right
+								text-align right
+							&.aling-left
+								text-align left
+							&.table-totales
+								font-weight bolder
+								color $grey-50
+		&__footer
+			flex 1
+			padding 15px
+			background $grey-10 + 30%
+			display flex
+			margin-top 15px
+			.modal-summary__submit
+				flex 1
+				aling-self flex-end
+				text-align right
+		&__low
+			flex 0.2
+		&__middle
+			flex 0.5
+		.super-modal
+			position absolute
+			top 0px
+			background rgba(0,0,0,0.5)
+			z-index 1060
+			width 100%
+			height 100%
+			left 0px
+			.block-super
+				position relative
+				background-color $white
+				background-clip padding-box
+				outline none
+				margin-top 30px
+				display block
+				padding 0px
+				.header-super
+					padding 15px 0px 15px 15px
+					background $grey-80
+					h2
+						margin-bottom 0px
+						color $white
+				.container-super
+					margin-top 10px
+					margin-bottom 20px
+					.table-responsive
+						padding 0px
+						tr:after
+							content ' '
+							display block
+							visibility hidden
+							clear both
+						thead
+							tr
+								height 45px
+								border-bottom none !important
+							th
+								height 35px
+								border-bottom none !important
+						tbody
+							height 340px
+							overflow-y auto
+							&::-webkit-scrollbar
+								width 6px !important
+								background $grey-10 !important
+							&::-webkit-scrollbar-button
+								width 8px !important
+								height 5px !important
+								display none !important
+							&::-webkit-scrollbar-track
+								background $grey-10 !important
+								border thin solid $grey-10 !important
+								box-shadow inset 0 0 6px rgba(0,0,0,0.2) !important
+							&::-webkit-scrollbar-thumb
+								background $brand-complementary !important
+								border-radius 2px !important
+								transition all 0.3s ease-in-out !important
+								&:hover
+									background $brand-secondary !important
+								&:window-inactive
+									background $grey-10 !important
+					.footer-super
+						background #eef0f2 
+						padding 15px
+						bottom 0px
+						display flex
+						flex-direction row
+						justify-content flex-end
+						.submit-super
+							text-align right
+		&__client-wallet
+			.modal-summary--close
+				z-index 9
+			.modal-summary__body
+				.modal-summary__bck
+					&:last-child
+						margin-left 0px
+					table
+						thead
+							background $brand-secondary
+							color $white
+							tr
+								th
+									background-color $brand-secondary
+									color $white
+									border-color #8bccde
+									transition all 0.3s ease-in-out
+									height 50px
+									vertical-align middle
+									padding-left 10px !important
+									padding-right 10px !important
+									padding-top 0px !important
+									padding-bottom 0px !important
+									font-size 11px
+									font-weight 100
+									&:hover
+										background-color $brand-secondary + 60%
+									.bch-custom-check
+										font-size 12px !important
+										margin-bottom 2px
+						.enlace-detalle-tabla
+							border 1px solid $grey-30
+							border-radius 50%
+							color $grey-30
+							display inline-block
+							font-size 8px
+							line-height 14px
+							text-align center
+							width 15px
+							height 15px
+							vertical-align middle
+							transition all 0.3s ease-in-out
+							&:hover
+								color $brand-secondary
+								border 1px solid $brand-secondary
+						&.tabla-interactiva
+							thead
+								.listado-header
+									background-color $grey-10
+									border-top-color $grey-80
+								.show-hide > a
+									color $grey-30
+									transition all 0.2s ease-in-out
+									&:hover
+										color $brand-primary
+									&:focus
+										color $grey-30 !important
+								th
+									position relative
+									span
+										font-size 14px
+										position absolute
+										right 10px
+										margin-top -2px
+							tbody
+								tr
+									background $white
+									transition all 0.2s ease-in-out
+									&:hover
+										background #f8f8f8
+									td
+										font-size 11px
+					h5
+						text-align center
+				.charts
+					margin-bottom 25px
+					.highcharts-container
+						font-family $regular !important
+						font-size 11px !important
+						font-weight normal !important
+						overflow visible !important
+						.highcharts-background
+							fill-opacity 0 !important
+						.highcharts-tooltip
+							text
+								font-size 10px !important
+								font-family $regular !important
+								font-weight 100 !important
+								fill $white !important
+							path:nth-child(4)
+								fill $grey-80 !important
+						.highcharts-legend
+							display inline-table
+							width 100%
+							.legend-data
+								display flex
+								min-width 210px
+								flex-direction row
+								justify-content space-between
+								position relative
+								border-bottom 1px solid $grey-10
+								.monto-legend
+									position absolute
+									right 0px
+									color $grey-50
+								&:last-child
+									border-bottom none !important
+					svg 
+						overflow visible !important
+	/* Modales Nuevos Estilos Diferent */
+	.diferent-modal
+		.modal-content
+			overflow hidden
+			height 564px
+		.modal-summary__footer
+			bottom 0px !important
+			position absolute
+			width 100%
+		.animate-showHide
+			transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s
+			line-height 20px
+			opacity 1
+			position  absolute
+			right  0
+			background white
+			top 0
+			width 100%
+			display block !important
+			height 100%
+		.animate-showHide.ng-enter, .animate-showHide.ng-leave
+			transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s
+		.animate-showHide.ng-enter,
+		.animate-showHide.ng-leave.ng-leave-active
+			right -100%
+		.animate-showHide.ng-leave,
+		.animate-showHide.ng-enter.ng-enter-active
+			right 0%
+		
+	/* MODAL FULL */ 
+	.Full-modal
+		background rgba(0,0,0,0.4)
+		.modal-dialog
+			width 100%
+		.modal-content
+			border none
+			width 96% !important
+			margin 0 auto !important
+			height auto !important
+			min-height calc(100% - 60px) !important
+			display flex
+			align-items stretch
+		.modal-summary
+			// display flex
+			// flex-direction column
+			height auto
+			width 100%
+			padding-bottom 0px !important
+			background $white
+			.modal__header
+				height auto
+				padding 0 25px
+				display block
+				position relative
+				background $grey-80
+				color $white
+				*
+					transition all 0.3s ease-in-out
+				.btn-secondary
+					color $white
+					border 1px solid $white
+				h2
+					padding 0 15px 0 0
+					margin 0 15px 0 0
+					float left
+					height 60px
+					line-height 60px
+					color $white
+				p
+					height 60px
+					padding 10px 0 0 0
+				
+				&.modal__header-management
+					h2
+						margin 0
+						padding 0 9px 0 0
+					p
+						height auto
+						float left
+						margin-top 9px	
+			.modal__nav
+				height 40px
+				background $grey-80
+				.modal__tabs
+					a
+						line-height 40px
+						height 40px
+						margin 0 0 0 15px
+						padding 0 15px
+						display block
+						float left
+						color $grey-10
+						cursor pointer
+						border-top 1px solid $white
+						border-left 1px solid $white
+						border-right 1px solid $white
+						&.active
+							color $grey-80
+							background $white
+				.btn-secondary
+					color $white
+					border 1px solid $white
+					margin-right 15px
+			.modal__body
+				flex 1
+				display flex
+				.modal__container
+					width 100%
+					float left
+					padding 30px 15px 30px 15px
+					#movimientos-nacionales
+					#movimientos-internacionales
+						display none
+						&.active
+							display block
+					.modal__container-title
+						margin-bottom 10px
+						.button-ctn-icons 
+							line-height 25px // REVISAR POR QUE SE VE DISTINTO AL WEBKIT 
+							font-size 16px // PROPUESTA MEJOR TAMAÑO
+							outline 0
+					.info-client-modal
+						display inline-block
+						width 100%
+					hr
+						border-top 1px solid #D6D6D6
+				.modal__aside
+					width 260px
+					background $grey-80 
+					float right
+					min-height 100%
+					display none
+					z-index 3
+					h3
+						color $grey-30
+					.data_group
+						p 
+							color white
+					time
+						background $grey-80
+						height 40px
+						line-height 40px
+						display block
+						padding 0 15px
+						border-bottom 1px solid $grey-50
+						color $grey-30
+					.modal__abstract
+						padding 20px 0 10px 0
+						border-bottom 1px solid $grey-50
+						cursor pointer
+						position relative
+						.progress
+							margin 3px 0 
+							height 12px
+							border-radius 0
+							background $grey-30
+							box-shadow none
+							.progress-bar
+								background $brand-complementary
+								box-shadow none
+						&:before
+							transition all 0.3s ease-in-out
+						&--active
+							&:before
+								width 100%
+								height 100%
+								display block
+								content ''
+								position absolute 
+								top 0
+								left -1px
+							.data_group
+								p 
+									color $grey-80
+							h3
+								color $grey-80
+					.modal__management
+						padding 20px 15px 10px 15px
+						button
+							&.btn-instruction
+								width 100%
+								margin-bottom 10px
+		.rate-range-drop
+			position absolute
+			top 20px
+			right -47px
+		.popover
+			background $black !important
+			border none
+			left -20 !important
+			.dropdown-copy
+				p
+					color $grey-10
+					text-align left
+					font-family $regular
+					span
+						color $white
+						font-family $bold
+				ul
+					list-style none
+					margin 0
+					padding 0
+					li
+						padding 5px
+						a
+							color $grey-10
+							&:hover
+								color $white
+			&.bottom > .arrow:after
+				border-bottom-color $black
+			.popover-content
+				padding 5px
+				
+		/* MODAL LATERAL */
+		.animate-showHide
+			transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s
+			position absolute
+			right 0
+			top 0
+			height 100%
+			box-shadow -6px 0 20px 0px rgba(0,0,0,0.4)
+			background $white
+			.modal-sideBar
+				background $white
+				display flex
+				height 100%
+				flex-direction column
+				z-index 12 !important
+				min-width 450px
+				width 600px
+				&__header
+					background $brand-complementary
+					padding 15px 15px 0
+					display flex
+					align-items baseline
+					justify-content space-between
+					h2
+						margin 0px !important
+						padding-bottom 15px 
+						color $white
+						flex 2
+					a
+						cursor pointer
+						padding 0 9px
+						i
+							font-size 30px
+							color $white !important
+							opacity 0.8
+							&:hover
+								opacity 1
+				&__body
+					flex 1
+					padding 0px 15px 0px 15px
+					margin-top 30px
+					ul
+						list-style none
+						padding 15px 40px
+						li
+							padding 10px 0
+					&--list
+						margin-top 30px
+						ul
+							padding 8px 3px 15px
+							list-style none
+							li
+								padding 0px
+								&:before
+									content "• "
+									color $grey-50
+									font-size 22px
+									vertical-align middle
+								p
+									display inline-block
+									margin-left 7px
+					.ui-select-choices
+						padding 0px !important
+						li
+							padding 0px !important
+		.animate-showHide.ng-enter, .animate-showHide.ng-leave
+			transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s
+		.animate-showHide.ng-enter,
+		.animate-showHide.ng-leave.ng-leave-active
+			right -100%
+		.animate-showHide.ng-leave,
+		.animate-showHide.ng-enter.ng-enter-active
+			right 0%

@@ -1,0 +1,25 @@
+{
+    "name": "orion-ui-ionicons",
+    "version": "0.0.11",
+    "authors": [
+        "Sebastian Duran <sdurane@bancochile.cl>",
+        "Oscar Fuentes <ofuentesp@bancochile.cl>",
+        "Juan Vallejos <jvallejosg@bancochile.cl>"
+    ],
+    "description": "Fork de iconos ionicons para modificar la ruta",
+    "keywords": [
+        "ui",
+        "front",
+        "iconos",
+        "ionicons",
+        "guidelines"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

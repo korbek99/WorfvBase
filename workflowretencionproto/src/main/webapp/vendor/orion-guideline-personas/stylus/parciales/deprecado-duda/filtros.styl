@@ -1,0 +1,78 @@
+.filtros-empresas
+	float left
+	margin-bottom 15px
+	width 100%
+	.form-control
+		border-color $grey-three
+	.bch-list-filters
+		margin-bottom 0
+		padding 15px 0px 5px
+		position relative
+		.form-group
+			margin-bottom 10px
+			label
+				font-size 12px
+				font-family $light
+			.text-muted
+				margin-top 0 !important
+		.filtro-datepicker 
+			.form-group
+				.form-control
+					border-color $grey-three
+			.input-group
+				.input-group-btn
+					margin 0
+					padding 0
+					background-color $white
+					button
+						background $white
+		.search-submit
+			button
+				height 28px !important
+				padding 0 !important
+			@media (min-width $bp-tablet)
+				position relative
+				right initial
+				bottom initial
+				padding 0 30px
+			@media (min-width $bp-desktop)
+				position absolute
+				right 0px
+				bottom 15px
+				padding 0 15px
+
+	.action-bar-table
+		.contextual-action
+			.btn
+				padding 3px 12px
+				cursor pointer
+			.neutro
+				background $default-color
+			.default
+				color $corporative-blue-thin
+				text-decoration underline
+		.filter-action
+			border-right none
+			border-left 1px solid $grey-four
+			max-height auto
+			.text-center
+				cursor pointer
+				.icon-action
+					font-size 21px
+					height 42px
+					display block
+					line-height 40px
+					cursor pointer
+					color $grey-two
+				&.border-box
+					border-left 1px solid $grey-four
+					&.active
+						background-color $grey-four
+			 	&:hover
+					cursor pointer
+					.icon-action
+						color $info-color
+						transition ease all .2s
+	.btn-link
+		&:after
+			bottom 3px

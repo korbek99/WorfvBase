@@ -1,0 +1,12 @@
+{
+  "name": "angular-ui-utils",
+  "version": "v0.1.1",
+  "main": "./ui-utils.js",
+  "dependencies": {
+    "angular": ">= 1.0.2"
+  },
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/angular-ui-utils",
+  "_target": "0.1.1",
+  "_release": "v0.1.1",
+  "_originalSource": "angular-ui-utils"
+}

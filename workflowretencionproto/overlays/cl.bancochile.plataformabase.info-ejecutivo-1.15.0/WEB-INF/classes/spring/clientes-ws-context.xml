@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:util="http://www.springframework.org/schema/util"
+             xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
+        >
+
+    <util:map id="jaxwsCustomProperties">
+        <beans:entry key="com.sun.xml.ws.request.timeout">
+            <beans:value type="java.lang.Integer">${timeout.webservice}</beans:value>
+        </beans:entry>
+        <beans:entry key="com.sun.xml.ws.connect.timeout">
+            <beans:value type="java.lang.Integer">${timeout.webservice}</beans:value>
+        </beans:entry>
+    </util:map>
+
+    <!--INI ConsultaInformacionEjecutivoProxy-->
+    <beans:bean id="EscalamientoFuncionarioBean" class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean" abstract="true">
+        <beans:property name="serviceInterface" value="cl.bancochile.osb.neg.siebel.escalamientofuncionario.v._2.EscalamientoFuncionarioPort"/>
+        <beans:property name="wsdlDocumentUrl" value="classpath:wsdl/2_1.wsdl" />
+        <beans:property name="namespaceUri" value="http://osb.bancochile.cl/neg/siebel/escalamientoFuncionario/v/2" />
+        <beans:property name="serviceName" value="EscalamientoFuncionarioBindingQSService" />
+        <beans:property name="portName" value="EscalamientoFuncionarioBindingQSPort"/>
+    </beans:bean>
+
+    <beans:bean id="ConsultaInformacionEjecutivoProxy" parent="EscalamientoFuncionarioBean">
+        <beans:property name="endpointAddress" value="${ConsultaInfoEjecutivo.endpoint}"/>
+        <beans:property name="customProperties" ref="jaxwsCustomProperties"/>
+    </beans:bean>
+    <!-- END ConsultaInformacionEjecutivoProxy-->
+</beans:beans>

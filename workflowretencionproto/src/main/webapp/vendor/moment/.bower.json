@@ -1,0 +1,27 @@
+{
+  "name": "moment",
+  "main": "moment.js",
+  "ignore": [
+    "**/.*",
+    "benchmarks",
+    "bower_components",
+    "meteor",
+    "node_modules",
+    "scripts",
+    "tasks",
+    "test",
+    "component.json",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "ender.js",
+    "Gruntfile.js",
+    "Moment.js.nuspec",
+    "package.js",
+    "package.json"
+  ],
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/moment",
+  "_target": "2.10.6",
+  "_release": "2.10.6",
+  "version": "2.10.6",
+  "_originalSource": "moment"
+}

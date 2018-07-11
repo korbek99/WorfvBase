@@ -1,0 +1,48 @@
+.caja-resumen-modelo-uno
+    background-color $grey-five
+    border-bottom-color $table-blue-three
+    .resumen-body
+        .caja-contenido
+            .btn-more
+                &:hover
+                  .ion-ios-plus-empty
+                    background $corporative-light-blue
+                .ion-ios-plus-empty
+                  background-color $info-color
+                  color $default-color
+
+        .listado-border
+            ul
+                border-left-color $corporative-light-grey
+                li
+                    border-bottom-color $corporative-light-grey
+                    &:before
+                        color $info-color
+
+.caja-resumen-modelo-tres
+    border-bottom-color $table-blue-three
+    .ion-ios-help-outline
+        color $grey-three
+    .resumen-body
+        .listado-border
+            ul
+                border-left-color $corporative-light-grey
+                li
+                    border-bottom-color $corporative-light-grey
+                    &:before
+                        color $info-color
+
+.caja-resumen-modelo-dos
+    @extend .caja-resumen-modelo-tres
+    .resumen-body
+        .row
+            & > div
+                & > div
+                    border-right-color $corporative-light-grey
+
+.caja-resumen-modelo-cuatro
+    @extend .caja-resumen-modelo-uno
+    .resumen-body
+        .border-inverse
+            ul
+                border-right-color $corporative-light-grey

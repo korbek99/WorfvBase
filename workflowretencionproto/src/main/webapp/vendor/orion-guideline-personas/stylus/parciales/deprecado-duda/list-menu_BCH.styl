@@ -1,0 +1,43 @@
+.bch-list-menu
+	ul
+		li
+			a
+				&:hover
+					& span
+						background-color $info-color
+
+			&.estado-success
+				a
+					&:hover
+						span
+							background-color $success-color
+				&.active
+					span
+						background-color $success-color
+						color $default-color
+
+			&.estado-info
+				a:hover
+					span
+						background-color $info-color
+				&.active
+					span
+						background-color $info-color
+						color $default-color
+
+			&.estado-danger
+				a:hover
+					span
+						background-color $danger-color
+				&.active
+					span
+						background-color $danger-color
+						color $default-color
+
+			&.active
+				a
+					background-color  $corporative-light-blue
+					color $default-color
+					span
+						background-color $info-color
+						color $default-color

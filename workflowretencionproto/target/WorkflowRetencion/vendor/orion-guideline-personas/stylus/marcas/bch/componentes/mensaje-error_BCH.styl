@@ -1,0 +1,57 @@
+@import '../variables_BCH'
+
+.error-landing-v2
+	.cont-error-landing
+		div
+			&:nth-child(2)
+				h4
+					color $color-11
+				h6
+				h5
+					color $color-11
+	span
+		color $corporative-blue
+
+	&.success
+		.cont-error-landing
+			&:before
+				color $color-19
+	&.error
+		.cont-error-landing
+			&:before
+				color $color-21
+	&.errorTwo
+		.cont-error-landing
+			&:before
+				color $color-23
+	&.information
+		.cont-error-landing
+			&:before
+				color $color-3
+				
+.error-landing
+	div
+		&:nth-child(2)
+			h5
+				color $color-3
+	&.success
+		background-color transparent
+		color $grey-two
+		h4
+			&:before
+				color $color-19
+	&.error
+		background-color transparent
+		h4
+			&:before
+				color $color-21
+	&.errorTwo
+		background-color transparent
+		h4
+			&:before
+				color $color-23
+	&.information
+		background-color transparent
+		h4
+			&:before
+				color $color-3

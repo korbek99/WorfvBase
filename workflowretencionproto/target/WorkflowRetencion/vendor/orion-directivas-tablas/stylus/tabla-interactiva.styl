@@ -1,0 +1,98 @@
+@css{
+/*  
+/* Tabla Interactiva
+/* Juan Vallejos
+*/
+}
+@import '../../orion-guideline-personas/stylus/parciales/variables.styl'
+@import 'nib'
+@import 'webkit'
+
+.tabla-interactiva
+	table-layout fixed
+	thead
+		tr
+			th
+				word-break break-all
+		.show-hide
+			padding 0
+			position relative
+			vertical-align top !important
+			& > a
+				display block
+				height 100%
+				text-align center
+				transition .2s all linear
+				i
+					font-size 30px
+					margin-top 10px
+					transition .2s all linear
+				&:hover
+				&.lista-desplegada
+					i
+						font-size 35px
+						margin-top 3px
+
+		.listado-header
+			border-top-width 1px
+			border-top-style solid
+			padding-bottom 5px
+			position absolute
+			right 0
+			min-width 370px
+			z-index 1000
+			cursor auto
+			box-shadow 0 6px 12px rgba(0,0,0,.175)
+			.mensaje-info-tabla
+				padding-top 10px
+				padding-bottom 10px
+				padding-right 45px
+				min-height 70px
+				.cerrar
+					position absolute
+					right 20px
+					top 20px
+				
+			.bch-custom-check
+				padding-top 5px
+				padding-bottom 5px
+				padding-left 15px
+				padding-right 15px
+				width 50%
+				.nombre
+					display inline-block
+					font-size 12px
+					font-family 'Arial'
+					vertical-align top
+					width calc(100% - 28px)
+					word-break break-word
+				&:nth-child(2n+1)
+					float left
+					clear left
+				& > div
+					vertical-align inherit
+			.obligatorio
+				position relative
+				.ion-ios-locked-outline
+					font-size 16px
+					line-height 100%
+					position absolute
+					left -2px
+					top 5px
+				&:hover
+					background inherit
+					cursor auto			
+	tbody
+		tr
+			td
+				cursor pointer
+				overflow hidden
+				text-overflow ellipsis
+				white-space nowrap
+				min-height 30px !important
+				padding 15px 10px !important
+				height inherit !important
+				&.activa
+					white-space normal
+				&.actions
+					overflow visible

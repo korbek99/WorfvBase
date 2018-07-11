@@ -1,0 +1,6 @@
+cl.bancochile.workflow.retencion.sal
+cl.bancochile.workflow.retencion.sal.Impl
+cl.bancochile.workflow.retencion.service
+cl.bancochile.workflow.retencion.service.Impl
+cl.bancochile.workflow.retencion.web.controller
+cl.bancochile.workflow.retencion.web.domain

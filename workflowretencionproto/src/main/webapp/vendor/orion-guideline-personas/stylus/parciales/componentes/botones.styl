@@ -1,0 +1,862 @@
+.btn
+	border-radius 2px
+	transition all .2s ease-in-out
+	outline none
+	cursor pointer
+	font-family $light
+	margin 0 7px
+	padding-left 12px
+	padding-right 12px
+	opacity 1
+	outline none !important
+	&.primary
+		background $color-3
+		color $default-color
+		transition all .2s ease-in-out
+		&:hover
+			background $color-2
+			color $default-color
+		&:focus
+		&:active
+			outline none
+			background $color-3
+			color $default-color
+	&.info
+		background $color-6
+		color $default-color
+		transition all .2s ease-in-out
+		&:hover
+			background $color-5
+			color $default-color
+		&:focus
+		&:active
+			outline none
+			background $color-6
+			color $default-color
+	&.danger
+		background $color-21
+		color $default-color
+		transition all .2s ease-in-out
+		&:hover
+			background $color-26
+			color $default-color
+		&:focus
+		&:active
+			outline none
+			background $color-21
+			color $default-color
+	&.success
+		background $color-19
+		color $default-color
+		transition all .2s ease-in-out
+		&:hover
+			background $color-18
+			color $default-color
+		&:focus
+		&:active
+			outline none
+			background $color-19
+			color $default-color
+	&.default
+		background $default-color
+		color $color-4
+		border 1px solid $color-13
+		transition all .2s ease-in-out
+		&:hover
+			background $default-color
+			border 1px solid $color-11
+			color $color-3
+		&:focus
+		&:active
+			outline none
+			background $default-color
+			border 1px solid $color-13
+			color $color-3
+	&.neutro
+		background $color-16
+		color $color-12
+		border 1px solid $color-13 !important
+		transition all .2s ease-in-out
+		&:hover
+			background $color-14
+			border 1px solid $color-13
+			color $color-12
+		&:focus
+		&:active
+			outline none
+			background $color-16
+			border 1px solid $color-13
+			color $color-12
+	&.btn-link
+		text-decoration none
+		color $color-6
+		padding-left 0 !important
+		padding-right 0 !important
+		transition all .2s ease-in-out
+		position relative
+		&:after
+			content ''
+			position absolute
+			width 100%
+			height 1px
+			background $color-6
+			left 0%
+			bottom 9px
+			transition all 0.2s ease-in-out
+		&:hover
+			color $color-5
+			text-decoration none
+			&:after
+				content ''
+				position absolute
+				width 0%
+				height 1px
+				background $color-5
+				left 50%
+				bottom 9px
+	&:first-child
+		margin-left 0
+	&:last-child
+		margin-right 0
+	i
+		font-size 16px
+		margin-right 5px
+		vertical-align middle
+		&.ion-ios-download-outline
+			vertical-align initial
+.ui-select-bootstrap
+	.btn-default
+		background $default-color
+		.caret
+			margin-top -15px
+		span
+			color $color-11
+			&:hover
+				opacity 1
+				color $color-11
+.dropdown-toggle
+	.caret
+		margin-top -20px
+		position relative
+		&:before
+			font-family 'Ionicons'
+			content '\f3d0'
+			display block
+			width 17px
+			text-align center
+.btn-file
+	position relative
+	overflow hidden
+	input[type=file]
+		position absolute
+		top 0
+		right 0
+		min-width 100%
+		min-height 100%
+		font-size 100px
+		text-align right
+		opacity 0
+		outline none
+		cursor inherit
+		display block
+.btn-icon
+	span
+		font-size 20px
+		line-height 100%
+		float left
+		margin 0 5px 0 0
+.btn.disabled
+.btn[disabled]
+fieldset[disabled] .btn
+	opacity 0.3
+.btn-fill 
+	.cont-animacion 
+		i
+			z-index 2 !important
+.btn-line 
+	.cont-animacion 
+		i
+			z-index 2 !important
+
+/* BOTON CON LOADER */
+
+.btn-loader
+	margin 0 7px
+	display inline-block
+	&:first-child
+		margin-left 0
+	&:last-child
+		margin-right 0
+.button-loader--rectangular-default
+	border-radius 2px
+	padding 0 15px
+	font-size 14px
+	font-family $light
+	font-weight 400
+	margin 0
+	line-height 2.45
+	color $default-color !important
+	transition all 0.2s ease-in-out
+	border none !important
+	background $color-3 !important
+	letter-spacing normal
+	text-transform initial
+	span
+		z-index 2 !important
+	.progress
+		height 0 !important
+		border-width 0 !important
+	&.progress-button
+		border none !important
+		margin-right 15px
+		&:last-child
+			margin-right 0px
+	&.progress-button
+		background $color-3 !important
+		color $default-color
+		transition all 0.2s ease-in-out
+		&:focus
+		&:active
+			background $color-3 !important
+			color $default-color
+			transition all 0.2s ease-in-out
+			outline none
+		&:hover
+			background $color-2 !important
+		.progress-inner
+			background $color-3 + 40% !important
+	&.progress-button.btn-info
+		background $color-6 !important
+		color $default-color
+		transition all 0.2s ease-in-out
+		&:focus
+		&:active
+			background $color-6 !important
+			color $default-color
+			transition all 0.2s ease-in-out
+			outline none
+		&:hover
+			background $color-5 !important
+		.progress-inner
+			background $color-6 + 40% !important
+	&.progress-button.btn-danger
+		background $color-21 !important
+		color $default-color
+		transition all 0.2s ease-in-out
+		&:focus
+		&:active
+			background $color-21 !important
+			color $default-color
+			transition all 0.2s ease-in-out
+			outline none
+		&:hover
+			background $color-26 !important
+		.progress-inner
+			background $color-21 + 40% !important
+	&.progress-button.btn-success
+		background $color-19 !important
+		color $default-color
+		transition all 0.2s ease-in-out
+		&:focus
+		&:active
+			background $color-19 !important
+			color $default-color
+			transition all 0.2s ease-in-out
+			outline none
+		&:hover
+			background $color-18 !important
+		.progress-inner
+			background $color-19 + 40% !important
+	&.progress-button.btn-neutro
+		background $color-16 !important
+		color $color-12 !important
+		transition all 0.2s ease-in-out
+		&:focus
+		&:active
+			background $color-16 !important
+			color $default-color
+			transition all 0.2s ease-in-out
+			outline none
+		&:hover
+			background $color-14 !important
+		.progress-inner
+			background $color-16 + 40% !important
+		
+
+.progress-button-style-fill
+	&.progress-button-dir-horizontal
+		.content:after, .progress-button-style-fill.progress-button-dir-horizontal .content:before
+			color $default-color !important
+.progress-button
+	.content
+		&:after, &:before
+			color $default-color !important
+			font-family 'Ionicons'
+			content '\f121'
+
+/* FIN BOTON CON LOADER */
+
+.btn-fill
+	vertical-align middle
+	display inline-block
+	text-decoration none
+	&:hover
+		text-decoration none
+		.cont-animacion
+			span
+				border-width 10px
+				border-style solid
+		> span
+			color $color-5
+	&:focus
+		text-decoration none
+	.cont-animacion
+		display inline-block
+		height 20px
+		position relative
+		vertical-align middle
+		width 20px
+		span
+			border-radius 50%
+			border-width 10px
+			border-style solid
+			font-size 15px
+			height 20px
+			absolute top 0 left 0
+			transition .2s all linear
+			width 20px
+		i
+			color $color-12 !important
+			font-size 18px
+			height 20px
+			padding-top 1px
+			position relative
+			text-align center
+			width 20px
+			transition-delay .1s
+			z-index 10
+			display block
+	& > span
+		color $color-6
+		transition all 0.2s ease-in-out
+		font-size 14px
+		font-family $regular
+		margin-left 5px
+		vertical-align middle
+	&:hover
+	&.activo
+		.cont-animacion
+				span
+					border-color $default-color !important
+					box-shadow 0 0 0 1px $grey-three
+				i
+					color $color-12
+	
+	&.success-btn
+		.cont-animacion
+			span
+				border-color $color-19
+				background-color $color-19
+			i
+				color $default-color !important
+		&:hover
+			.cont-animacion
+				i
+					color $color-19 !important
+	&.info-btn
+		.cont-animacion
+			span
+				border-color $color-6
+				background-color $color-6
+			i
+				color $default-color !important
+		&:hover
+			.cont-animacion
+				i
+					color $color-6 !important
+	&.warning-btn
+		.cont-animacion
+			span
+				border-color $color-23
+				background-color $color-23
+			i
+				color $default-color !important
+		&:hover
+			.cont-animacion
+				i
+					color $color-23 !important
+	&.danger-btn
+		.cont-animacion
+			span
+				border-color $color-21
+				background-color $color-21
+			i
+				color $default-color !important
+		&:hover
+			.cont-animacion
+				i
+					color $color-21 !important
+					
+
+.btn-line
+	vertical-align middle
+	display inline-block
+	text-decoration none
+	&:hover
+		text-decoration none
+		.cont-animacion
+			span
+				border-width 10px
+				border-style solid
+		> span
+			color $color-5
+	&:focus
+		text-decoration none
+	.cont-animacion
+		display inline-block
+		height 20px
+		position relative
+		vertical-align middle
+		width 20px
+		span
+			border-radius 50%
+			border-width 10px
+			border-style solid
+			font-size 15px
+			height 20px
+			absolute top 0 left 0
+			transition .2s all linear
+			width 20px
+		i
+			color $color-12 !important
+			font-size 18px
+			height 20px
+			padding-top 1px
+			position relative
+			text-align center
+			width 20px
+			transition-delay .1s
+			z-index 10
+			display block
+	& > span
+		color $color-6
+		transition all 0.2s ease-in-out
+		font-size 14px
+		font-family $regular
+		margin-left 5px
+		vertical-align middle
+	&:hover
+	&.activo
+		.cont-animacion
+				span
+					border-color $default-color !important
+					box-shadow 0 0 0 1px $color-6
+					transition all 0.3s ease-in-out
+				i
+					color $color-6
+	
+	&.success-btn
+		.cont-animacion
+			span
+				border-color $default-color !important
+				box-shadow 0 0 0 1px $color-19
+				transition all 0.3s ease-in-out
+			i
+				color $color-19 !important
+		&:hover
+			.cont-animacion
+				span
+					box-shadow 0 0 0 2px $color-19
+				i
+					color $color-19 !important
+	&.info-btn
+		.cont-animacion
+			span
+				border-color $default-color !important
+				box-shadow 0 0 0 1px $color-6
+				transition all 0.3s ease-in-out
+			i
+				color $color-6 !important
+		&:hover
+			.cont-animacion
+				span
+					box-shadow 0 0 0 2px $color-6
+				i
+					color $color-6 !important
+	&.warning-btn
+		.cont-animacion
+			span
+				border-color $default-color !important
+				box-shadow 0 0 0 1px $color-23
+				transition all 0.3s ease-in-out
+			i
+				color $color-23 !important
+		&:hover
+			.cont-animacion
+				span
+					box-shadow 0 0 0 2px $color-23
+				i
+					color $color-23 !important
+	&.danger-btn
+		.cont-animacion
+			span
+				border-color $default-color !important
+				box-shadow 0 0 0 1px $color-21
+				transition all 0.3s ease-in-out
+			i
+				color $color-21 !important
+		&:hover
+			.cont-animacion
+				span
+					box-shadow 0 0 0 2px $color-21
+				i
+					color $color-21 !important
+
+a
+	&.btn-link
+		color $color-6
+		font-family $regular !important
+		outline none
+		padding-left 0 !important
+		padding-right 0 !important
+		position relative
+		text-decoration none
+		transition all .2s ease-in-out
+		&:after
+			content ''
+			position absolute
+			width 100%
+			height 1px
+			background $color-6
+			left 0%
+			bottom 2px
+			transition all .2s ease-in-out
+		&:hover
+			color $color-5
+			text-decoration none
+			&:after
+				content ''
+				position absolute
+				width 0%
+				height 1px
+				background $color-5
+				left 50%
+				bottom 2px
+		&:focus
+			color $color-6
+			outline none					
+.btn-link
+	color $color-6
+	padding-left 0 !important
+	padding-right 0 !important
+	position relative
+	transition all .2s ease-in-out
+	text-decoration none
+	&:after
+		content ''
+		position absolute
+		width 100%
+		height 1px
+		background $color-6
+		left 0%
+		bottom 9px
+		transition all .2s ease-in-out
+	&:hover
+		color $color-5
+		text-decoration none !important
+		&:after
+			content ''
+			position absolute
+			width 0%
+			height 1px
+			background $color-5
+			left 50%
+			bottom 9px
+	&:focus
+		color $color-6
+		outline none
+		border none
+		text-decoration none !important
+	&--no-underline__xs
+		font-size 12px
+		&:after
+			display none
+	&--no-underline__sm
+		font-size 14px
+		&:after
+			display none
+span
+	&.btn-link
+		color $color-6
+		padding-left 0 !important
+		padding-right 0 !important
+		position relative
+		transition all .2s ease-in-out
+		text-decoration none
+		&:after
+			content ''
+			position absolute
+			width 100%
+			height 1px
+			background $color-6
+			left 0%
+			bottom 1px
+			transition all .2s ease-in-out
+		&:hover
+			color $color-5
+			text-decoration none
+			&:after
+				content ''
+				position absolute
+				width 0%
+				height 1px
+				background $color-5
+				left 50%
+				bottom 1px
+		&:focus
+			color $color-6
+			outline none
+			border none
+.links-actions
+	display flex
+	justify-content flex-end
+.link-icon
+	display flex
+	flex-direction row
+	align-items center
+	float left
+	i
+		font-size 25px
+		padding-left 5px
+		padding-right 7px
+		color #149DC9 !important
+	&:last-child
+		margin-left 15px
+.btn-open-aside
+	color $color-6
+	font-size 14px
+	width 18px
+	height 18px
+	text-align center
+	border-radius 100%
+	border-color $color-6
+	border-width 1px
+	border-style solid
+	transition all 0.3s ease-in-out
+	line-height 18px
+	display inline-block
+	i
+		color $color-6
+		transition all 0.3s ease-in-out
+	&:hover
+		color $color-4
+		border-color $color-4
+		i
+			color $color-4
+	&:focus
+		color $color-6
+		border-color $color-6 !important
+		border-width 1px !important
+		border-style solid !important
+		i
+			color $color-6
+.btn-fill__data-bar
+	width 18px !important
+	height 18px !important
+	.cont-animacion
+		width 18px !important
+		height 18px !important
+		span
+			background-color $color-6 !important
+			border-width 0px !important
+			box-shadow none !important
+			width 18px !important
+			height 18px !important
+		i.ion-ios-arrow-down
+			transform rotate(0deg) scale(1) skew(1deg) translate(0px)
+			transition all 0.3s ease-in-out
+			color $default-color !important
+			font-size 16px !important
+			width 18px !important
+			height 18px !important
+			&.voltea
+				transform rotate(-180deg) scale(1) skew(1deg) translate(0px)
+		i.ion-ios-arrow-right
+			transform rotate(0deg) scale(1) skew(1deg) translate(0px)
+			transition all 0.3s ease-in-out
+			color $default-color !important
+			font-size 16px !important
+			width 18px !important
+			height 18px !important
+			&.voltea2
+				transform rotate(-180deg) scale(1) skew(1deg) translate(0px)
+	&:hover
+		.cont-animacion
+			span
+				background-color $color-5 !important
+			i.ion-ios-arrow-down
+				color $default-color !important
+				font-size 16px !important
+				width 18px !important
+			height 18px !important
+			i.ion-ios-arrow-right
+				color $default-color !important
+				font-size 16px !important
+				width 18px !important
+				height 18px !important
+	&:focus
+		.cont-animacion
+			span
+				background-color $color-6 !important
+				border-width 0px !important
+				width 18px !important
+				height 18px !important
+			i.ion-ios-arrow-down
+				color $default-color !important
+				font-size 16px !important
+				width 18px !important
+				height 18px !important
+			i.ion-ios-arrow-right
+				color $default-color !important
+				font-size 16px !important
+				width 18px !important
+				height 18px !important
+.dropdown
+	margin-right 10px
+	cursor pointer
+	a.dropdown-toggle
+		font-size 25px
+		color $color-6
+		transition all 0.3s ease-in-out
+	&:hover
+		a.dropdown-toggle
+			color $color-5
+.come-back
+	transition all 0.2s ease-in-out
+	.box-back
+		background $color-16
+		text-align center
+		width 40px
+		height 100%
+		position absolute
+		cursor pointer
+		display flex
+		flex-direction column
+		align-items center
+		justify-content center
+		transition all 0.3s linear
+		top 0px
+		i
+			color $color-6
+			font-size 18px !important
+			transform rotate(180deg)
+			transition all 0.3s linear
+		&:hover
+			background $color-6
+			i
+				color $default-color
+.come-back.active
+	.box-back
+		background $color-6
+		cursor pointer
+		transition all 0.3s linear
+		top 0px
+		i
+			transform rotate(0deg)
+			color $default-color
+	&:hover
+		background $color-5
+// SOLO WEBKIT
+.list-botones-wbk
+	display flex
+	flex-direction row
+	align-items center
+div.dropdown
+	&.dropdown-btn
+		a.btn
+			transition all .2s ease-in-out
+			&.info
+				font-size 14px
+				color $default-color
+				background $color-6
+				transition all .2s ease-in-out
+			&.primary
+				font-size 14px
+				background $color-3
+				color $default-color
+				transition all .2s ease-in-out
+			&.danger
+				font-size 14px
+				background $color-21
+				color $default-color
+				transition all .2s ease-in-out
+			&.success
+				font-size 14px
+				background $color-19
+				color $default-color
+				transition all .2s ease-in-out
+			&.default
+				font-size 14px
+				background $default-color
+				color $color-4
+				border 1px solid $color-13
+				transition all .2s ease-in-out
+			&.neutro
+				font-size 14px
+				background $color-16
+				color $color-12
+				transition all .2s ease-in-out
+		&:hover
+			a.btn
+				&.info
+					background $color-5
+					color $default-color
+					&:focus
+					&:active
+						outline none
+						background $color-6
+						color $default-color
+				&.primary
+					background $color-2
+					color $default-color
+					&:focus
+					&:active
+						outline none
+						background $color-3
+						color $default-color
+				&.danger
+					background $color-26
+					color $default-color
+					&:focus
+					&:active
+						outline none
+						background $color-21
+						color $default-color
+				&.success
+					background $color-18
+					color $default-color
+					&:focus
+					&:active
+						outline none
+						background $color-19
+						color $default-color
+				&.default
+					background $default-color
+					border 1px solid $color-11
+					color $color-3
+					&:focus
+					&:active
+						outline none
+						background $default-color
+						border 1px solid $color-13
+						color $color-3
+				&.neutro
+					background $color-14
+					border 1px solid $color-13
+					color $color-12
+					&:focus
+					&:active
+						outline none
+						background $color-16
+						border 1px solid $color-13
+						color $color-12

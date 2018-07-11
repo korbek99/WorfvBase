@@ -1,0 +1,82 @@
+.bch-mensaje-empresas
+	&.success
+		background-color $color-20
+		article
+			&:before
+				color $color-19
+			ul
+				li
+					color $color-19
+					p
+						color $color-12
+
+	&.warning
+		background-color $color-24
+		article
+			&:before
+				color $color-23
+			ul
+				li
+					color $color-23
+					p
+						color $color-12
+
+	&.error
+		background-color $color-22
+		article
+			&:before
+				color $color-21
+			ul
+				li
+					color $color-21
+					p
+						color $color-12
+
+	&.information
+		background-color $color-9
+		article
+			&:before
+				color $color-3
+			ul
+				li
+					color $color-3
+					p
+						color $color-12
+
+	&--opciones
+		background-color $color-10
+		color $color-11
+
+.bch-alert-lista
+	&.success-list
+		.bch-mensaje-empresas
+			background-color $color-20
+		& > ul
+			background-color alpha($alert-success, .05)
+			li
+				&:before
+					color $color-20
+	&.warning-list
+		.bch-mensaje-empresas
+			background-color $color-24
+		& > ul
+			background-color alpha($alert-warning, .05)
+			li
+				&:before
+					color $alert-warning
+	&.error-list
+		.bch-mensaje-empresas
+			background-color $color-22
+		& > ul
+			background-color alpha($alert-error, .05)
+			li
+				&:before
+					color $alert-error
+	&.info-list
+		.bch-mensaje-empresas
+			background-color $color-9
+		& > ul
+			background-color alpha($alert-info, .05)
+			li
+				&:before
+					color $alert-info

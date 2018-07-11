@@ -1,0 +1,151 @@
+.tag
+	padding 2px 8px
+	border-radius 2px 
+	font 11px $regular
+	display inline-block
+	height 20px
+	vertical-align top
+	cursor pointer
+	white-space nowrap
+	&.tag-button
+		padding 4px 20px 2px 8px
+		line-height 1
+		height 20px
+		position relative
+		span
+			margin  0 0 0 5px
+			padding 4px 5px 
+			transition all ease .2s
+			absolute right 0 top 0
+			height 20px
+			border-radius 0 2px 2px 0
+		&.neutro
+		&.default
+			padding-top 3px
+			span
+				height 19px
+	&.neutro
+		background-color $grey-five
+		border-width 1px
+		border-style solid
+		padding-top 1px
+	&.default
+		border-width 1px
+		border-style solid
+		padding-top 1px
+	&-status
+		display flex
+		flex-direction row
+		align-items center
+		.tag
+			padding 1px 8px
+			padding-left 4px
+			margin-left 10px
+			display inline-block
+			border-left none
+			&.neutro
+				position relative
+				padding 5px 8px 5px 8px !important
+				height auto !important
+				&:nth-child(n+2)
+					margin-left 20px
+				&:after, &:before
+					right 100%
+					top 50%
+					border solid transparent
+					content " "
+					height 0
+					width 0
+					position absolute
+					pointer-events none
+				&:after
+					border-color rgba(246, 246, 248, 0)
+					border-right-color $grey-five
+					border-width 12px
+					margin-top -12px
+				&:before
+					border-color rgba(210, 210, 212, 0)
+					border-right-color $grey-three
+					border-width 13px
+					margin-top -13px
+
+	&--lg
+		color $grey-two !important
+		background $grey-six
+		border-width 1px 1px 1px 0
+		border-style solid
+		border-radius 0 5px 5px 0
+		display inline-block
+		font-size 11px
+		height auto !important
+		margin-left 10px
+		margin-top 4px
+		line-height 22px !important
+		padding 1px 8px 1px 4px !important
+		position relative
+		vertical-align middle
+		&:nth-child(n+2)
+			margin-left 20px
+		&:after, &:before
+			right 100%
+			top 50%
+			border solid transparent
+			content " "
+			height 0
+			width 0
+			position absolute
+			pointer-events none
+		&:after
+			border-right-color $grey-six
+			border-width 12px
+			margin-top -12px
+		&:before
+			border-right-color $grey-three
+			border-width 13px
+			margin-top -13px
+		&.tag-button
+			padding-right 20px !important
+			span
+				padding-top 7px
+				height 24px
+
+.tags-status
+	display flex
+	flex-direction row
+	align-items center
+	.modal-state
+		position relative
+		background $grey-six
+		border 1px solid $grey-three
+		padding 1px 8px
+		padding-left 4px
+		margin-left 10px
+		font-size 11px
+		display inline-block
+		line-height 22px
+		border-left none
+		border-top-right-radius 5px
+		border-bottom-right-radius 5px
+		color $brand-primary
+		margin-top 4px
+		&:nth-child(n+2)
+			margin-left 20px
+		&:after, &:before
+			right 100%
+			top 50%
+			border solid transparent
+			content " "
+			height 0
+			width 0
+			position absolute
+			pointer-events none
+		&:after
+			border-color rgba(246, 246, 248, 0)
+			border-right-color $grey-six
+			border-width 12px
+			margin-top -12px
+		&:before
+			border-color rgba(210, 210, 212, 0)
+			border-right-color $grey-three
+			border-width 13px
+			margin-top -13px

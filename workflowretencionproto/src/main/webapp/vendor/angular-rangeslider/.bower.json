@@ -1,0 +1,17 @@
+{
+  "name": "angular-rangeslider",
+  "version": "v0.0.14",
+  "license": "MIT",
+  "main": [
+    "./angular.rangeSlider.js",
+    "./angular.rangeSlider.css"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7",
+    "angular": ">=1.0.*"
+  },
+  "_source": "nexus+http://200.14.166.117:8081/repository/bower-cdn-all/angular-rangeslider",
+  "_target": "0.0.14",
+  "_release": "v0.0.14",
+  "_originalSource": "angular-rangeslider"
+}

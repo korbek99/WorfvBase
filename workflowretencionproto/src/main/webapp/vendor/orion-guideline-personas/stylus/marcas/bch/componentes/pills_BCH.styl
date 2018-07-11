@@ -1,0 +1,73 @@
+.pill-descarga
+	&__icono
+		border-color $color-13 !important
+		color $color-14
+		&--success
+			border none !important
+			color $success-color
+		&--error
+			border none !important
+			color $danger-color
+	&__ir-detalle
+		color $color-12
+		border-color $color-12 !important
+	&:hover
+	&--active
+		background-color $color-3
+		color $default-color !important
+		h5
+		span
+			color $default-color
+		.pill-descarga__icono
+			border-color $default-color !important
+			color $default-color !important
+		.pill-descarga__dato
+			a
+				color $default-color
+		.pill-descarga__ir-detalle
+			background-color $default-color
+			border-color $default-color !important
+			color $color-3
+		.boton-descarga-documentos
+			color $color-12
+			i
+				color $default-color
+		.pill-descarga__cerrar
+			color $default-color
+	&--sin-hover
+		&:hover
+			background-color $default-color
+			color $color-3 !important
+			h5
+				color $color-3
+			span
+				color $color-12
+			.pill-descarga__icono
+				border-color $color-13 !important
+				color $color-14 !important
+				&--success
+					border none !important
+					color $success-color
+				&--error
+					border none !important
+					color $danger-color
+			.pill-descarga__ir-detalle
+				color $color-12
+				border-color $color-12 !important
+			.pill-descarga__dato
+				a
+					color $color-3
+			.boton-descarga-documentos
+				color $grey-one
+				i
+					color $color-11
+			.pill-descarga__cerrar
+				color $color-12
+		&__icono
+			color $color-14 !important
+			font-size 25px
+			height 35px
+			line-height 125%
+			width 35px
+	&--dashed
+		border-color $color-13
